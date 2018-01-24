@@ -23,6 +23,8 @@ public:
     int tabuLength;
     std::vector<int> tabuList;  // prof tabu list: unused
 
+    int mTabuLength;
+    int mMaxIteration;
     std::list<TSPMove> mTabuList;
 
 
@@ -30,13 +32,17 @@ public:
 
     TabuSearchSolver() {}
 
-    bool solve( const TSP& tsp , const TSPSolution& initSol , int tabulength , int maxIter , TSPSolution& bestSol ); /// TS: new parameters
+    TabuSearchSolver(int tabuLength, int maxIter) : mTabuLength(tabuLength), mMaxIteration(maxIter) {}
 
-    double findBestNeighbor( const TSP& tsp , const TSPSolution& currSol , int currIter , TSPMove& move );        /// TS: use currIter!!!
+    bool solve(const TSP &tsp, const TSPSolution &initSol, TSPSolution &bestSol);
+
+    double findBestNeighbor( const TSP& tsp , const TSPSolution& currSol , int currIter , TSPMove& move );
 
     TSPSolution& swap(TSPSolution& tspSol , const TSPMove& move );
 
-    // Tabu search (tabu list stores, for each node, when (last iteration) a move involving that node have been chosen)
+    bool isTabuMove(int from, int to);
+
+    /*// Tabu search (tabu list stores, for each node, when (last iteration) a move involving that node have been chosen)
     // a neighbor is tabu if the generating move involves two nodes that have been chosen in the last 'tabulength' moves
     // that is, currentIteration - LastTimeInvolved <= tabuLength
     void initTabuList(int n) {
@@ -44,9 +50,7 @@ public:
             // at iterarion 0, no neighbor is tabu --> iteration(= 0) - tabulistInit > tabulength --> tabulistInit < tabuLength + 0
             tabuList.push_back(-tabuLength-1);
         }
-    }
-
-    bool isTabuMove(int from, int to);
+    }*/
 
 };
 

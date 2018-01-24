@@ -1,24 +1,20 @@
 /**
  * @file TSPSolver.cpp
  * @brief TSP solver (neighborhood search)
- *
  */
 
 #include "TabuSearchSolver.h"
 #include <iostream>
 
-bool TabuSearchSolver::solve(const TSP& tsp , const TSPSolution& initSol , int tabulength , int maxIter , TSPSolution& bestSol ) {
-
-
+bool TabuSearchSolver::solve(const TSP& tsp, const TSPSolution& initSol, TSPSolution& bestSol) {
 
     try {
         bool stop = false;
         int  iter = 0;
 
         // Tabu Search
-        tabuLength = tabulength;
         tabuList.reserve(tsp.n);
-        initTabuList(tsp.n);
+        //initTabuList(tsp.n);
 
         TSPSolution currSol(initSol);
         double bestValue, currValue;
@@ -49,7 +45,7 @@ bool TabuSearchSolver::solve(const TSP& tsp , const TSPSolution& initSol , int t
                 tabuList[currSol.sequence[move.to]]   = iter;
 
                 // insertTabu(move);
-                if (mTabuList.size() < tabuLength) {
+                if (mTabuList.size() < mTabuLength) {
                     mTabuList.push_back(move);
                 } else {
                     mTabuList.pop_front();  // remove old elements
@@ -66,7 +62,7 @@ bool TabuSearchSolver::solve(const TSP& tsp , const TSPSolution& initSol , int t
                 }
 
                 // stopping criteria
-                if (iter > maxIter) {
+                if (iter > mMaxIteration) {
                     stop = true;
                 }
 

@@ -81,9 +81,11 @@ int main (int argc, char const *argv[]) {
         int tabuLength = 30; // atoi(argv[2]);
         int maxIter    = 10000; // atoi(argv[3]);
 
-        TabuSearchSolver tsSolver;
+        //TabuSearchSolver tsSolver;
+        TabuSearchSolver tsSolver(tabuLength, maxIter);
+
         TSPSolution bestSolution2(tspInstance);
-        tsSolver.solve(tspInstance, aSolution, tabuLength, maxIter, bestSolution2);
+        tsSolver.solve(tspInstance, aSolution, bestSolution2);
 
         finishClock = clock();
         gettimeofday(&tv2, NULL);
