@@ -28,16 +28,25 @@ public:
     int mMaxIteration;
     std::list<TSPMove> mTabuList;
 
+    double mAspiration;
+    // config variable
+    bool ACmode;
+
 
 
     TabuSearchSolver() {}
 
-    TabuSearchSolver(int tabuLength, int maxIter) : mTabuLength(tabuLength), mMaxIteration(maxIter) {}
+    TabuSearchSolver(int tabuLength, int maxIter, bool aspCriteria = false) : mTabuLength(tabuLength), mMaxIteration(maxIter), ACmode(aspCriteria) {}
 
 
     std::string getSolverName() const;
 
     bool solve(const TSP &tsp, const TSPSolution &initSol, TSPSolution &bestSol);
+
+    bool satisfiedAspirationCriteria(double neighbourCostVariation) const;
+
+
+    // private:
 
     double findBestNeighbor( const TSP& tsp , const TSPSolution& currSol , int currIter , TSPMove& move );
 

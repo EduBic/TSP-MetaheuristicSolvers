@@ -5,9 +5,21 @@
 
 #include "TabuSearchSolver.h"
 #include <iostream>
+#include <string>
+#include <stdio.h>
+
 
 std::string TabuSearchSolver::getSolverName() const {
-    return "Tabu Search";
+    char buffer[50];
+    sprintf(buffer, "\t(tabuLenght: %d, Num Max Iterations: %d)", mTabuLength, mMaxIteration);
+
+    std::string tmp = std::string(buffer);
+
+    if (ACmode) {
+        return "Tabu Search Aspiration Criteria " + tmp;
+    } else {
+        return "Tabu Search " + tmp;
+    }
 }
 
 bool TabuSearchSolver::solve(const TSP& tsp, const TSPSolution& initSol, TSPSolution& bestSol) {
@@ -34,8 +46,9 @@ bool TabuSearchSolver::solve(const TSP& tsp, const TSPSolution& initSol, TSPSolu
                 currSol.print();
             }
 
-            std::cout << " (" << iter << ") value " << currValue << "\t(" << currSol.evaluateObjectiveFunction(tsp) << ")";
+            //std::cout << " (" << iter << ") value " << currValue << "\t(" << currSol.evaluateObjectiveFunction(tsp) << ")";
 
+            mAspiration = bestValue - currValue;
             double bestNeighValue = currValue + findBestNeighbor(tsp, currSol, iter, move);
 
             if (bestNeighValue >= tsp.infinite) {                                                             // TS: stop because all neighbours are tabu
@@ -43,7 +56,7 @@ bool TabuSearchSolver::solve(const TSP& tsp, const TSPSolution& initSol, TSPSolu
                 stop = true;
             }
             else {
-                std::cout << "\tmove: " << move.from << " , " << move.to;
+                //std::cout << "\tmove: " << move.from << " , " << move.to;
 
                 tabuList[currSol.sequence[move.from]] = iter;                                           // TS: update tabu list
                 tabuList[currSol.sequence[move.to]]   = iter;
@@ -62,7 +75,11 @@ bool TabuSearchSolver::solve(const TSP& tsp, const TSPSolution& initSol, TSPSolu
                 if (currValue < bestValue - 0.01) {                                                   // TS: update incumbent (if better -with tolerance- solution found)
                     bestValue = currValue;
                     bestSol = currSol;
+
+                    std::cout << " (" << iter << ") value " << currValue << "\t(" << currSol.evaluateObjectiveFunction(tsp) << ")";
+                    std::cout << "\tmove: " << move.from << " , " << move.to;
                     std::cout << "\tbetter solution";
+                    std::cout << std::endl;
                 }
 
                 // stopping criteria
@@ -70,7 +87,7 @@ bool TabuSearchSolver::solve(const TSP& tsp, const TSPSolution& initSol, TSPSolu
                     stop = true;
                 }
 
-                std::cout << std::endl;
+                //std::cout << std::endl;
             }
         }
 
@@ -110,23 +127,27 @@ double TabuSearchSolver::findBestNeighbor( const TSP& tsp , const TSPSolution& c
 
         for (uint b = a + 1 ; b < currSol.sequence.size() - 1 ; b++) {
 
-            // choose a finishing node
-            int j = currSol.sequence[b];
-            // prev node
-            int l = currSol.sequence[b+1];
+            int j = currSol.sequence[b];        // choose a finishing node
+            int l = currSol.sequence[b+1];      // prev node
 
             // prof. implementation it discards other moves
             /*if ( ( (currIter - tabuList[i] <= tabuLength) &&
-                    (currIter - tabuList[j] <= tabuLength)) ) {
-                std::cout << "\t" << "discard move: " << a << ", " << b << "\t";*/
+                    (currIter - tabuList[j] <= tabuLength)) ) continue */
 
-            if (isTabuMove(a, b)) {
+            double neighCostVariation = - tsp.cost[h][i] - tsp.cost[j][l]
+                                        + tsp.cost[h][j] + tsp.cost[i][l];
+
+
+            if (isTabuMove(a, b) && !satisfiedAspirationCriteria(neighCostVariation)) {
+                // DEBUG
                 //std::cout << "\t" << "discard move: " << a << ", " << b << "\t";
             }
             else {
 
-                double neighCostVariation = - tsp.cost[h][i] - tsp.cost[j][l]
-                                            + tsp.cost[h][j] + tsp.cost[i][l];
+                // DEBUG
+                /*if (isTabuMove(a, b) && satisfiedAspirationCriteria(neighCostVariation)) {
+                    std::cout << "\t" << "in tabu but satisfied AC: " << a << ", " << b << "\t";
+                }*/
 
                 if (neighCostVariation < bestCostVariation) {
                     bestCostVariation = neighCostVariation;
@@ -143,6 +164,16 @@ double TabuSearchSolver::findBestNeighbor( const TSP& tsp , const TSPSolution& c
     }
 
     return bestCostVariation;
+}
+
+bool TabuSearchSolver::satisfiedAspirationCriteria(double neighbourCostVariation) const {
+    if (ACmode) {
+        // aspiration criteria implementation
+        //std::cout << std::endl << "Aspiration criteria";
+        return neighbourCostVariation < (mAspiration - 0.01);
+    } else {
+        return false; // default implementation
+    }
 }
 
 

@@ -17,17 +17,23 @@ void SolversExecutor::addSolver(Solver *solver) {
 
 void SolversExecutor::execute() {
     // TODO: refactor init solutions
-    TSPSolution aSolution(mTspInstance);
-    aSolution.initRandom();
+    TSPSolution* aSol = new TSPSolution(mTspInstance);
+    aSol->initRandom();
+    mInitSolutions.push_back(aSol);
 
-    for (std::vector<Solver*>::iterator it = mSolvers.begin() ; it != mSolvers.end(); ++it) {
-        // new solution used by solver
-        //TSPSolution bestSolution(mTspInstance);
-        TSPSolution* bestSolution = new TSPSolution(mTspInstance);
+    TSPSolution* anotherSol = new TSPSolution(mTspInstance);
+    anotherSol->initRandom(time(NULL));
+    mInitSolutions.push_back(anotherSol);
 
-        executeAndMeasureTime(*(*it), aSolution, *bestSolution);
+    for (std::vector<Solver*>::iterator it = mSolvers.begin(); it != mSolvers.end(); ++it) {
 
-        mBestSolutions.push_back(bestSolution);
+        for (std::vector<TSPSolution*>::iterator inIt = mInitSolutions.begin(); inIt != mInitSolutions.end(); ++inIt) {
+
+            TSPSolution* bestSolution = new TSPSolution(mTspInstance);
+            executeAndMeasureTime(*(*it), **inIt, *bestSolution);
+
+            mBestSolutions.push_back(bestSolution);
+        }
     }
 }
 
@@ -53,18 +59,34 @@ void SolversExecutor::executeAndMeasureTime(Solver& tspSolver, TSPSolution& init
     finishClock = clock();
     gettimeofday(&tv2, NULL);
 
-    cout << endl;
+    bestSol.userTime = (double)(tv2.tv_sec+tv2.tv_usec*1e-6 - (tv1.tv_sec+tv1.tv_usec*1e-6));
+    bestSol.cpuTime = (double)(finishClock - startClock) / CLOCKS_PER_SEC;
+
+    /*cout << endl;
     cout << "in " << (double)(tv2.tv_sec+tv2.tv_usec*1e-6 - (tv1.tv_sec+tv1.tv_usec*1e-6)) << " seconds (user time)" << endl;
     cout << "in " << (double)(finishClock - startClock) / CLOCKS_PER_SEC << " seconds (CPU time)" << endl;
-    cout << endl;
+    cout << endl;*/
+}
+
+void SolversExecutor::printInitSolutions() const {
+    for (vector<TSPSolution*>::const_iterator it = mInitSolutions.begin(); it != mInitSolutions.end(); ++it) {
+        std::cout << std::endl << (*it)->solveBy << std::endl;
+        //(*it)->print();
+        std::cout << "(value : " << (*it)->evaluateObjectiveFunction(mTspInstance) << ")\n";
+        std::cout << "sec. (user time) " << (*it)->userTime << std::endl;
+        std::cout << "sec. (CPU time) " << (*it)->cpuTime << std::endl;
+    }
 }
 
 void SolversExecutor::printResults() const {
+    std::cout << "----------------------------------------------------------------------" << std::endl;
 
     for (vector<TSPSolution*>::const_iterator it = mBestSolutions.begin(); it != mBestSolutions.end(); ++it) {
         std::cout << std::endl << (*it)->solveBy << std::endl;
-        (*it)->print();
+        //(*it)->print();
         std::cout << "(value : " << (*it)->evaluateObjectiveFunction(mTspInstance) << ")\n";
+        std::cout << "sec. (user time) " << (*it)->userTime << std::endl;
+        std::cout << "sec. (CPU time) " << (*it)->cpuTime << std::endl;
     }
 
 }

@@ -20,7 +20,10 @@ class TSPSolution
 public:
     std::vector<int> sequence;
 
+    // utils solutions fields
     std::string solveBy;
+    double userTime;
+    double cpuTime;
 
 
     TSPSolution( const TSP& tsp ) {
@@ -32,6 +35,10 @@ public:
         }
 
         sequence.push_back(0);
+
+        solveBy = "Random";
+        userTime = -1.0;
+        cpuTime = -1.0;
     }
 
     TSPSolution( const TSPSolution& tspSol ) {
@@ -43,8 +50,8 @@ public:
     }
 
 
-    void initRandom() {
-        srand(42/*time(NULL)*/);
+    void initRandom(int seed = 42) {
+        srand(seed/*time(NULL)*/);
 
         for (uint i = 1 ; i < sequence.size() ; ++i ) {
             // initial and final position are fixed (initial/final node remains 0)

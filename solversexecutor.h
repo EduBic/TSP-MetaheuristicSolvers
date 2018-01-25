@@ -20,6 +20,8 @@ private:
     vector<Solver*> mSolvers;
     vector<TSPSolution*> mBestSolutions;
 
+    vector<TSPSolution*> mInitSolutions;
+
 public:
     SolversExecutor(const char *filename);
 
@@ -28,6 +30,8 @@ public:
     void execute();
 
     void executeAndMeasureTime(Solver& tspSolver, TSPSolution& initSol, TSPSolution& bestSol);
+
+    void printInitSolutions() const;
 
     void printResults() const;
 };
