@@ -34,7 +34,7 @@ public:
         std::ifstream in(filename);
 
         in >> n;
-        std::cout << "num nodes = " << n << std::endl;
+        std::cout << "read from file, num nodes = " << n << std::endl;
 
         cost.resize(n);
         for (int i = 0; i < n; i++) {

@@ -9,22 +9,14 @@
 
 #include <vector>
 
-#include "TSPSolution.h"
-
-/**
- * Class representing substring reversal move
- */
-typedef struct move {
-  int from;
-  int to;
-} TSPMove;
+#include "solver.h"
 
 
 
 /**
  * Class that solves a TSP problem by neighbourdood search and 2-opt moves
  */
-class LocalSearchSolver
+class LocalSearchSolver : public Solver
 {
 public:
   LocalSearchSolver() {}
@@ -37,6 +29,8 @@ public:
    * @return true id everything OK, false otherwise
    */
   bool solve ( const TSP& tsp , const TSPSolution& initSol , TSPSolution& bestSol );
+
+  std::string getSolverName() const;
 
   /**
    * explore the neighbouhood

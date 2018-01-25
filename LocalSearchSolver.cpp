@@ -1,12 +1,14 @@
 /**
  * @file TSPSolver.cpp
  * @brief TSP solver (neighborhood search)
- *
  */
 
 #include "LocalSearchSolver.h"
 #include <iostream>
 
+std::string LocalSearchSolver::getSolverName() const {
+    return "Local Search";
+}
 
 bool LocalSearchSolver::solve( const TSP& tsp , const TSPSolution& initSol , TSPSolution& bestSol ) {
 

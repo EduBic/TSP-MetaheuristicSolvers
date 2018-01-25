@@ -9,26 +9,16 @@
 #include <sys/time.h>
 #include <string>
 
+#include "solver.h"
 #include "LocalSearchSolver.h"
 #include "TabuSearchSolver.h"
+#include "solversexecutor.h"
 
 // error status and messagge buffer
 int status;
 char errmsg[255];
 
 using namespace std;
-
-void printSolution(TSPSolution& solution, TSP& tspInstance, string title) {
-    std::cout << std::endl << title << std::endl;
-    solution.print();
-    std::cout << "(value : " << solution.evaluateObjectiveFunction(tspInstance) << ")\n";
-}
-
-void printTime(clock_t& t1, clock_t& t2, timeval& tv1, timeval& tv2) {
-    cout << endl;
-    cout << "in " << (double)(tv2.tv_sec+tv2.tv_usec*1e-6 - (tv1.tv_sec+tv1.tv_usec*1e-6)) << " seconds (user time)" << endl;
-    cout << "in " << (double)(t2-t1) / CLOCKS_PER_SEC << " seconds (CPU time)" << endl;
-}
 
 
 int main (int argc, char const *argv[]) {
@@ -38,63 +28,14 @@ int main (int argc, char const *argv[]) {
             throw std::runtime_error("usage: ./main filename.dat");
         }
 
-        // (1) init phase
-        TSP tspInstance;
-        tspInstance.readFromFile(argv[1]);
+        SolversExecutor solversExe(argv[1]);
 
-        // init solution
-        TSPSolution aSolution(tspInstance);
-        aSolution.initRandom();
+        solversExe.addSolver(new LocalSearchSolver());
+        solversExe.addSolver(new TabuSearchSolver(5, 100));
 
-        // initialize clocks for running time recording
-        //   two ways:
-        //   1) CPU time (t2 - t1)
-        //   2) wall-clock time (tv2 - tv1)
-        clock_t startClock, finishClock;
-        timeval  tv1, tv2;
+        solversExe.execute();
 
-        // (2) solver phase
-
-        startClock = clock();
-        gettimeofday(&tv1, NULL);
-
-        LocalSearchSolver tspSolver;
-
-        // run the neighbourhood search
-        TSPSolution bestSolution(tspInstance);
-        tspSolver.solve(tspInstance, aSolution, bestSolution);
-
-        finishClock = clock();
-        gettimeofday(&tv2, NULL);
-
-        printTime(startClock, finishClock, tv1, tv2);
-
-
-        cout << endl;
-        cout << "------ TABU SEARCH -----" << endl;
-        cout << endl;
-
-
-        startClock = clock();
-        gettimeofday(&tv1, NULL);
-
-        int tabuLength = 30; // atoi(argv[2]);
-        int maxIter    = 10000; // atoi(argv[3]);
-
-        //TabuSearchSolver tsSolver;
-        TabuSearchSolver tsSolver(tabuLength, maxIter);
-
-        TSPSolution bestSolution2(tspInstance);
-        tsSolver.solve(tspInstance, aSolution, bestSolution2);
-
-        finishClock = clock();
-        gettimeofday(&tv2, NULL);
-
-        printTime(startClock, finishClock, tv1, tv2);
-
-        printSolution(aSolution, tspInstance, "Init solution");
-        printSolution(bestSolution, tspInstance, "Local search solution");
-        printSolution(bestSolution2, tspInstance, "Tabu search solution");
+        solversExe.printResults();
 
     }
     catch (std::exception& e) {

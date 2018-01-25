@@ -20,6 +20,8 @@ class TSPSolution
 public:
     std::vector<int> sequence;
 
+    std::string solveBy;
+
 
     TSPSolution( const TSP& tsp ) {
 
@@ -73,7 +75,7 @@ public:
     }
 
 
-    void print() {
+    void print() const {
         for (uint i = 0; i < sequence.size(); i++ ) {
             std::cout << sequence[i] << " ";
         }

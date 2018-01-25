@@ -6,6 +6,10 @@
 #include "TabuSearchSolver.h"
 #include <iostream>
 
+std::string TabuSearchSolver::getSolverName() const {
+    return "Tabu Search";
+}
+
 bool TabuSearchSolver::solve(const TSP& tsp, const TSPSolution& initSol, TSPSolution& bestSol) {
 
     try {

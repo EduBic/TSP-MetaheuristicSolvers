@@ -2,7 +2,7 @@ CC = g++
 CPPFLAGS = -g -Wall -O2
 LDFLAGS =
 
-OBJ = LocalSearchSolver.o TabuSearchSolver.o main.o
+OBJ = solversexecutor.o LocalSearchSolver.o TabuSearchSolver.o main.o
 
 %.o: %.cpp
 		$(CC) $(CPPFLAGS) -c $^ -o $@
