@@ -24,19 +24,21 @@ public:
     int tabuLength;
     std::vector<int> tabuList;  // prof tabu list: unused
 
-    int mTabuLength;
+    uint mTabuLength;
     int mMaxIteration;
     std::list<TSPMove> mTabuList;
 
     double mAspiration;
     // config variable
     bool ACmode;
+    bool BestImprovement;
 
 
 
     TabuSearchSolver() {}
 
-    TabuSearchSolver(int tabuLength, int maxIter, bool aspCriteria = false) : mTabuLength(tabuLength), mMaxIteration(maxIter), ACmode(aspCriteria) {}
+    TabuSearchSolver(int tabuLength, int maxIter, bool aspCriteria = false, bestImprovement = true)
+        : mTabuLength(tabuLength), mMaxIteration(maxIter), ACmode(aspCriteria), BestImprovement(bestImprovement) {}
 
 
     std::string getSolverName() const;
@@ -48,7 +50,8 @@ public:
 
     // private:
 
-    double findBestNeighbor( const TSP& tsp , const TSPSolution& currSol , int currIter , TSPMove& move );
+    double findBestNeighbor(const TSP& tsp , const TSPSolution& currSol , TSPMove& move );
+    double findFirstBestNeighbor(const TSP &tsp, const TSPSolution &currSol, TSPMove &move);
 
     TSPSolution& swap(TSPSolution& tspSol , const TSPMove& move );
 

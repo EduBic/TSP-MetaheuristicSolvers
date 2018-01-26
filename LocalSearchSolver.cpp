@@ -7,7 +7,7 @@
 #include <iostream>
 
 std::string LocalSearchSolver::getSolverName() const {
-    return "Local Search";
+    return string("Local Search ") + findNeighbor->getName();
 }
 
 bool LocalSearchSolver::solve( const TSP& tsp , const TSPSolution& initSol , TSPSolution& bestSol ) {
@@ -29,8 +29,15 @@ bool LocalSearchSolver::solve( const TSP& tsp , const TSPSolution& initSol , TSP
 
             std::cout << " (" << ++iter << ") value " << currValue << " (" << bestValue << ")";
 
+            // first improvement
+            // neigh = findFirstBestNeighbor(tsp, currSol, )
+            // neighValue = compute neight obj fun value
+            // if neighValue < currentBest then bestFound = currentBest = neightValue
+
+
             // incremental evaluation: findBestNeighbour returns the cost increment
-            double bestNeighValue = currValue + findBestNeighbor(tsp, currSol, move);
+            double bestNeighValue = currValue + findNeighbor->execute(tsp, currSol, move);
+
             std::cout << "\t move: " << move.from << " , " << move.to << std::endl;
 
             // stop criteria
@@ -63,37 +70,6 @@ TSPSolution& LocalSearchSolver::swap( TSPSolution& tspSol , const TSPMove& move 
 
     return tspSol;
 }
-
-
-double LocalSearchSolver::findBestNeighbor( const TSP& tsp , const TSPSolution& currSol , TSPMove& move ) {
-    // Determine the *move* yielding the best 2-opt neigbor solution
-    double bestCostVariation = tsp.infinite;
-
-    // initial and final position are fixed (initial/final node remains 0)
-    for ( uint a = 1 ; a < currSol.sequence.size() - 2 ; a++ ) {
-
-        int h = currSol.sequence[a-1];
-        int i = currSol.sequence[a];
-
-        for ( uint b = a + 1 ; b < currSol.sequence.size() - 1 ; b++ ) {
-            int j = currSol.sequence[b];
-            int l = currSol.sequence[b+1];
-
-            // incremental evaluation --> bestCostVariation (instead of best cost)
-            double neighCostVariation = - tsp.cost[h][i] - tsp.cost[j][l]
-                                        + tsp.cost[h][j] + tsp.cost[i][l];
-
-            if ( neighCostVariation < bestCostVariation ) {
-                bestCostVariation = neighCostVariation;
-                move.from = a;
-                move.to = b;
-            }
-        }
-    }
-
-    return bestCostVariation;
-}
-
 
 
 

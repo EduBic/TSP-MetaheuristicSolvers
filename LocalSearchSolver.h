@@ -10,6 +10,7 @@
 #include <vector>
 
 #include "solver.h"
+#include "neighborimprovement.h"
 
 
 
@@ -19,7 +20,15 @@
 class LocalSearchSolver : public Solver
 {
 public:
-  LocalSearchSolver() {}
+    NeigthborImprovement* findNeighbor;
+
+    LocalSearchSolver(bool bestImprovement = true) {
+        if (bestImprovement) {
+            findNeighbor = new BestImprovement();
+        } else {
+            findNeighbor = new FirstImprovement();
+        }
+    }
 
   /**
    * search for a good tour by neighbourhood search
@@ -32,14 +41,6 @@ public:
 
   std::string getSolverName() const;
 
-  /**
-   * explore the neighbouhood
-   * @param tsp TSP data
-   * @param currSol center solution
-   * @return (into param move) the selected move (stepest descent strategy)
-   * @return the incremental cost with respect to currSol
-   */
-  double findBestNeighbor( const TSP& tsp , const TSPSolution& currSol , TSPMove& move );
 
   /**
    * perform a swap move (corresponding to 2-opt)
