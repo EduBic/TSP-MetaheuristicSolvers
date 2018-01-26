@@ -11,9 +11,9 @@
 #include <list>
 #include <iostream>
 
-//#include "TSPSolution.h"
-#include "LocalSearchSolver.h"  // need for the struct TSPMove
 #include "solver.h"
+
+using namespace std;
 
 /**
  * Class that solves a TSP problem by neighbourdood search and 2-opt moves
@@ -22,11 +22,11 @@ class TabuSearchSolver : public Solver
 {
 public:
     int tabuLength;
-    std::vector<int> tabuList;  // prof tabu list: unused
+    vector<int> tabuList;  // prof tabu list: unused
 
     uint mTabuLength;
     int mMaxIteration;
-    std::list<TSPMove> mTabuList;
+    list<TSPMove> mTabuList;
 
     double mAspiration;
     // config variable
@@ -37,7 +37,7 @@ public:
 
     TabuSearchSolver() {}
 
-    TabuSearchSolver(int tabuLength, int maxIter, bool aspCriteria = false, bestImprovement = true)
+    TabuSearchSolver(int tabuLength, int maxIter, bool aspCriteria = false, bool bestImprovement = true)
         : mTabuLength(tabuLength), mMaxIteration(maxIter), ACmode(aspCriteria), BestImprovement(bestImprovement) {}
 
 

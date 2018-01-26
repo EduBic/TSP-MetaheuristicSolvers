@@ -8,17 +8,27 @@
 #include <string>
 #include <stdio.h>
 
+using namespace std;
+
 
 std::string TabuSearchSolver::getSolverName() const {
     char buffer[50];
-    sprintf(buffer, "\t(tabuLenght: %d, Num Max Iterations: %d)", mTabuLength, mMaxIteration);
+    sprintf(buffer, "\t(tabuLenght: %d, MaxIter: %d)", mTabuLength, mMaxIteration);
 
     std::string tmp = std::string(buffer);
 
     if (ACmode) {
-        return "Tabu Search Aspiration Criteria " + tmp;
+        if (BestImprovement) {
+            return "Tabu Search AC - BI " + tmp;
+        } else {
+            return "Tabu Search AC - FI " + tmp;
+        }
     } else {
-        return "Tabu Search " + tmp;
+        if (BestImprovement) {
+            return "Tabu Search - BI " + tmp;
+        } else {
+            return "Tabu Search - FI " + tmp;
+        }
     }
 }
 
@@ -28,8 +38,7 @@ bool TabuSearchSolver::solve(const TSP& tsp, const TSPSolution& initSol, TSPSolu
         bool stop = false;
         int  iter = 0;
 
-        // Tabu Search
-        tabuList.reserve(tsp.n);
+        //tabuList.reserve(tsp.n);
         //initTabuList(tsp.n);
 
         TSPSolution currSol(initSol);

@@ -1,5 +1,5 @@
 CC = g++
-CPPFLAGS = -g -Wall -O2
+CPPFLAGS = -g -Wall -O2 -std=gnu++11
 LDFLAGS =
 
 OBJ = solversexecutor.o LocalSearchSolver.o TabuSearchSolver.o main.o

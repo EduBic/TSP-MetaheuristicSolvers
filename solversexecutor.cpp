@@ -23,7 +23,7 @@ void SolversExecutor::execute() {
 
     TSPSolution* anotherSol = new TSPSolution(mTspInstance);
     anotherSol->initRandom(time(NULL));
-    mInitSolutions.push_back(anotherSol);
+    //mInitSolutions.push_back(anotherSol);
 
     for (std::vector<Solver*>::iterator it = mSolvers.begin(); it != mSolvers.end(); ++it) {
 
@@ -81,13 +81,30 @@ void SolversExecutor::printInitSolutions() const {
 void SolversExecutor::printResults() const {
     std::cout << "----------------------------------------------------------------------" << std::endl;
 
+    TSPSolution* bestSolutionFound;
+    double bestValue = 1e10;
+
     for (vector<TSPSolution*>::const_iterator it = mBestSolutions.begin(); it != mBestSolutions.end(); ++it) {
+        double value = (*it)->evaluateObjectiveFunction(mTspInstance);
+
+        if (value < bestValue) {
+            bestValue = value;
+            bestSolutionFound = *it;
+        }
+
         std::cout << std::endl << (*it)->solveBy << std::endl;
         //(*it)->print();
-        std::cout << "(value : " << (*it)->evaluateObjectiveFunction(mTspInstance) << ")\n";
+        std::cout << "(value : " << value << ")\n";
         std::cout << "sec. (user time) " << (*it)->userTime << std::endl;
         std::cout << "sec. (CPU time) " << (*it)->cpuTime << std::endl;
     }
+
+    std::cout << "------------------------------- THE WINNER -------------------------------------" << std::endl;
+
+    std::cout << std::endl << bestSolutionFound->solveBy << std::endl;
+    std::cout << "(value : " << bestValue << ")\n";
+    std::cout << "sec. (user time) " << bestSolutionFound->userTime << std::endl;
+    std::cout << "sec. (CPU time) " << bestSolutionFound->cpuTime << std::endl;
 
 }
 

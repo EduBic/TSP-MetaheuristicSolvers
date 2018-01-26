@@ -33,10 +33,16 @@ int main (int argc, char const *argv[]) {
         solversExe.addSolver(new LocalSearchSolver());
         solversExe.addSolver(new LocalSearchSolver(false));
 
-        /*for (int i = 3; i <= 30; i = i + 3) {
-            solversExe.addSolver(new TabuSearchSolver(i, 1000, false, true));
-            solversExe.addSolver(new TabuSearchSolver(i, 1000, true));
-        }*/
+
+        int maxIteration = 1000;
+
+        for (int i = 3; i <= 45; i = i + 3) {
+            solversExe.addSolver(new TabuSearchSolver(i, maxIteration, true));
+            solversExe.addSolver(new TabuSearchSolver(i, maxIteration, true, false));
+
+            solversExe.addSolver(new TabuSearchSolver(i, maxIteration));
+            solversExe.addSolver(new TabuSearchSolver(i, maxIteration, false, false));
+        }
 
         solversExe.execute();
 

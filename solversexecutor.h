@@ -34,6 +34,7 @@ public:
     void printInitSolutions() const;
 
     void printResults() const;
+
 };
 
 #endif // SOLVERSEXECUTOR_H
