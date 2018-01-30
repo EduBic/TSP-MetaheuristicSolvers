@@ -1,5 +1,6 @@
 #include "solversexecutor.h"
 
+#include <fstream>
 #include <ctime>
 #include <sys/time.h>
 
@@ -11,19 +12,38 @@ SolversExecutor::SolversExecutor(const char* filename) : mFilename(filename)
     mTspInstance.readFromFile(filename);
 }
 
+void SolversExecutor::addRandomSeedInitSolution(int seed) {
+    TSPSolution* initSol = new TSPSolution(mTspInstance);
+    initSol->initRandom(seed);
+
+    mInitSolutions.push_back(initSol);
+}
+
+void SolversExecutor::addRandomInitSolution() {
+    addRandomSeedInitSolution(time(NULL));
+}
+
 void SolversExecutor::addSolver(Solver *solver) {
     mSolvers.push_back(solver);
 }
 
 void SolversExecutor::execute() {
-    // TODO: refactor init solutions
-    TSPSolution* aSol = new TSPSolution(mTspInstance);
-    aSol->initRandom();
-    mInitSolutions.push_back(aSol);
 
-    TSPSolution* anotherSol = new TSPSolution(mTspInstance);
-    anotherSol->initRandom(time(NULL));
-    //mInitSolutions.push_back(anotherSol);
+    // name log file with actual date
+    time_t rawtime;
+    struct tm* timeinfo;
+    char buffer[80];
+
+    time(&rawtime);
+    timeinfo = localtime(&rawtime);
+
+    strftime(buffer, sizeof(buffer),"%d-%m-%Y %I:%M:%S", timeinfo);
+    std::string nowTime(buffer);
+
+    std::string tmp = std::string(mFilename);
+    tmp.erase(0, 5);
+
+    std::ofstream outputLog("Log/outputLog - " + tmp + " - " + nowTime + ".txt");
 
     for (std::vector<Solver*>::iterator it = mSolvers.begin(); it != mSolvers.end(); ++it) {
 
@@ -33,8 +53,21 @@ void SolversExecutor::execute() {
             executeAndMeasureTime(*(*it), **inIt, *bestSolution);
 
             mBestSolutions.push_back(bestSolution);
+
+
+            // print solution into log file
+            double value = bestSolution->evaluateObjectiveFunction(mTspInstance);
+
+            outputLog << std::endl << "----------------------------------------------------------------------" << std::endl;
+            outputLog << std::endl << bestSolution->solveBy << std::endl;
+            bestSolution->print(outputLog);
+            outputLog << "(value : " << value << ")\n";
+            outputLog << "sec. (user time) " << bestSolution->userTime << std::endl;
+            outputLog << "sec. (CPU time) " << bestSolution->cpuTime << std::endl;
         }
     }
+
+    outputLog.close();
 }
 
 void SolversExecutor::executeAndMeasureTime(Solver& tspSolver, TSPSolution& initSol, TSPSolution& bestSol) {
@@ -82,6 +115,7 @@ void SolversExecutor::printResults() const {
     std::cout << "----------------------------------------------------------------------" << std::endl;
 
     TSPSolution* bestSolutionFound;
+    std::vector<TSPSolution*> bestSolutionsFound;
     double bestValue = 1e10;
 
     for (vector<TSPSolution*>::const_iterator it = mBestSolutions.begin(); it != mBestSolutions.end(); ++it) {
@@ -92,8 +126,11 @@ void SolversExecutor::printResults() const {
             bestSolutionFound = *it;
         }
 
+        if (value <= bestValue) {
+            bestSolutionsFound.push_back(*it);
+        }
+
         std::cout << std::endl << (*it)->solveBy << std::endl;
-        //(*it)->print();
         std::cout << "(value : " << value << ")\n";
         std::cout << "sec. (user time) " << (*it)->userTime << std::endl;
         std::cout << "sec. (CPU time) " << (*it)->cpuTime << std::endl;
@@ -105,6 +142,19 @@ void SolversExecutor::printResults() const {
     std::cout << "(value : " << bestValue << ")\n";
     std::cout << "sec. (user time) " << bestSolutionFound->userTime << std::endl;
     std::cout << "sec. (CPU time) " << bestSolutionFound->cpuTime << std::endl;
+
+
+
+    std::cout << "------------------------------- THE WINNERS -------------------------------------" << std::endl;
+
+    for (vector<TSPSolution*>::const_iterator it = bestSolutionsFound.begin(); it != bestSolutionsFound.end(); ++it) {
+        double value = (*it)->evaluateObjectiveFunction(mTspInstance);
+
+        std::cout << std::endl << (*it)->solveBy << std::endl;
+        std::cout << "(value : " << value << ")\n";
+        std::cout << "sec. (user time) " << (*it)->userTime << std::endl;
+        std::cout << "sec. (CPU time) " << (*it)->cpuTime << std::endl;
+    }
 
 }
 

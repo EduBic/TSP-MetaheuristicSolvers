@@ -24,7 +24,7 @@ bool LocalSearchSolver::solve( const TSP& tsp , const TSPSolution& initSol , TSP
 
         while (!stop) {
             if ( tsp.n < 20 ) {
-                currSol.print(); //log current solution (only small instances)
+                currSol.print(std::cout); //log current solution (only small instances)
             }
 
             std::cout << " (" << ++iter << ") value " << currValue << " (" << bestValue << ")";

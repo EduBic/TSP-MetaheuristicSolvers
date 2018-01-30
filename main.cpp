@@ -25,23 +25,33 @@ int main (int argc, char const *argv[]) {
     try {
 
         if (argc < 2) {
-            throw std::runtime_error("usage: ./main filename.dat");
+            throw std::runtime_error("usage: ./main <filename>.dat");
         }
 
         SolversExecutor solversExe(argv[1]);
 
-        solversExe.addSolver(new LocalSearchSolver());
-        solversExe.addSolver(new LocalSearchSolver(false));
+        //solversExe.addRandomSeedInitSolution(42);
+        //solversExe.addRandomSeedInitSolution(58);
+        solversExe.addRandomSeedInitSolution(46);
+        solversExe.addRandomSeedInitSolution(93);
+
+        //solversExe.addSolver(new LocalSearchSolver());
+        //solversExe.addSolver(new LocalSearchSolver(false));
+
+        //solversExe.addSolver(new TabuSearchSolver(100, 100000, true, true, 60*5));
 
 
-        int maxIteration = 1000;
+        int maxIteration = 100000;
+        double maxSeconds = 20;//60 * 1;
 
-        for (int i = 3; i <= 45; i = i + 3) {
-            solversExe.addSolver(new TabuSearchSolver(i, maxIteration, true));
-            solversExe.addSolver(new TabuSearchSolver(i, maxIteration, true, false));
+        //solversExe.addSolver(TabuSearchSolver::buildTS_BI(100, maxIteration, maxSeconds));
+        //solversExe.addSolver(TabuSearchSolver::buildTS_FI(i, maxIteration, maxSeconds));
 
-            solversExe.addSolver(new TabuSearchSolver(i, maxIteration));
-            solversExe.addSolver(new TabuSearchSolver(i, maxIteration, false, false));
+        for (int i = 100; i <= 100; i = i + 10) {
+            solversExe.addSolver(TabuSearchSolver::buildTS_BI(i, maxIteration, maxSeconds));
+            //solversExe.addSolver(TabuSearchSolver::buildTS_BI_AC(i, maxIteration, maxSeconds));
+            //solversExe.addSolver(TabuSearchSolver::buildTS_FI(i, maxIteration, maxSeconds));
+            //solversExe.addSolver(TabuSearchSolver::buildTS_FI_AC(i, maxIteration, maxSeconds));
         }
 
         solversExe.execute();

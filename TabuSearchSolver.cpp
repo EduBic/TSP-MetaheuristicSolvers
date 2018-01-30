@@ -7,6 +7,8 @@
 #include <iostream>
 #include <string>
 #include <stdio.h>
+#include <ctime>
+#include <sys/time.h>
 
 using namespace std;
 
@@ -47,12 +49,14 @@ bool TabuSearchSolver::solve(const TSP& tsp, const TSPSolution& initSol, TSPSolu
         bestValue = currValue = currSol.evaluateObjectiveFunction(tsp);
         TSPMove move;
 
+        clock_t currTime = clock();
+
         while (!stop) {
             iter++;
 
             // for small instance of problem print the current solution
             if (tsp.n < 20) {
-                currSol.print();
+                currSol.print(std::cout);
             }
 
             //std::cout << " (" << iter << ") value " << currValue << "\t(" << currSol.evaluateObjectiveFunction(tsp) << ")";
@@ -91,6 +95,8 @@ bool TabuSearchSolver::solve(const TSP& tsp, const TSPSolution& initSol, TSPSolu
 
                 // stopping criteria
                 if (iter > mMaxIteration) {
+                    stop = true;
+                } else if ((double)(clock() - currTime) / CLOCKS_PER_SEC > mMaxTime) {
                     stop = true;
                 }
 
@@ -254,6 +260,8 @@ bool TabuSearchSolver::isTabuMove(int from, int to) {
         //std::cout << "Hello" << std::endl << (*it).from << ", " << (*it).to << std::endl;
 
         if ((*it).from == from && (*it).to == to) return true;
+        if ((*it).from == to && (*it).to == from) return true;
+
         it++;
     }
 

@@ -65,7 +65,7 @@ public:
         }
 
         std::cout << "###" << std::endl;
-        print();
+        print(std::cout);
         std::cout << "###" << std::endl;
     }
 
@@ -82,11 +82,11 @@ public:
     }
 
 
-    void print() const {
+    void print(std::ostream& out) const {
         for (uint i = 0; i < sequence.size(); i++ ) {
-            std::cout << sequence[i] << " ";
+            out << sequence[i] << " ";
         }
-        std::cout << std::endl;
+        out << std::endl;
     }
 
     TSPSolution& operator=(const TSPSolution& right) {

@@ -25,6 +25,10 @@ private:
 public:
     SolversExecutor(const char *filename);
 
+    void addRandomSeedInitSolution(int seed);
+
+    void addRandomInitSolution();
+
     void addSolver(Solver* solver);
 
     void execute();

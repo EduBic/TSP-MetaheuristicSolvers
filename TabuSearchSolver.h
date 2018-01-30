@@ -15,6 +15,10 @@
 
 using namespace std;
 
+class TSStopCriteria {
+
+};
+
 /**
  * Class that solves a TSP problem by neighbourdood search and 2-opt moves
  */
@@ -26,6 +30,7 @@ public:
 
     uint mTabuLength;
     int mMaxIteration;
+    double mMaxTime;
     list<TSPMove> mTabuList;
 
     double mAspiration;
@@ -34,11 +39,31 @@ public:
     bool BestImprovement;
 
 
+    //TSStopCriteria StopCriteria;
+
+
 
     TabuSearchSolver() {}
 
-    TabuSearchSolver(int tabuLength, int maxIter, bool aspCriteria = false, bool bestImprovement = true)
-        : mTabuLength(tabuLength), mMaxIteration(maxIter), ACmode(aspCriteria), BestImprovement(bestImprovement) {}
+    TabuSearchSolver(int tabuLength, int maxIter, bool aspCriteria = false, bool bestImprovement = true, double maxSeconds = 1e10)
+        : mTabuLength(tabuLength), mMaxIteration(maxIter), ACmode(aspCriteria), BestImprovement(bestImprovement), mMaxTime(maxSeconds) {}
+
+    // Factory methods
+    static TabuSearchSolver* buildTS_BI(int tabuLenght, int maxIter, double maxSeconds = 1e10) {
+        return new TabuSearchSolver(tabuLenght, maxIter, false, true, maxSeconds);
+    }
+
+    static TabuSearchSolver* buildTS_BI_AC(int tabuLenght, int maxIter, double maxSeconds = 1e10) {
+        return new TabuSearchSolver(tabuLenght, maxIter, true, true, maxSeconds);
+    }
+
+    static TabuSearchSolver* buildTS_FI(int tabuLenght, int maxIter, double maxSeconds = 1e10) {
+        return new TabuSearchSolver(tabuLenght, maxIter, false, false, maxSeconds);
+    }
+
+    static TabuSearchSolver* buildTS_FI_AC(int tabuLenght, int maxIter, double maxSeconds = 1e10) {
+        return new TabuSearchSolver(tabuLenght, maxIter, true, false, maxSeconds);
+    }
 
 
     std::string getSolverName() const;
