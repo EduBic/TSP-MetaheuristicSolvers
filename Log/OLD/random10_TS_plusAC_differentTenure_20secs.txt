@@ -1,0 +1,677 @@
+Random
+(value : 2683.11)
+sec. (user time) -1
+sec. (CPU time) -1
+
+Random
+(value : 2546.16)
+sec. (user time) -1
+sec. (CPU time) -1
+
+Random
+(value : 2638.11)
+sec. (user time) -1
+sec. (CPU time) -1
+
+Random
+(value : 2682.93)
+sec. (user time) -1
+sec. (CPU time) -1
+
+Random
+(value : 2708.72)
+sec. (user time) -1
+sec. (CPU time) -1
+
+Random
+(value : 2665.49)
+sec. (user time) -1
+sec. (CPU time) -1
+
+Random
+(value : 2745.47)
+sec. (user time) -1
+sec. (CPU time) -1
+
+Random
+(value : 2699.23)
+sec. (user time) -1
+sec. (CPU time) -1
+----------------------------------------------------------------------
+
+Tabu Search - BI 	(tabuLenght: 80, MaxIter: 100000)
+(value : 379.11)
+sec. (user time) 20.0024
+sec. (CPU time) 20.0002
+
+Tabu Search - BI 	(tabuLenght: 80, MaxIter: 100000)
+(value : 387.05)
+sec. (user time) 20.0014
+sec. (CPU time) 20.0002
+
+Tabu Search - BI 	(tabuLenght: 80, MaxIter: 100000)
+(value : 383.04)
+sec. (user time) 20.0014
+sec. (CPU time) 20.0002
+
+Tabu Search - BI 	(tabuLenght: 80, MaxIter: 100000)
+(value : 373.01)
+sec. (user time) 20.0014
+sec. (CPU time) 20.0003
+
+Tabu Search - BI 	(tabuLenght: 80, MaxIter: 100000)
+(value : 379.61)
+sec. (user time) 20.0016
+sec. (CPU time) 20.0004
+
+Tabu Search - BI 	(tabuLenght: 80, MaxIter: 100000)
+(value : 397.46)
+sec. (user time) 20.0014
+sec. (CPU time) 20.0002
+
+Tabu Search - BI 	(tabuLenght: 80, MaxIter: 100000)
+(value : 387.24)
+sec. (user time) 20.0014
+sec. (CPU time) 20.0003
+
+Tabu Search - BI 	(tabuLenght: 80, MaxIter: 100000)
+(value : 371.87)
+sec. (user time) 20.0015
+sec. (CPU time) 20.0004
+
+Tabu Search AC - BI 	(tabuLenght: 80, MaxIter: 100000)
+(value : 376.69)
+sec. (user time) 20.0015
+sec. (CPU time) 20.0004
+
+Tabu Search AC - BI 	(tabuLenght: 80, MaxIter: 100000)
+(value : 373.73)
+sec. (user time) 20.0014
+sec. (CPU time) 20.0002
+
+Tabu Search AC - BI 	(tabuLenght: 80, MaxIter: 100000)
+(value : 376.45)
+sec. (user time) 20.0011
+sec. (CPU time) 20
+
+Tabu Search AC - BI 	(tabuLenght: 80, MaxIter: 100000)
+(value : 374.72)
+sec. (user time) 20.0012
+sec. (CPU time) 20.0001
+
+Tabu Search AC - BI 	(tabuLenght: 80, MaxIter: 100000)
+(value : 373.73)
+sec. (user time) 20.0014
+sec. (CPU time) 20.0003
+
+Tabu Search AC - BI 	(tabuLenght: 80, MaxIter: 100000)
+(value : 385.55)
+sec. (user time) 20.0012
+sec. (CPU time) 20.0001
+
+Tabu Search AC - BI 	(tabuLenght: 80, MaxIter: 100000)
+(value : 387.24)
+sec. (user time) 20.0013
+sec. (CPU time) 20.0002
+
+Tabu Search AC - BI 	(tabuLenght: 80, MaxIter: 100000)
+(value : 402.22)
+sec. (user time) 20.0016
+sec. (CPU time) 20.0004
+
+Tabu Search - BI 	(tabuLenght: 100, MaxIter: 100000)
+(value : 376.45)
+sec. (user time) 20.0013
+sec. (CPU time) 20.0001
+
+Tabu Search - BI 	(tabuLenght: 100, MaxIter: 100000)
+(value : 370.09)
+sec. (user time) 20.0014
+sec. (CPU time) 20.0003
+
+Tabu Search - BI 	(tabuLenght: 100, MaxIter: 100000)
+(value : 376.32)
+sec. (user time) 20.0015
+sec. (CPU time) 20.0004
+
+Tabu Search - BI 	(tabuLenght: 100, MaxIter: 100000)
+(value : 370.09)
+sec. (user time) 20.0011
+sec. (CPU time) 20
+
+Tabu Search - BI 	(tabuLenght: 100, MaxIter: 100000)
+(value : 379.61)
+sec. (user time) 20.0008
+sec. (CPU time) 20
+
+Tabu Search - BI 	(tabuLenght: 100, MaxIter: 100000)
+(value : 381.61)
+sec. (user time) 20.0012
+sec. (CPU time) 20.0004
+
+Tabu Search - BI 	(tabuLenght: 100, MaxIter: 100000)
+(value : 370.09)
+sec. (user time) 20.0013
+sec. (CPU time) 20.0005
+
+Tabu Search - BI 	(tabuLenght: 100, MaxIter: 100000)
+(value : 371.87)
+sec. (user time) 20.0007
+sec. (CPU time) 20.0001
+
+Tabu Search AC - BI 	(tabuLenght: 100, MaxIter: 100000)
+(value : 376.2)
+sec. (user time) 20.0008
+sec. (CPU time) 20.0003
+
+Tabu Search AC - BI 	(tabuLenght: 100, MaxIter: 100000)
+(value : 370.09)
+sec. (user time) 20.0006
+sec. (CPU time) 20.0001
+
+Tabu Search AC - BI 	(tabuLenght: 100, MaxIter: 100000)
+(value : 376.2)
+sec. (user time) 20.0011
+sec. (CPU time) 20.0005
+
+Tabu Search AC - BI 	(tabuLenght: 100, MaxIter: 100000)
+(value : 371.87)
+sec. (user time) 20.0009
+sec. (CPU time) 20.0004
+
+Tabu Search AC - BI 	(tabuLenght: 100, MaxIter: 100000)
+(value : 370.09)
+sec. (user time) 20.0008
+sec. (CPU time) 20.0004
+
+Tabu Search AC - BI 	(tabuLenght: 100, MaxIter: 100000)
+(value : 376.52)
+sec. (user time) 20.0006
+sec. (CPU time) 20.0001
+
+Tabu Search AC - BI 	(tabuLenght: 100, MaxIter: 100000)
+(value : 387.24)
+sec. (user time) 20.0004
+sec. (CPU time) 20
+
+Tabu Search AC - BI 	(tabuLenght: 100, MaxIter: 100000)
+(value : 402.22)
+sec. (user time) 20.0008
+sec. (CPU time) 20.0005
+
+Tabu Search - BI 	(tabuLenght: 120, MaxIter: 100000)
+(value : 370.84)
+sec. (user time) 20.0009
+sec. (CPU time) 20.0006
+
+Tabu Search - BI 	(tabuLenght: 120, MaxIter: 100000)
+(value : 370.09)
+sec. (user time) 20.0006
+sec. (CPU time) 20.0003
+
+Tabu Search - BI 	(tabuLenght: 120, MaxIter: 100000)
+(value : 372.19)
+sec. (user time) 20.0005
+sec. (CPU time) 20.0002
+
+Tabu Search - BI 	(tabuLenght: 120, MaxIter: 100000)
+(value : 371.87)
+sec. (user time) 20.0008
+sec. (CPU time) 20.0005
+
+Tabu Search - BI 	(tabuLenght: 120, MaxIter: 100000)
+(value : 370.09)
+sec. (user time) 20.0005
+sec. (CPU time) 20.0002
+
+Tabu Search - BI 	(tabuLenght: 120, MaxIter: 100000)
+(value : 381.32)
+sec. (user time) 20.0007
+sec. (CPU time) 20.0004
+
+Tabu Search - BI 	(tabuLenght: 120, MaxIter: 100000)
+(value : 376.62)
+sec. (user time) 20.0009
+sec. (CPU time) 20.0006
+
+Tabu Search - BI 	(tabuLenght: 120, MaxIter: 100000)
+(value : 372.35)
+sec. (user time) 20.0009
+sec. (CPU time) 20.0006
+
+Tabu Search AC - BI 	(tabuLenght: 120, MaxIter: 100000)
+(value : 376.2)
+sec. (user time) 20.0009
+sec. (CPU time) 20.0003
+
+Tabu Search AC - BI 	(tabuLenght: 120, MaxIter: 100000)
+(value : 370.09)
+sec. (user time) 20.0009
+sec. (CPU time) 20.0005
+
+Tabu Search AC - BI 	(tabuLenght: 120, MaxIter: 100000)
+(value : 371.87)
+sec. (user time) 20.0007
+sec. (CPU time) 20.0003
+
+Tabu Search AC - BI 	(tabuLenght: 120, MaxIter: 100000)
+(value : 370.09)
+sec. (user time) 20.0006
+sec. (CPU time) 20.0002
+
+Tabu Search AC - BI 	(tabuLenght: 120, MaxIter: 100000)
+(value : 370.09)
+sec. (user time) 20.0009
+sec. (CPU time) 20.0006
+
+Tabu Search AC - BI 	(tabuLenght: 120, MaxIter: 100000)
+(value : 371.87)
+sec. (user time) 20.0005
+sec. (CPU time) 20.0002
+
+Tabu Search AC - BI 	(tabuLenght: 120, MaxIter: 100000)
+(value : 384.95)
+sec. (user time) 20.0005
+sec. (CPU time) 20.0002
+
+Tabu Search AC - BI 	(tabuLenght: 120, MaxIter: 100000)
+(value : 387.81)
+sec. (user time) 20.0004
+sec. (CPU time) 20.0001
+
+Tabu Search - BI 	(tabuLenght: 140, MaxIter: 100000)
+(value : 370.47)
+sec. (user time) 20.0006
+sec. (CPU time) 20.0003
+
+Tabu Search - BI 	(tabuLenght: 140, MaxIter: 100000)
+(value : 370.27)
+sec. (user time) 20.0009
+sec. (CPU time) 20.0005
+
+Tabu Search - BI 	(tabuLenght: 140, MaxIter: 100000)
+(value : 372.68)
+sec. (user time) 20.001
+sec. (CPU time) 20.0007
+
+Tabu Search - BI 	(tabuLenght: 140, MaxIter: 100000)
+(value : 370.47)
+sec. (user time) 20.0009
+sec. (CPU time) 20.0005
+
+Tabu Search - BI 	(tabuLenght: 140, MaxIter: 100000)
+(value : 370.58)
+sec. (user time) 20.001
+sec. (CPU time) 20.0007
+
+Tabu Search - BI 	(tabuLenght: 140, MaxIter: 100000)
+(value : 370.64)
+sec. (user time) 20.0004
+sec. (CPU time) 20.0001
+
+Tabu Search - BI 	(tabuLenght: 140, MaxIter: 100000)
+(value : 370.09)
+sec. (user time) 20.0009
+sec. (CPU time) 20.0006
+
+Tabu Search - BI 	(tabuLenght: 140, MaxIter: 100000)
+(value : 373.02)
+sec. (user time) 20.0007
+sec. (CPU time) 20.0003
+
+Tabu Search AC - BI 	(tabuLenght: 140, MaxIter: 100000)
+(value : 371.87)
+sec. (user time) 20.0008
+sec. (CPU time) 20.0004
+
+Tabu Search AC - BI 	(tabuLenght: 140, MaxIter: 100000)
+(value : 370.09)
+sec. (user time) 20.001
+sec. (CPU time) 20.0006
+
+Tabu Search AC - BI 	(tabuLenght: 140, MaxIter: 100000)
+(value : 372.05)
+sec. (user time) 20.0005
+sec. (CPU time) 20.0002
+
+Tabu Search AC - BI 	(tabuLenght: 140, MaxIter: 100000)
+(value : 370.27)
+sec. (user time) 20.0005
+sec. (CPU time) 20.0002
+
+Tabu Search AC - BI 	(tabuLenght: 140, MaxIter: 100000)
+(value : 370.09)
+sec. (user time) 20.0008
+sec. (CPU time) 20.0005
+
+Tabu Search AC - BI 	(tabuLenght: 140, MaxIter: 100000)
+(value : 376.2)
+sec. (user time) 20.0009
+sec. (CPU time) 20.0005
+
+Tabu Search AC - BI 	(tabuLenght: 140, MaxIter: 100000)
+(value : 383.54)
+sec. (user time) 20.0004
+sec. (CPU time) 20.0001
+
+Tabu Search AC - BI 	(tabuLenght: 140, MaxIter: 100000)
+(value : 371.87)
+sec. (user time) 20.0004
+sec. (CPU time) 20.0001
+
+Tabu Search - BI 	(tabuLenght: 160, MaxIter: 100000)
+(value : 372.56)
+sec. (user time) 20.0016
+sec. (CPU time) 20.0004
+
+Tabu Search - BI 	(tabuLenght: 160, MaxIter: 100000)
+(value : 370.47)
+sec. (user time) 20.0017
+sec. (CPU time) 20.0004
+
+Tabu Search - BI 	(tabuLenght: 160, MaxIter: 100000)
+(value : 372.27)
+sec. (user time) 20.0016
+sec. (CPU time) 20.0002
+
+Tabu Search - BI 	(tabuLenght: 160, MaxIter: 100000)
+(value : 371.26)
+sec. (user time) 20.0016
+sec. (CPU time) 20.0003
+
+Tabu Search - BI 	(tabuLenght: 160, MaxIter: 100000)
+(value : 371.2)
+sec. (user time) 20.0019
+sec. (CPU time) 20.0006
+
+Tabu Search - BI 	(tabuLenght: 160, MaxIter: 100000)
+(value : 371.69)
+sec. (user time) 20.0022
+sec. (CPU time) 20
+
+Tabu Search - BI 	(tabuLenght: 160, MaxIter: 100000)
+(value : 371.94)
+sec. (user time) 20.0013
+sec. (CPU time) 20.0001
+
+Tabu Search - BI 	(tabuLenght: 160, MaxIter: 100000)
+(value : 372.35)
+sec. (user time) 20.0014
+sec. (CPU time) 20.0003
+
+Tabu Search AC - BI 	(tabuLenght: 160, MaxIter: 100000)
+(value : 372.46)
+sec. (user time) 20.0019
+sec. (CPU time) 20.0006
+
+Tabu Search AC - BI 	(tabuLenght: 160, MaxIter: 100000)
+(value : 370.09)
+sec. (user time) 20.0015
+sec. (CPU time) 20.0003
+
+Tabu Search AC - BI 	(tabuLenght: 160, MaxIter: 100000)
+(value : 370.09)
+sec. (user time) 20.0014
+sec. (CPU time) 20.0001
+
+Tabu Search AC - BI 	(tabuLenght: 160, MaxIter: 100000)
+(value : 370.09)
+sec. (user time) 20.0017
+sec. (CPU time) 20.0005
+
+Tabu Search AC - BI 	(tabuLenght: 160, MaxIter: 100000)
+(value : 371.87)
+sec. (user time) 20.0012
+sec. (CPU time) 20.0001
+
+Tabu Search AC - BI 	(tabuLenght: 160, MaxIter: 100000)
+(value : 381.03)
+sec. (user time) 20.0015
+sec. (CPU time) 20.0005
+
+Tabu Search AC - BI 	(tabuLenght: 160, MaxIter: 100000)
+(value : 373.49)
+sec. (user time) 20.0011
+sec. (CPU time) 20
+
+Tabu Search AC - BI 	(tabuLenght: 160, MaxIter: 100000)
+(value : 370.09)
+sec. (user time) 20.0018
+sec. (CPU time) 20.0005
+
+Tabu Search - BI 	(tabuLenght: 180, MaxIter: 100000)
+(value : 370.72)
+sec. (user time) 20.002
+sec. (CPU time) 20.0007
+
+Tabu Search - BI 	(tabuLenght: 180, MaxIter: 100000)
+(value : 371.9)
+sec. (user time) 20.0014
+sec. (CPU time) 20.0003
+
+Tabu Search - BI 	(tabuLenght: 180, MaxIter: 100000)
+(value : 371.56)
+sec. (user time) 20.0015
+sec. (CPU time) 20.0005
+
+Tabu Search - BI 	(tabuLenght: 180, MaxIter: 100000)
+(value : 374.08)
+sec. (user time) 20.0011
+sec. (CPU time) 20.0001
+
+Tabu Search - BI 	(tabuLenght: 180, MaxIter: 100000)
+(value : 372.58)
+sec. (user time) 20.0009
+sec. (CPU time) 20.0004
+
+Tabu Search - BI 	(tabuLenght: 180, MaxIter: 100000)
+(value : 379.46)
+sec. (user time) 20.0003
+sec. (CPU time) 20
+
+Tabu Search - BI 	(tabuLenght: 180, MaxIter: 100000)
+(value : 372.03)
+sec. (user time) 20.0005
+sec. (CPU time) 20.0002
+
+Tabu Search - BI 	(tabuLenght: 180, MaxIter: 100000)
+(value : 373.64)
+sec. (user time) 20.0008
+sec. (CPU time) 20.0004
+
+Tabu Search AC - BI 	(tabuLenght: 180, MaxIter: 100000)
+(value : 370.09)
+sec. (user time) 20.0004
+sec. (CPU time) 20.0001
+
+Tabu Search AC - BI 	(tabuLenght: 180, MaxIter: 100000)
+(value : 370.27)
+sec. (user time) 20.0004
+sec. (CPU time) 20.0001
+
+Tabu Search AC - BI 	(tabuLenght: 180, MaxIter: 100000)
+(value : 370.27)
+sec. (user time) 20.0006
+sec. (CPU time) 20.0003
+
+Tabu Search AC - BI 	(tabuLenght: 180, MaxIter: 100000)
+(value : 371.87)
+sec. (user time) 20.0005
+sec. (CPU time) 20.0002
+
+Tabu Search AC - BI 	(tabuLenght: 180, MaxIter: 100000)
+(value : 370.09)
+sec. (user time) 20.0012
+sec. (CPU time) 20.0009
+
+Tabu Search AC - BI 	(tabuLenght: 180, MaxIter: 100000)
+(value : 370.09)
+sec. (user time) 20.0009
+sec. (CPU time) 20.0006
+
+Tabu Search AC - BI 	(tabuLenght: 180, MaxIter: 100000)
+(value : 370.09)
+sec. (user time) 20.0011
+sec. (CPU time) 20.0008
+
+Tabu Search AC - BI 	(tabuLenght: 180, MaxIter: 100000)
+(value : 370.27)
+sec. (user time) 20.0012
+sec. (CPU time) 20.0008
+
+Tabu Search - BI 	(tabuLenght: 200, MaxIter: 100000)
+(value : 372.53)
+sec. (user time) 20.001
+sec. (CPU time) 20.0007
+
+Tabu Search - BI 	(tabuLenght: 200, MaxIter: 100000)
+(value : 370.75)
+sec. (user time) 20.0014
+sec. (CPU time) 20.001
+
+Tabu Search - BI 	(tabuLenght: 200, MaxIter: 100000)
+(value : 372.19)
+sec. (user time) 20.0007
+sec. (CPU time) 20.0004
+
+Tabu Search - BI 	(tabuLenght: 200, MaxIter: 100000)
+(value : 371.79)
+sec. (user time) 20.0011
+sec. (CPU time) 20.0008
+
+Tabu Search - BI 	(tabuLenght: 200, MaxIter: 100000)
+(value : 371.3)
+sec. (user time) 20.0013
+sec. (CPU time) 20.001
+
+Tabu Search - BI 	(tabuLenght: 200, MaxIter: 100000)
+(value : 373.48)
+sec. (user time) 20.0009
+sec. (CPU time) 20.0006
+
+Tabu Search - BI 	(tabuLenght: 200, MaxIter: 100000)
+(value : 371.78)
+sec. (user time) 20.0013
+sec. (CPU time) 20.001
+
+Tabu Search - BI 	(tabuLenght: 200, MaxIter: 100000)
+(value : 373.81)
+sec. (user time) 20.0007
+sec. (CPU time) 20.0004
+
+Tabu Search AC - BI 	(tabuLenght: 200, MaxIter: 100000)
+(value : 373.83)
+sec. (user time) 20.0003
+sec. (CPU time) 20
+
+Tabu Search AC - BI 	(tabuLenght: 200, MaxIter: 100000)
+(value : 370.09)
+sec. (user time) 20.0007
+sec. (CPU time) 20.0004
+
+Tabu Search AC - BI 	(tabuLenght: 200, MaxIter: 100000)
+(value : 376.45)
+sec. (user time) 20.0005
+sec. (CPU time) 20.0002
+
+Tabu Search AC - BI 	(tabuLenght: 200, MaxIter: 100000)
+(value : 370.09)
+sec. (user time) 20.0014
+sec. (CPU time) 20.001
+
+Tabu Search AC - BI 	(tabuLenght: 200, MaxIter: 100000)
+(value : 370.27)
+sec. (user time) 20.0023
+sec. (CPU time) 20.0008
+
+Tabu Search AC - BI 	(tabuLenght: 200, MaxIter: 100000)
+(value : 370.68)
+sec. (user time) 20.0013
+sec. (CPU time) 20.0009
+
+Tabu Search AC - BI 	(tabuLenght: 200, MaxIter: 100000)
+(value : 370.09)
+sec. (user time) 20.0008
+sec. (CPU time) 20.0004
+
+Tabu Search AC - BI 	(tabuLenght: 200, MaxIter: 100000)
+(value : 371.87)
+sec. (user time) 20.0011
+sec. (CPU time) 20.0008
+------------------------------- THE WINNER -------------------------------------
+
+Tabu Search - BI 	(tabuLenght: 100, MaxIter: 100000)
+(value : 370.09)
+sec. (user time) 20.0011
+sec. (CPU time) 20
+------------------------------- THE WINNERS -------------------------------------
+
+Tabu Search - BI 	(tabuLenght: 80, MaxIter: 100000)
+(value : 379.11)
+sec. (user time) 20.0024
+sec. (CPU time) 20.0002
+
+Tabu Search - BI 	(tabuLenght: 80, MaxIter: 100000)
+(value : 373.01)
+sec. (user time) 20.0014
+sec. (CPU time) 20.0003
+
+Tabu Search - BI 	(tabuLenght: 80, MaxIter: 100000)
+(value : 371.87)
+sec. (user time) 20.0015
+sec. (CPU time) 20.0004
+
+Tabu Search - BI 	(tabuLenght: 100, MaxIter: 100000)
+(value : 370.09)
+sec. (user time) 20.0014
+sec. (CPU time) 20.0003
+
+Tabu Search - BI 	(tabuLenght: 100, MaxIter: 100000)
+(value : 370.09)
+sec. (user time) 20.0011
+sec. (CPU time) 20
+
+Tabu Search - BI 	(tabuLenght: 120, MaxIter: 100000)
+(value : 370.09)
+sec. (user time) 20.0005
+sec. (CPU time) 20.0002
+
+Tabu Search AC - BI 	(tabuLenght: 120, MaxIter: 100000)
+(value : 370.09)
+sec. (user time) 20.0009
+sec. (CPU time) 20.0006
+
+Tabu Search - BI 	(tabuLenght: 140, MaxIter: 100000)
+(value : 370.09)
+sec. (user time) 20.0009
+sec. (CPU time) 20.0006
+
+Tabu Search AC - BI 	(tabuLenght: 140, MaxIter: 100000)
+(value : 370.09)
+sec. (user time) 20.001
+sec. (CPU time) 20.0006
+
+Tabu Search AC - BI 	(tabuLenght: 160, MaxIter: 100000)
+(value : 370.09)
+sec. (user time) 20.0015
+sec. (CPU time) 20.0003
+
+Tabu Search AC - BI 	(tabuLenght: 160, MaxIter: 100000)
+(value : 370.09)
+sec. (user time) 20.0017
+sec. (CPU time) 20.0005
+
+Tabu Search AC - BI 	(tabuLenght: 180, MaxIter: 100000)
+(value : 370.09)
+sec. (user time) 20.0004
+sec. (CPU time) 20.0001
+
+Tabu Search AC - BI 	(tabuLenght: 180, MaxIter: 100000)
+(value : 370.09)
+sec. (user time) 20.0009
+sec. (CPU time) 20.0006
+
+Tabu Search AC - BI 	(tabuLenght: 200, MaxIter: 100000)
+(value : 370.09)
+sec. (user time) 20.0007
+sec. (CPU time) 20.0004

@@ -1,0 +1,2 @@
+
+Tabu Search - BI 	(tabuLenght: 100, MaxIter: 100000) & 380.466 & 1 \\

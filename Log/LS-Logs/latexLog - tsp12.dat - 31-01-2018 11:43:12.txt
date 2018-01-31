@@ -1,0 +1,40 @@
+
+Local Search Best Improvement & 66.4 & 5.2e-05 \\
+
+Local Search Best Improvement & 66.4 & 5.2e-05 \\
+
+Local Search Best Improvement & 66.4 & 4.4e-05 \\
+
+Local Search Best Improvement & 66.4 & 5e-05 \\
+
+Local Search Best Improvement & 68.2 & 4.3e-05 \\
+
+Local Search Best Improvement & 66.4 & 6.1e-05 \\
+
+Local Search Best Improvement & 66.4 & 6e-05 \\
+
+Local Search Best Improvement & 68.2 & 5.3e-05 \\
+
+
+Local Search Best Improvement & 66.85 & 5.1875e-05 \\
+Local Search Best Improvement & 66.4 & 0.000415 \\
+
+Local Search First Improvement & 66.4 & 5.7e-05 \\
+
+Local Search First Improvement & 66.4 & 6.8e-05 \\
+
+Local Search First Improvement & 72 & 9.8e-05 \\
+
+Local Search First Improvement & 66.4 & 9.4e-05 \\
+
+Local Search First Improvement & 66.4 & 7.7e-05 \\
+
+Local Search First Improvement & 66.4 & 7.8e-05 \\
+
+Local Search First Improvement & 68.2 & 7.5e-05 \\
+
+Local Search First Improvement & 66.4 & 6.3e-05 \\
+
+
+Local Search First Improvement & 67.325 & 7.625e-05 \\
+Local Search First Improvement & 66.4 & 0.00061 \\

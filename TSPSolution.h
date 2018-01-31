@@ -83,6 +83,7 @@ public:
 
 
     void print(std::ostream& out) const {
+        out << std::endl;
         for (uint i = 0; i < sequence.size(); i++ ) {
             out << sequence[i] << " ";
         }

@@ -1,6 +1,8 @@
 #ifndef NEIGHBORIMPROVEMENT
 #define NEIGHBORIMPROVEMENT
 
+#include <iostream>
+
 #include "TSP.h"
 #include "TSPSolution.h"
 #include "solver.h"
@@ -28,6 +30,8 @@ class FirstImprovement : public NeigthborImprovement
 public:
 
     double execute(const TSP& tsp , const TSPSolution& currSol, TSPMove& move) {
+        //cout << endl << endl << "-------------- find neighbor --------------";
+
 
         double bestCostVariation = tsp.infinite;
 
@@ -53,13 +57,18 @@ public:
                     double currentBestValueFound = currSol.evaluateObjectiveFunction(tsp);
 
                     // on first improvement exit
+                    //cout << endl << "Move from " << a << " to " << b;
+                    //cout << "\tNeighbor Value = " << currentBestValueFound + bestCostVariation << " - CurrentBestValue = " << currentBestValueFound;
                     if (currentBestValueFound + bestCostVariation < currentBestValueFound) {
+                        //cout << "\tIt's an improvement, chose it!" << endl;
+                        //cout << "------------------------" << endl;
                         return bestCostVariation;
                     }
                 }
             }
         }
 
+        //cout << endl << "------------------------------" << endl;
         return bestCostVariation;
     }
 
@@ -73,6 +82,8 @@ class BestImprovement : public NeigthborImprovement
 {
 public:
     double execute(const TSP &tsp, const TSPSolution &currSol, TSPMove &move) {
+        //cout << endl << endl << "------------- find neighbor --------------";
+
         // Determine the *move* yielding the best 2-opt neigbor solution
         double bestCostVariation = tsp.infinite;
 
@@ -90,7 +101,12 @@ public:
                 double neighCostVariation = - tsp.cost[h][i] - tsp.cost[j][l]
                                             + tsp.cost[h][j] + tsp.cost[i][l];
 
+                //cout << endl << "Move from " << a << " to " << b;
+                //cout << "\tNeighbor Variation = " << neighCostVariation << " - BestCostVariation = " << bestCostVariation;
+
                 if ( neighCostVariation < bestCostVariation ) {
+                    //cout << "\tSave! Best neighbor found until now";
+
                     bestCostVariation = neighCostVariation;
                     move.from = a;
                     move.to = b;
@@ -98,6 +114,7 @@ public:
             }
         }
 
+        //cout << endl << "-----------------------------" << endl;
         return bestCostVariation;
     }
 

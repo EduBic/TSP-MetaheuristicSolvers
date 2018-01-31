@@ -44,8 +44,14 @@ void SolversExecutor::execute() {
     tmp.erase(0, 5);
 
     std::ofstream outputLog("Log/outputLog - " + tmp + " - " + nowTime + ".txt");
+    std::ofstream latexLog("Log/latexLog - " + tmp + " - " + nowTime + ".txt");
 
     for (std::vector<Solver*>::iterator it = mSolvers.begin(); it != mSolvers.end(); ++it) {
+
+        int i = 0;
+        double values[mInitSolutions.size()];
+        double times[mInitSolutions.size()];
+        double bestOfBestvalue = 1e10;
 
         for (std::vector<TSPSolution*>::iterator inIt = mInitSolutions.begin(); inIt != mInitSolutions.end(); ++inIt) {
 
@@ -58,15 +64,46 @@ void SolversExecutor::execute() {
             // print solution into log file
             double value = bestSolution->evaluateObjectiveFunction(mTspInstance);
 
+            if (value < bestOfBestvalue) {
+                bestOfBestvalue = value;
+            }
+
             outputLog << std::endl << "----------------------------------------------------------------------" << std::endl;
             outputLog << std::endl << bestSolution->solveBy << std::endl;
             bestSolution->print(outputLog);
-            outputLog << "(value : " << value << ")\n";
-            outputLog << "sec. (user time) " << bestSolution->userTime << std::endl;
+            outputLog << "(value : " << value << ")\t";
+            outputLog << "sec. (user time) " << bestSolution->userTime << "\t";
             outputLog << "sec. (CPU time) " << bestSolution->cpuTime << std::endl;
+
+            latexLog << std::endl;
+            latexLog << bestSolution->solveBy << " & " << value << " & " << bestSolution->cpuTime << " \\\\";
+            latexLog << std::endl;
+
+            // for compute average
+            values[i] = value;
+            times[i] = bestSolution->cpuTime;
+
+            i++;
         }
+
+
+        double sumValue = 0;
+        double sumTime = 0;
+        for (int j = 0; j < mInitSolutions.size(); j++) {
+            sumValue += values[j];
+            sumTime += times[j];
+        }
+
+        double avgValue = sumValue / mInitSolutions.size();
+        double avgTime = sumTime / mInitSolutions.size();
+
+        latexLog << std::endl << std::endl;
+        latexLog << (*it)->getSolverName() << " & " << avgValue << " & " << avgTime << " \\\\" << std::endl;
+        latexLog << (*it)->getSolverName() << " & " << bestOfBestvalue << " & " << sumTime << " \\\\";
+        latexLog << std::endl;
     }
 
+    latexLog.close();
     outputLog.close();
 }
 

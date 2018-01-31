@@ -1,0 +1,112 @@
+
+----------------------------------------------------------------------
+
+Local Search Best Improvement
+
+0 1 7 8 11 10 9 6 5 4 3 2 0 
+(value : 66.4)	sec. (user time) 4.88758e-05	sec. (CPU time) 5.2e-05
+
+----------------------------------------------------------------------
+
+Local Search Best Improvement
+
+0 2 3 4 5 6 9 10 11 8 7 1 0 
+(value : 66.4)	sec. (user time) 4.60148e-05	sec. (CPU time) 5.2e-05
+
+----------------------------------------------------------------------
+
+Local Search Best Improvement
+
+0 2 3 4 5 6 9 10 11 8 7 1 0 
+(value : 66.4)	sec. (user time) 4.50611e-05	sec. (CPU time) 4.4e-05
+
+----------------------------------------------------------------------
+
+Local Search Best Improvement
+
+0 2 3 4 5 6 9 10 11 8 7 1 0 
+(value : 66.4)	sec. (user time) 4.91142e-05	sec. (CPU time) 5e-05
+
+----------------------------------------------------------------------
+
+Local Search Best Improvement
+
+0 2 3 4 5 6 7 9 10 11 8 1 0 
+(value : 68.2)	sec. (user time) 4.31538e-05	sec. (CPU time) 4.3e-05
+
+----------------------------------------------------------------------
+
+Local Search Best Improvement
+
+0 2 3 4 5 6 9 10 11 8 7 1 0 
+(value : 66.4)	sec. (user time) 6.19888e-05	sec. (CPU time) 6.1e-05
+
+----------------------------------------------------------------------
+
+Local Search Best Improvement
+
+0 1 7 8 11 10 9 6 5 4 3 2 0 
+(value : 66.4)	sec. (user time) 6.00815e-05	sec. (CPU time) 6e-05
+
+----------------------------------------------------------------------
+
+Local Search Best Improvement
+
+0 1 8 11 10 9 7 6 5 4 3 2 0 
+(value : 68.2)	sec. (user time) 5.19753e-05	sec. (CPU time) 5.3e-05
+
+----------------------------------------------------------------------
+
+Local Search First Improvement
+
+0 1 7 8 11 10 9 6 5 4 3 2 0 
+(value : 66.4)	sec. (user time) 5.6982e-05	sec. (CPU time) 5.7e-05
+
+----------------------------------------------------------------------
+
+Local Search First Improvement
+
+0 1 7 8 11 10 9 6 5 4 3 2 0 
+(value : 66.4)	sec. (user time) 6.79493e-05	sec. (CPU time) 6.8e-05
+
+----------------------------------------------------------------------
+
+Local Search First Improvement
+
+0 2 3 4 5 6 7 8 9 10 11 1 0 
+(value : 72)	sec. (user time) 9.799e-05	sec. (CPU time) 9.8e-05
+
+----------------------------------------------------------------------
+
+Local Search First Improvement
+
+0 2 3 4 5 6 9 10 11 8 7 1 0 
+(value : 66.4)	sec. (user time) 9.39369e-05	sec. (CPU time) 9.4e-05
+
+----------------------------------------------------------------------
+
+Local Search First Improvement
+
+0 2 3 4 5 6 9 10 11 8 7 1 0 
+(value : 66.4)	sec. (user time) 7.70092e-05	sec. (CPU time) 7.7e-05
+
+----------------------------------------------------------------------
+
+Local Search First Improvement
+
+0 1 7 8 11 10 9 6 5 4 3 2 0 
+(value : 66.4)	sec. (user time) 7.79629e-05	sec. (CPU time) 7.8e-05
+
+----------------------------------------------------------------------
+
+Local Search First Improvement
+
+0 1 8 11 10 9 7 6 5 4 3 2 0 
+(value : 68.2)	sec. (user time) 7.51019e-05	sec. (CPU time) 7.5e-05
+
+----------------------------------------------------------------------
+
+Local Search First Improvement
+
+0 2 3 4 5 6 9 10 11 8 7 1 0 
+(value : 66.4)	sec. (user time) 6.31809e-05	sec. (CPU time) 6.3e-05

@@ -1,0 +1,14 @@
+
+Tabu Search - BI 	(tabuLenght: 100, MaxIter: 100000) & 384.659 & 1 \\
+
+Tabu Search - BI 	(tabuLenght: 100, MaxIter: 100000) & 384.58 & 1 \\
+
+Tabu Search - BI 	(tabuLenght: 100, MaxIter: 100000) & 385.935 & 1 \\
+
+Tabu Search - BI 	(tabuLenght: 100, MaxIter: 100000) & 386.633 & 1 \\
+
+Tabu Search - BI 	(tabuLenght: 100, MaxIter: 100000) & 385.085 & 1 \\
+
+Tabu Search - BI 	(tabuLenght: 100, MaxIter: 100000) & 386.031 & 1 \\
+
+Tabu Search - BI 	(tabuLenght: 100, MaxIter: 100000) & 386.031 & 1 \\

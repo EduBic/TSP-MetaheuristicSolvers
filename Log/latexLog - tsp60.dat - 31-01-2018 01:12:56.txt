@@ -1,0 +1,280 @@
+
+Tabu Search - BI 	(tabuLenght: 80, MaxIter: 100000) & 629.8 & 16.2484 \\
+
+Tabu Search - BI 	(tabuLenght: 80, MaxIter: 100000) & 629.8 & 15.9415 \\
+
+Tabu Search - BI 	(tabuLenght: 80, MaxIter: 100000) & 629.8 & 16.0386 \\
+
+Tabu Search - BI 	(tabuLenght: 80, MaxIter: 100000) & 629.8 & 16.1009 \\
+
+Tabu Search - BI 	(tabuLenght: 80, MaxIter: 100000) & 629.8 & 15.8701 \\
+
+Tabu Search - BI 	(tabuLenght: 80, MaxIter: 100000) & 629.8 & 16.3703 \\
+
+Tabu Search - BI 	(tabuLenght: 80, MaxIter: 100000) & 629.8 & 16.5684 \\
+
+Tabu Search - BI 	(tabuLenght: 80, MaxIter: 100000) & 629.8 & 16.562 \\
+
+
+Tabu Search - BI 	(tabuLenght: 80, MaxIter: 100000) & 629.8 & 16.2125 \\
+Tabu Search - BI 	(tabuLenght: 80, MaxIter: 100000) & 629.8 & 129.7 \\
+
+Tabu Search AC - BI 	(tabuLenght: 80, MaxIter: 100000) & 629.8 & 16.3727 \\
+
+Tabu Search AC - BI 	(tabuLenght: 80, MaxIter: 100000) & 629.8 & 16.194 \\
+
+Tabu Search AC - BI 	(tabuLenght: 80, MaxIter: 100000) & 629.8 & 16.1298 \\
+
+Tabu Search AC - BI 	(tabuLenght: 80, MaxIter: 100000) & 629.8 & 16.0514 \\
+
+Tabu Search AC - BI 	(tabuLenght: 80, MaxIter: 100000) & 629.8 & 16.0125 \\
+
+Tabu Search AC - BI 	(tabuLenght: 80, MaxIter: 100000) & 629.8 & 16.3791 \\
+
+Tabu Search AC - BI 	(tabuLenght: 80, MaxIter: 100000) & 629.8 & 16.0857 \\
+
+Tabu Search AC - BI 	(tabuLenght: 80, MaxIter: 100000) & 629.8 & 16.0153 \\
+
+
+Tabu Search AC - BI 	(tabuLenght: 80, MaxIter: 100000) & 629.8 & 16.1551 \\
+Tabu Search AC - BI 	(tabuLenght: 80, MaxIter: 100000) & 629.8 & 129.24 \\
+
+Tabu Search - BI 	(tabuLenght: 100, MaxIter: 100000) & 630.5 & 18.3875 \\
+
+Tabu Search - BI 	(tabuLenght: 100, MaxIter: 100000) & 629.8 & 18.2995 \\
+
+Tabu Search - BI 	(tabuLenght: 100, MaxIter: 100000) & 629.8 & 18.2538 \\
+
+Tabu Search - BI 	(tabuLenght: 100, MaxIter: 100000) & 629.8 & 18.2586 \\
+
+Tabu Search - BI 	(tabuLenght: 100, MaxIter: 100000) & 630.5 & 18.4462 \\
+
+Tabu Search - BI 	(tabuLenght: 100, MaxIter: 100000) & 630.6 & 18.3413 \\
+
+Tabu Search - BI 	(tabuLenght: 100, MaxIter: 100000) & 630.8 & 18.4031 \\
+
+Tabu Search - BI 	(tabuLenght: 100, MaxIter: 100000) & 629.8 & 18.7264 \\
+
+
+Tabu Search - BI 	(tabuLenght: 100, MaxIter: 100000) & 630.2 & 18.3895 \\
+Tabu Search - BI 	(tabuLenght: 100, MaxIter: 100000) & 629.8 & 147.116 \\
+
+Tabu Search AC - BI 	(tabuLenght: 100, MaxIter: 100000) & 629.8 & 18.319 \\
+
+Tabu Search AC - BI 	(tabuLenght: 100, MaxIter: 100000) & 629.8 & 18.3011 \\
+
+Tabu Search AC - BI 	(tabuLenght: 100, MaxIter: 100000) & 629.8 & 18.3821 \\
+
+Tabu Search AC - BI 	(tabuLenght: 100, MaxIter: 100000) & 629.8 & 18.4403 \\
+
+Tabu Search AC - BI 	(tabuLenght: 100, MaxIter: 100000) & 629.8 & 18.343 \\
+
+Tabu Search AC - BI 	(tabuLenght: 100, MaxIter: 100000) & 629.8 & 18.3202 \\
+
+Tabu Search AC - BI 	(tabuLenght: 100, MaxIter: 100000) & 629.8 & 18.4634 \\
+
+Tabu Search AC - BI 	(tabuLenght: 100, MaxIter: 100000) & 629.8 & 18.3335 \\
+
+
+Tabu Search AC - BI 	(tabuLenght: 100, MaxIter: 100000) & 629.8 & 18.3628 \\
+Tabu Search AC - BI 	(tabuLenght: 100, MaxIter: 100000) & 629.8 & 146.903 \\
+
+Tabu Search - BI 	(tabuLenght: 120, MaxIter: 100000) & 630.5 & 22.2721 \\
+
+Tabu Search - BI 	(tabuLenght: 120, MaxIter: 100000) & 630.6 & 22.3305 \\
+
+Tabu Search - BI 	(tabuLenght: 120, MaxIter: 100000) & 630.8 & 22.4716 \\
+
+Tabu Search - BI 	(tabuLenght: 120, MaxIter: 100000) & 630.6 & 22.2889 \\
+
+Tabu Search - BI 	(tabuLenght: 120, MaxIter: 100000) & 629.8 & 22.2234 \\
+
+Tabu Search - BI 	(tabuLenght: 120, MaxIter: 100000) & 629.8 & 22.1258 \\
+
+Tabu Search - BI 	(tabuLenght: 120, MaxIter: 100000) & 631.2 & 22.3149 \\
+
+Tabu Search - BI 	(tabuLenght: 120, MaxIter: 100000) & 630.6 & 22.2711 \\
+
+
+Tabu Search - BI 	(tabuLenght: 120, MaxIter: 100000) & 630.488 & 22.2873 \\
+Tabu Search - BI 	(tabuLenght: 120, MaxIter: 100000) & 629.8 & 178.298 \\
+
+Tabu Search AC - BI 	(tabuLenght: 120, MaxIter: 100000) & 629.8 & 22.1925 \\
+
+Tabu Search AC - BI 	(tabuLenght: 120, MaxIter: 100000) & 629.8 & 22.2337 \\
+
+Tabu Search AC - BI 	(tabuLenght: 120, MaxIter: 100000) & 629.8 & 22.1304 \\
+
+Tabu Search AC - BI 	(tabuLenght: 120, MaxIter: 100000) & 629.8 & 22.0908 \\
+
+Tabu Search AC - BI 	(tabuLenght: 120, MaxIter: 100000) & 629.8 & 22.0905 \\
+
+Tabu Search AC - BI 	(tabuLenght: 120, MaxIter: 100000) & 629.8 & 22.1774 \\
+
+Tabu Search AC - BI 	(tabuLenght: 120, MaxIter: 100000) & 629.8 & 22.2006 \\
+
+Tabu Search AC - BI 	(tabuLenght: 120, MaxIter: 100000) & 629.8 & 22.1471 \\
+
+
+Tabu Search AC - BI 	(tabuLenght: 120, MaxIter: 100000) & 629.8 & 22.1579 \\
+Tabu Search AC - BI 	(tabuLenght: 120, MaxIter: 100000) & 629.8 & 177.263 \\
+
+Tabu Search - BI 	(tabuLenght: 140, MaxIter: 100000) & 632.6 & 26.2663 \\
+
+Tabu Search - BI 	(tabuLenght: 140, MaxIter: 100000) & 632.2 & 26.3185 \\
+
+Tabu Search - BI 	(tabuLenght: 140, MaxIter: 100000) & 631.8 & 26.3353 \\
+
+Tabu Search - BI 	(tabuLenght: 140, MaxIter: 100000) & 632.4 & 26.3186 \\
+
+Tabu Search - BI 	(tabuLenght: 140, MaxIter: 100000) & 630.5 & 26.348 \\
+
+Tabu Search - BI 	(tabuLenght: 140, MaxIter: 100000) & 634.2 & 26.3276 \\
+
+Tabu Search - BI 	(tabuLenght: 140, MaxIter: 100000) & 630.6 & 26.2739 \\
+
+Tabu Search - BI 	(tabuLenght: 140, MaxIter: 100000) & 631.2 & 26.3088 \\
+
+
+Tabu Search - BI 	(tabuLenght: 140, MaxIter: 100000) & 631.938 & 26.3121 \\
+Tabu Search - BI 	(tabuLenght: 140, MaxIter: 100000) & 630.5 & 210.497 \\
+
+Tabu Search AC - BI 	(tabuLenght: 140, MaxIter: 100000) & 629.8 & 26.2413 \\
+
+Tabu Search AC - BI 	(tabuLenght: 140, MaxIter: 100000) & 629.8 & 26.2909 \\
+
+Tabu Search AC - BI 	(tabuLenght: 140, MaxIter: 100000) & 629.8 & 26.3443 \\
+
+Tabu Search AC - BI 	(tabuLenght: 140, MaxIter: 100000) & 629.8 & 26.4611 \\
+
+Tabu Search AC - BI 	(tabuLenght: 140, MaxIter: 100000) & 629.8 & 26.5445 \\
+
+Tabu Search AC - BI 	(tabuLenght: 140, MaxIter: 100000) & 629.8 & 26.6802 \\
+
+Tabu Search AC - BI 	(tabuLenght: 140, MaxIter: 100000) & 630.5 & 26.3765 \\
+
+Tabu Search AC - BI 	(tabuLenght: 140, MaxIter: 100000) & 629.8 & 26.3198 \\
+
+
+Tabu Search AC - BI 	(tabuLenght: 140, MaxIter: 100000) & 629.888 & 26.4073 \\
+Tabu Search AC - BI 	(tabuLenght: 140, MaxIter: 100000) & 629.8 & 211.259 \\
+
+Tabu Search - BI 	(tabuLenght: 160, MaxIter: 100000) & 634.4 & 30.0001 \\
+
+Tabu Search - BI 	(tabuLenght: 160, MaxIter: 100000) & 633 & 30.0001 \\
+
+Tabu Search - BI 	(tabuLenght: 160, MaxIter: 100000) & 630.5 & 30.0001 \\
+
+Tabu Search - BI 	(tabuLenght: 160, MaxIter: 100000) & 634 & 30.0003 \\
+
+Tabu Search - BI 	(tabuLenght: 160, MaxIter: 100000) & 631.4 & 30 \\
+
+Tabu Search - BI 	(tabuLenght: 160, MaxIter: 100000) & 634.4 & 30.0001 \\
+
+Tabu Search - BI 	(tabuLenght: 160, MaxIter: 100000) & 629.8 & 30.0001 \\
+
+Tabu Search - BI 	(tabuLenght: 160, MaxIter: 100000) & 630.6 & 30.0001 \\
+
+
+Tabu Search - BI 	(tabuLenght: 160, MaxIter: 100000) & 632.263 & 30.0001 \\
+Tabu Search - BI 	(tabuLenght: 160, MaxIter: 100000) & 629.8 & 240.001 \\
+
+Tabu Search AC - BI 	(tabuLenght: 160, MaxIter: 100000) & 630.8 & 30.0002 \\
+
+Tabu Search AC - BI 	(tabuLenght: 160, MaxIter: 100000) & 629.8 & 29.9744 \\
+
+Tabu Search AC - BI 	(tabuLenght: 160, MaxIter: 100000) & 629.8 & 30 \\
+
+Tabu Search AC - BI 	(tabuLenght: 160, MaxIter: 100000) & 629.8 & 30.0001 \\
+
+Tabu Search AC - BI 	(tabuLenght: 160, MaxIter: 100000) & 629.8 & 30.0002 \\
+
+Tabu Search AC - BI 	(tabuLenght: 160, MaxIter: 100000) & 629.8 & 30.0001 \\
+
+Tabu Search AC - BI 	(tabuLenght: 160, MaxIter: 100000) & 629.8 & 30.0001 \\
+
+Tabu Search AC - BI 	(tabuLenght: 160, MaxIter: 100000) & 631 & 30 \\
+
+
+Tabu Search AC - BI 	(tabuLenght: 160, MaxIter: 100000) & 630.075 & 29.9969 \\
+Tabu Search AC - BI 	(tabuLenght: 160, MaxIter: 100000) & 629.8 & 239.975 \\
+
+Tabu Search - BI 	(tabuLenght: 180, MaxIter: 100000) & 631.3 & 30.0001 \\
+
+Tabu Search - BI 	(tabuLenght: 180, MaxIter: 100000) & 633.1 & 30.0002 \\
+
+Tabu Search - BI 	(tabuLenght: 180, MaxIter: 100000) & 629.8 & 30.0001 \\
+
+Tabu Search - BI 	(tabuLenght: 180, MaxIter: 100000) & 632.2 & 30.0001 \\
+
+Tabu Search - BI 	(tabuLenght: 180, MaxIter: 100000) & 632 & 30.0003 \\
+
+Tabu Search - BI 	(tabuLenght: 180, MaxIter: 100000) & 631.2 & 30.0002 \\
+
+Tabu Search - BI 	(tabuLenght: 180, MaxIter: 100000) & 631.8 & 30.0003 \\
+
+Tabu Search - BI 	(tabuLenght: 180, MaxIter: 100000) & 631.8 & 30.0002 \\
+
+
+Tabu Search - BI 	(tabuLenght: 180, MaxIter: 100000) & 631.65 & 30.0002 \\
+Tabu Search - BI 	(tabuLenght: 180, MaxIter: 100000) & 629.8 & 240.001 \\
+
+Tabu Search AC - BI 	(tabuLenght: 180, MaxIter: 100000) & 631.4 & 30.0002 \\
+
+Tabu Search AC - BI 	(tabuLenght: 180, MaxIter: 100000) & 631.2 & 30.0001 \\
+
+Tabu Search AC - BI 	(tabuLenght: 180, MaxIter: 100000) & 631 & 30.0002 \\
+
+Tabu Search AC - BI 	(tabuLenght: 180, MaxIter: 100000) & 630.8 & 30.0003 \\
+
+Tabu Search AC - BI 	(tabuLenght: 180, MaxIter: 100000) & 630.8 & 30.0001 \\
+
+Tabu Search AC - BI 	(tabuLenght: 180, MaxIter: 100000) & 629.8 & 30.0002 \\
+
+Tabu Search AC - BI 	(tabuLenght: 180, MaxIter: 100000) & 629.8 & 30.0003 \\
+
+Tabu Search AC - BI 	(tabuLenght: 180, MaxIter: 100000) & 631 & 30.0001 \\
+
+
+Tabu Search AC - BI 	(tabuLenght: 180, MaxIter: 100000) & 630.725 & 30.0002 \\
+Tabu Search AC - BI 	(tabuLenght: 180, MaxIter: 100000) & 629.8 & 240.002 \\
+
+Tabu Search - BI 	(tabuLenght: 200, MaxIter: 100000) & 635 & 30.0002 \\
+
+Tabu Search - BI 	(tabuLenght: 200, MaxIter: 100000) & 636.3 & 30.0003 \\
+
+Tabu Search - BI 	(tabuLenght: 200, MaxIter: 100000) & 632.3 & 30 \\
+
+Tabu Search - BI 	(tabuLenght: 200, MaxIter: 100000) & 635.4 & 30 \\
+
+Tabu Search - BI 	(tabuLenght: 200, MaxIter: 100000) & 629.8 & 30.0002 \\
+
+Tabu Search - BI 	(tabuLenght: 200, MaxIter: 100000) & 634.4 & 30 \\
+
+Tabu Search - BI 	(tabuLenght: 200, MaxIter: 100000) & 636 & 30.0003 \\
+
+Tabu Search - BI 	(tabuLenght: 200, MaxIter: 100000) & 633 & 30.0002 \\
+
+
+Tabu Search - BI 	(tabuLenght: 200, MaxIter: 100000) & 634.025 & 30.0002 \\
+Tabu Search - BI 	(tabuLenght: 200, MaxIter: 100000) & 629.8 & 240.001 \\
+
+Tabu Search AC - BI 	(tabuLenght: 200, MaxIter: 100000) & 630.8 & 30.0001 \\
+
+Tabu Search AC - BI 	(tabuLenght: 200, MaxIter: 100000) & 631 & 30.0004 \\
+
+Tabu Search AC - BI 	(tabuLenght: 200, MaxIter: 100000) & 629.8 & 30.0003 \\
+
+Tabu Search AC - BI 	(tabuLenght: 200, MaxIter: 100000) & 629.8 & 30.0001 \\
+
+Tabu Search AC - BI 	(tabuLenght: 200, MaxIter: 100000) & 629.8 & 30.0002 \\
+
+Tabu Search AC - BI 	(tabuLenght: 200, MaxIter: 100000) & 629.8 & 30.0002 \\
+
+Tabu Search AC - BI 	(tabuLenght: 200, MaxIter: 100000) & 629.8 & 30.0001 \\
+
+Tabu Search AC - BI 	(tabuLenght: 200, MaxIter: 100000) & 629.8 & 30.0004 \\
+
+
+Tabu Search AC - BI 	(tabuLenght: 200, MaxIter: 100000) & 630.075 & 30.0002 \\
+Tabu Search AC - BI 	(tabuLenght: 200, MaxIter: 100000) & 629.8 & 240.002 \\
