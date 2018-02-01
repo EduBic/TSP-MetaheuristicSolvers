@@ -46,7 +46,7 @@ public:
     TabuSearchSolver() {}
 
     TabuSearchSolver(int tabuLength, int maxIter, bool aspCriteria = false, bool bestImprovement = true, double maxSeconds = 1e10)
-        : mTabuLength(tabuLength), mMaxIteration(maxIter), ACmode(aspCriteria), BestImprovement(bestImprovement), mMaxTime(maxSeconds) {}
+        : mTabuLength(tabuLength), mMaxIteration(maxIter), mMaxTime(maxSeconds), ACmode(aspCriteria), BestImprovement(bestImprovement) {}
 
     // Factory methods
     static TabuSearchSolver* buildTS_BI(int tabuLenght, int maxIter, double maxSeconds = 1e10) {

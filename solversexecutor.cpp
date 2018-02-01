@@ -3,9 +3,13 @@
 #include <fstream>
 #include <ctime>
 #include <sys/time.h>
+#include <typeinfo>
 
 #include "TSPSolution.h"
+#include "TabuSearchSolver.h"
 #include "solver.h"
+
+using namespace std;
 
 SolversExecutor::SolversExecutor(const char* filename) : mFilename(filename)
 {
@@ -40,11 +44,12 @@ void SolversExecutor::execute() {
     strftime(buffer, sizeof(buffer),"%d-%m-%Y %I:%M:%S", timeinfo);
     std::string nowTime(buffer);
 
-    std::string tmp = std::string(mFilename);
-    tmp.erase(0, 5);
+    std::string fileNameStr = std::string(mFilename);
+    fileNameStr.erase(0, 5);
 
-    std::ofstream outputLog("Log/outputLog - " + tmp + " - " + nowTime + ".txt");
-    std::ofstream latexLog("Log/latexLog - " + tmp + " - " + nowTime + ".txt");
+    ofstream outputLog("Log/outputLog - " + fileNameStr + " - " + nowTime + ".txt");
+    ofstream latexLog("Log/latexLog - " + fileNameStr + " - " + nowTime + ".txt");
+    ofstream csvLog("Log/csvLog - " + fileNameStr + " - " + nowTime + ".csv");
 
     for (std::vector<Solver*>::iterator it = mSolvers.begin(); it != mSolvers.end(); ++it) {
 
@@ -68,6 +73,7 @@ void SolversExecutor::execute() {
                 bestOfBestvalue = value;
             }
 
+            // print logconsole result of init solution solved
             outputLog << std::endl << "----------------------------------------------------------------------" << std::endl;
             outputLog << std::endl << bestSolution->solveBy << std::endl;
             bestSolution->print(outputLog);
@@ -75,6 +81,7 @@ void SolversExecutor::execute() {
             outputLog << "sec. (user time) " << bestSolution->userTime << "\t";
             outputLog << "sec. (CPU time) " << bestSolution->cpuTime << std::endl;
 
+            // print latex result of init solution solved
             latexLog << std::endl;
             latexLog << bestSolution->solveBy << " & " << value << " & " << bestSolution->cpuTime << " \\\\";
             latexLog << std::endl;
@@ -89,7 +96,7 @@ void SolversExecutor::execute() {
 
         double sumValue = 0;
         double sumTime = 0;
-        for (int j = 0; j < mInitSolutions.size(); j++) {
+        for (unsigned int j = 0; j < mInitSolutions.size(); j++) {
             sumValue += values[j];
             sumTime += times[j];
         }
@@ -101,8 +108,18 @@ void SolversExecutor::execute() {
         latexLog << (*it)->getSolverName() << " & " << avgValue << " & " << avgTime << " \\\\" << std::endl;
         latexLog << (*it)->getSolverName() << " & " << bestOfBestvalue << " & " << sumTime << " \\\\";
         latexLog << std::endl;
+
+        // Print result for Calibration of TS
+        TabuSearchSolver* tsSolver = dynamic_cast<TabuSearchSolver*>(*it);
+        if (tsSolver != NULL) {
+            csvLog << tsSolver->mTabuLength << ", " << avgValue << endl;
+        }
+
+        // Print result
+        //csvLog << (*it)->getSolverName() << ", " << bestOfBestvalue << ", " << sumTime << endl;
     }
 
+    csvLog.close();
     latexLog.close();
     outputLog.close();
 }
@@ -131,17 +148,11 @@ void SolversExecutor::executeAndMeasureTime(Solver& tspSolver, TSPSolution& init
 
     bestSol.userTime = (double)(tv2.tv_sec+tv2.tv_usec*1e-6 - (tv1.tv_sec+tv1.tv_usec*1e-6));
     bestSol.cpuTime = (double)(finishClock - startClock) / CLOCKS_PER_SEC;
-
-    /*cout << endl;
-    cout << "in " << (double)(tv2.tv_sec+tv2.tv_usec*1e-6 - (tv1.tv_sec+tv1.tv_usec*1e-6)) << " seconds (user time)" << endl;
-    cout << "in " << (double)(finishClock - startClock) / CLOCKS_PER_SEC << " seconds (CPU time)" << endl;
-    cout << endl;*/
 }
 
 void SolversExecutor::printInitSolutions() const {
     for (vector<TSPSolution*>::const_iterator it = mInitSolutions.begin(); it != mInitSolutions.end(); ++it) {
         std::cout << std::endl << (*it)->solveBy << std::endl;
-        //(*it)->print();
         std::cout << "(value : " << (*it)->evaluateObjectiveFunction(mTspInstance) << ")\n";
         std::cout << "sec. (user time) " << (*it)->userTime << std::endl;
         std::cout << "sec. (CPU time) " << (*it)->cpuTime << std::endl;

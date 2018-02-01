@@ -31,19 +31,19 @@ int main (int argc, char const *argv[]) {
         SolversExecutor solversExe(argv[1]);
 
         //solversExe.addRandomSeedInitSolution(42);
-        solversExe.addRandomSeedInitSolution(58);
-        solversExe.addRandomSeedInitSolution(4);
-        solversExe.addRandomSeedInitSolution(25);
-        solversExe.addRandomSeedInitSolution(26);
+        //solversExe.addRandomSeedInitSolution(58);
+        //solversExe.addRandomSeedInitSolution(4);
+        //solversExe.addRandomSeedInitSolution(25);
+        //solversExe.addRandomSeedInitSolution(26);
         solversExe.addRandomSeedInitSolution(43);
         solversExe.addRandomSeedInitSolution(46);
         solversExe.addRandomSeedInitSolution(93); 
         solversExe.addRandomSeedInitSolution(99);
 
-        //solversExe.addSolver(new LocalSearchSolver());
+        solversExe.addSolver(new LocalSearchSolver());
         //solversExe.addSolver(new LocalSearchSolver(false));
 
-        //solversExe.addSolver(new TabuSearchSolver(100, 100000, true, true, 60*5));
+        //solversExe.addSolver(new TabuSearchSolver(100, 2000, true, true, 10));
 
 
         int maxIteration = 100000;
@@ -61,8 +61,8 @@ int main (int argc, char const *argv[]) {
             for (int t = 80; t <= 200; t = t + 20) {
                 //solversExe.addSolver(TabuSearchSolver::buildTS_BI(t, maxIteration, maxSeconds));
                 //solversExe.addSolver(TabuSearchSolver::buildTS_BI_AC(t, maxIteration, maxSeconds));
-                solversExe.addSolver(TabuSearchSolver::buildTS_FI(t, maxIteration, maxSeconds));
-                solversExe.addSolver(TabuSearchSolver::buildTS_FI_AC(t, maxIteration, maxSeconds));
+                //solversExe.addSolver(TabuSearchSolver::buildTS_FI(t, maxIteration, maxSeconds));
+                //solversExe.addSolver(TabuSearchSolver::buildTS_FI_AC(t, maxIteration, maxSeconds));
             }
         //}
 

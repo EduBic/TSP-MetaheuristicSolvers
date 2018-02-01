@@ -15,7 +15,7 @@ using namespace std;
 
 std::string TabuSearchSolver::getSolverName() const {
     char buffer[50];
-    sprintf(buffer, "\t(tabuLenght: %d, MaxIter: %d)", mTabuLength, mMaxIteration);
+    sprintf(buffer, "\tTenure: %d, MaxIter: %d", mTabuLength, mMaxIteration);
 
     std::string tmp = std::string(buffer);
 
