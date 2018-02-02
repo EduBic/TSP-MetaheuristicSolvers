@@ -1,0 +1,6 @@
+
+Tabu Search AC - BI 	Tenure: 20, MaxIter: 10000 & 644.6 & 0.249091 \\
+
+
+Tabu Search AC - BI 	Tenure: 20, MaxIter: 10000 & 644.6 & 0.249091 \\
+Tabu Search AC - BI 	Tenure: 20, MaxIter: 10000 & 644.6 & 0.249091 \\

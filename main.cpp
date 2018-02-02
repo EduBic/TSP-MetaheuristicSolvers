@@ -5,9 +5,13 @@
 
 
 #include <stdexcept>
-#include <ctime>
-#include <sys/time.h>
 #include <string>
+
+#include <getopt.h>
+#include <ctype.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
 
 #include "solver.h"
 #include "LocalSearchSolver.h"
@@ -20,8 +24,26 @@ char errmsg[255];
 
 using namespace std;
 
+/** Struct containing the long options */
+static struct option long_options[] = {
+    {"ls", no_argument, NULL, 'l'},             // Local Search
+    {"ts", no_argument, NULL, 't'},             // Tabu Search
 
-int main (int argc, char const *argv[]) {
+    {"fi", no_argument, NULL, 'f'},             // First Improvement
+    {"bi", no_argument, NULL, 'b'},             // Best Improvement
+
+    {"ac", no_argument, NULL, 'a'},             // Aspiration Criteria
+
+    {"maxIter", required_argument, NULL, 'i'},  // Max iteration for TS
+    {"tenure", required_argument, NULL, 'e'},   // Tenure for TS
+    {"secs", required_argument, NULL, 's'},     // Seconds for TS
+
+    {"bm", required_argument, NULL, 'm'},       // Benchmark
+    {0, 0, 0, 0}
+};
+
+
+int main (int argc, char *argv[]) {
     try {
 
         if (argc < 2) {
@@ -30,41 +52,114 @@ int main (int argc, char const *argv[]) {
 
         SolversExecutor solversExe(argv[1]);
 
-        // Test initial solutions
-        solversExe.addRandomSeedInitSolution(58);
-        solversExe.addRandomSeedInitSolution(4);
-        solversExe.addRandomSeedInitSolution(25);
-        solversExe.addRandomSeedInitSolution(26);
-        solversExe.addRandomSeedInitSolution(43);
-        solversExe.addRandomSeedInitSolution(46);
-        solversExe.addRandomSeedInitSolution(93); 
-        solversExe.addRandomSeedInitSolution(99);
+        bool benchmark = false;
 
-        solversExe.addSolver(new LocalSearchSolver());
-        solversExe.addSolver(new LocalSearchSolver(false));
+        // Solver option    default = LocalSearch
+        bool localSearch = true;
 
-        //solversExe.addSolver(new TabuSearchSolver(100, 2000, true, true, 10));
+        // Solvers features     default = BI
+        bool bestImprove = true;
+        bool aspCriteria = false;   // only for TabuSearch
 
+        // Tabu options
+        int seconds = 30;
+        int tenure = 50;
+        int maxIterations = 1000;
 
-        int maxIteration = 100000;
-        double maxSeconds = 30;
-        //int bestTabuLenght = 180;   // for rnd100.dat
+        int c;
+        int option_index;
 
-        //solversExe.addSolver(TabuSearchSolver::buildTS_BI(bestTabuLenght, maxIteration, maxSeconds));
-        //solversExe.addSolver(TabuSearchSolver::buildTS_BI_AC(bestTabuLenght, maxIteration, maxSeconds));
-        //solversExe.addSolver(TabuSearchSolver::buildTS_FI(bestTabuLenght, maxIteration, maxSeconds));
-        //solversExe.addSolver(TabuSearchSolver::buildTS_FI_AC(bestTabuLenght, maxIteration, maxSeconds));
-
-
-
-        //for (int i = 6000; i <= 14000; i = i + 2000) {
-            for (int t = 80; t <= 200; t = t + 20) {
-                //solversExe.addSolver(TabuSearchSolver::buildTS_BI(t, maxIteration, maxSeconds));
-                //solversExe.addSolver(TabuSearchSolver::buildTS_BI_AC(t, maxIteration, maxSeconds));
-                //solversExe.addSolver(TabuSearchSolver::buildTS_FI(t, maxIteration, maxSeconds));
-                //solversExe.addSolver(TabuSearchSolver::buildTS_FI_AC(t, maxIteration, maxSeconds));
+        while((c = getopt_long (argc, argv, "lfbtae:i:s:m", long_options, &option_index)) != EOF) {
+            switch(c) {
+                case 'l': {
+                    localSearch = true;
+                    break;
+                }
+                case 't': {
+                    localSearch = false;
+                    break;
+                }
+                case 'b': {
+                    bestImprove = true;
+                    break;
+                }
+                case 'f': {
+                    bestImprove = false;
+                    break;
+                }
+                case 'a': {
+                    aspCriteria = true;
+                    cout << endl << "AspCriteria: " << aspCriteria << endl;
+                    break;
+                }
+                case 'e': {
+                    tenure = strtol(optarg, NULL, 0);
+                    cout << endl << "Tenure: " << tenure << endl << endl;
+                    break;
+                }
+                case 'i': {
+                    maxIterations = (int)strtol(optarg, NULL, 0);
+                    break;
+                }
+                case 's': {
+                    seconds = (int)strtol(optarg, NULL, 0);
+                    break;
+                }
+                case 'm': {
+                    benchmark = true;
+                    break;
+                }
             }
-        //}
+        }
+
+        if (benchmark) {
+
+            // Test initial solutions
+            solversExe.addRandomSeedInitSolution(58);
+            solversExe.addRandomSeedInitSolution(4);
+            solversExe.addRandomSeedInitSolution(25);
+            solversExe.addRandomSeedInitSolution(26);
+            solversExe.addRandomSeedInitSolution(43);
+            solversExe.addRandomSeedInitSolution(46);
+            solversExe.addRandomSeedInitSolution(93);
+            solversExe.addRandomSeedInitSolution(99);
+
+            //solversExe.addSolver(new LocalSearchSolver());
+            //solversExe.addSolver(new LocalSearchSolver(false));
+
+            //solversExe.addSolver(new TabuSearchSolver(100, 2000, true, true, 10));
+
+
+            //int maxIteration = 100000;
+            //double maxSeconds = 30;
+            //int bestTabuLenght = 180;   // for rnd100.dat
+
+            //solversExe.addSolver(TabuSearchSolver::buildTS_BI(bestTabuLenght, maxIteration, maxSeconds));
+            //solversExe.addSolver(TabuSearchSolver::buildTS_BI_AC(bestTabuLenght, maxIteration, maxSeconds));
+            //solversExe.addSolver(TabuSearchSolver::buildTS_FI(bestTabuLenght, maxIteration, maxSeconds));
+            //solversExe.addSolver(TabuSearchSolver::buildTS_FI_AC(bestTabuLenght, maxIteration, maxSeconds));
+
+
+
+            //for (int i = 6000; i <= 14000; i = i + 2000) {
+                //for (int t = 80; t <= 200; t = t + 20) {
+                    //solversExe.addSolver(TabuSearchSolver::buildTS_BI(t, maxIteration, maxSeconds));
+                    //solversExe.addSolver(TabuSearchSolver::buildTS_BI_AC(t, maxIteration, maxSeconds));
+                    //solversExe.addSolver(TabuSearchSolver::buildTS_FI(t, maxIteration, maxSeconds));
+                    //solversExe.addSolver(TabuSearchSolver::buildTS_FI_AC(t, maxIteration, maxSeconds));
+                //}
+            //}
+
+        } else {
+            // Command line program
+            solversExe.addRandomInitSolution();
+
+            if (localSearch) {
+                solversExe.addSolver(new LocalSearchSolver(bestImprove));
+            } else { // tabu search
+                solversExe.addSolver(new TabuSearchSolver(tenure, maxIterations, aspCriteria, bestImprove, seconds));
+            }
+        }
 
         solversExe.execute();
 

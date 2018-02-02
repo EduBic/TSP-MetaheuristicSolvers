@@ -51,6 +51,7 @@ void SolversExecutor::execute() {
     ofstream latexLog("Log/" + fileNameStr + "-latexLog-" + nowTime + ".txt");
     ofstream csvLog("Log/" + fileNameStr + "-csvLog-" + nowTime + ".csv");
 
+
     for (std::vector<Solver*>::iterator it = mSolvers.begin(); it != mSolvers.end(); ++it) {
 
         int i = 0;
@@ -116,7 +117,7 @@ void SolversExecutor::execute() {
         }
 
         // Print result
-        csvLog << (*it)->getSolverName() << ", " << bestOfBestvalue << ", " << sumTime << endl;
+        // csvLog << (*it)->getSolverName() << ", " << bestOfBestvalue << ", " << sumTime << endl;
     }
 
     csvLog.close();
@@ -184,25 +185,27 @@ void SolversExecutor::printResults() const {
         std::cout << "sec. (CPU time) " << (*it)->cpuTime << std::endl;
     }
 
-    std::cout << "------------------------------- THE WINNER -------------------------------------" << std::endl;
+    if (mBestSolutions.size() > 1) {
 
-    std::cout << std::endl << bestSolutionFound->solveBy << std::endl;
-    std::cout << "(value : " << bestValue << ")\n";
-    std::cout << "sec. (user time) " << bestSolutionFound->userTime << std::endl;
-    std::cout << "sec. (CPU time) " << bestSolutionFound->cpuTime << std::endl;
+        std::cout << "------------------------------- THE WINNER -------------------------------------" << std::endl;
 
+        std::cout << std::endl << bestSolutionFound->solveBy << std::endl;
+        std::cout << "(value : " << bestValue << ")\n";
+        std::cout << "sec. (user time) " << bestSolutionFound->userTime << std::endl;
+        std::cout << "sec. (CPU time) " << bestSolutionFound->cpuTime << std::endl;
 
+        std::cout << "------------------------------- THE WINNERS -------------------------------------" << std::endl;
 
-    std::cout << "------------------------------- THE WINNERS -------------------------------------" << std::endl;
+        for (vector<TSPSolution*>::const_iterator it = bestSolutionsFound.begin(); it != bestSolutionsFound.end(); ++it) {
+            double value = (*it)->evaluateObjectiveFunction(mTspInstance);
 
-    for (vector<TSPSolution*>::const_iterator it = bestSolutionsFound.begin(); it != bestSolutionsFound.end(); ++it) {
-        double value = (*it)->evaluateObjectiveFunction(mTspInstance);
-
-        std::cout << std::endl << (*it)->solveBy << std::endl;
-        std::cout << "(value : " << value << ")\n";
-        std::cout << "sec. (user time) " << (*it)->userTime << std::endl;
-        std::cout << "sec. (CPU time) " << (*it)->cpuTime << std::endl;
+            std::cout << std::endl << (*it)->solveBy << std::endl;
+            std::cout << "(value : " << value << ")\n";
+            std::cout << "sec. (user time) " << (*it)->userTime << std::endl;
+            std::cout << "sec. (CPU time) " << (*it)->cpuTime << std::endl;
+        }
     }
 
+    cout << endl;
 }
 

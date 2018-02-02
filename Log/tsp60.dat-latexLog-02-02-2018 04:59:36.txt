@@ -1,0 +1,6 @@
+
+Tabu Search AC - FI 	Tenure: 50, MaxIter: 100 & 641.4 & 0.010234 \\
+
+
+Tabu Search AC - FI 	Tenure: 50, MaxIter: 100 & 641.4 & 0.010234 \\
+Tabu Search AC - FI 	Tenure: 50, MaxIter: 100 & 641.4 & 0.010234 \\
