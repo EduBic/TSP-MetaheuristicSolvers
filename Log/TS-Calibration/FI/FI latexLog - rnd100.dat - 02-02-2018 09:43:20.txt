@@ -1,0 +1,280 @@
+
+Tabu Search - FI 	Tenure: 80, MaxIter: 100000 & 379.11 & 30.0004 \\
+
+Tabu Search - FI 	Tenure: 80, MaxIter: 100000 & 373.01 & 30.0004 \\
+
+Tabu Search - FI 	Tenure: 80, MaxIter: 100000 & 376.45 & 30.0002 \\
+
+Tabu Search - FI 	Tenure: 80, MaxIter: 100000 & 373.01 & 30.0004 \\
+
+Tabu Search - FI 	Tenure: 80, MaxIter: 100000 & 379.61 & 30.0003 \\
+
+Tabu Search - FI 	Tenure: 80, MaxIter: 100000 & 376.52 & 30.0003 \\
+
+Tabu Search - FI 	Tenure: 80, MaxIter: 100000 & 387.24 & 30.0005 \\
+
+Tabu Search - FI 	Tenure: 80, MaxIter: 100000 & 371.87 & 30.0001 \\
+
+
+Tabu Search - FI 	Tenure: 80, MaxIter: 100000 & 377.103 & 30.0003 \\
+Tabu Search - FI 	Tenure: 80, MaxIter: 100000 & 371.87 & 240.003 \\
+
+Tabu Search AC - FI 	Tenure: 80, MaxIter: 100000 & 376.69 & 30.0002 \\
+
+Tabu Search AC - FI 	Tenure: 80, MaxIter: 100000 & 373.73 & 30 \\
+
+Tabu Search AC - FI 	Tenure: 80, MaxIter: 100000 & 376.45 & 30.0002 \\
+
+Tabu Search AC - FI 	Tenure: 80, MaxIter: 100000 & 374.72 & 30.0003 \\
+
+Tabu Search AC - FI 	Tenure: 80, MaxIter: 100000 & 373.73 & 30.0003 \\
+
+Tabu Search AC - FI 	Tenure: 80, MaxIter: 100000 & 385.55 & 30.0001 \\
+
+Tabu Search AC - FI 	Tenure: 80, MaxIter: 100000 & 387.24 & 30 \\
+
+Tabu Search AC - FI 	Tenure: 80, MaxIter: 100000 & 402.22 & 30.0004 \\
+
+
+Tabu Search AC - FI 	Tenure: 80, MaxIter: 100000 & 381.291 & 30.0002 \\
+Tabu Search AC - FI 	Tenure: 80, MaxIter: 100000 & 373.73 & 240.002 \\
+
+Tabu Search - FI 	Tenure: 100, MaxIter: 100000 & 376.45 & 30.0004 \\
+
+Tabu Search - FI 	Tenure: 100, MaxIter: 100000 & 370.09 & 30.0003 \\
+
+Tabu Search - FI 	Tenure: 100, MaxIter: 100000 & 376.32 & 30.0004 \\
+
+Tabu Search - FI 	Tenure: 100, MaxIter: 100000 & 370.09 & 30.0001 \\
+
+Tabu Search - FI 	Tenure: 100, MaxIter: 100000 & 370.09 & 30.0005 \\
+
+Tabu Search - FI 	Tenure: 100, MaxIter: 100000 & 380.89 & 30.0003 \\
+
+Tabu Search - FI 	Tenure: 100, MaxIter: 100000 & 381 & 30.0002 \\
+
+Tabu Search - FI 	Tenure: 100, MaxIter: 100000 & 371.87 & 30.0001 \\
+
+
+Tabu Search - FI 	Tenure: 100, MaxIter: 100000 & 374.6 & 30.0003 \\
+Tabu Search - FI 	Tenure: 100, MaxIter: 100000 & 370.09 & 240.002 \\
+
+Tabu Search AC - FI 	Tenure: 100, MaxIter: 100000 & 376.2 & 30.0001 \\
+
+Tabu Search AC - FI 	Tenure: 100, MaxIter: 100000 & 370.09 & 30 \\
+
+Tabu Search AC - FI 	Tenure: 100, MaxIter: 100000 & 376.2 & 30.0001 \\
+
+Tabu Search AC - FI 	Tenure: 100, MaxIter: 100000 & 371.87 & 30 \\
+
+Tabu Search AC - FI 	Tenure: 100, MaxIter: 100000 & 370.09 & 30.0002 \\
+
+Tabu Search AC - FI 	Tenure: 100, MaxIter: 100000 & 376.52 & 30 \\
+
+Tabu Search AC - FI 	Tenure: 100, MaxIter: 100000 & 373.73 & 30.0001 \\
+
+Tabu Search AC - FI 	Tenure: 100, MaxIter: 100000 & 396.94 & 30.0002 \\
+
+
+Tabu Search AC - FI 	Tenure: 100, MaxIter: 100000 & 376.455 & 30.0001 \\
+Tabu Search AC - FI 	Tenure: 100, MaxIter: 100000 & 370.09 & 240.001 \\
+
+Tabu Search - FI 	Tenure: 120, MaxIter: 100000 & 370.47 & 30.0005 \\
+
+Tabu Search - FI 	Tenure: 120, MaxIter: 100000 & 370.47 & 30.0005 \\
+
+Tabu Search - FI 	Tenure: 120, MaxIter: 100000 & 371.87 & 30.0002 \\
+
+Tabu Search - FI 	Tenure: 120, MaxIter: 100000 & 370.47 & 30.0002 \\
+
+Tabu Search - FI 	Tenure: 120, MaxIter: 100000 & 370.09 & 30.0001 \\
+
+Tabu Search - FI 	Tenure: 120, MaxIter: 100000 & 370.09 & 30.0002 \\
+
+Tabu Search - FI 	Tenure: 120, MaxIter: 100000 & 385.2 & 30.0002 \\
+
+Tabu Search - FI 	Tenure: 120, MaxIter: 100000 & 371.87 & 30.0001 \\
+
+
+Tabu Search - FI 	Tenure: 120, MaxIter: 100000 & 372.566 & 30.0003 \\
+Tabu Search - FI 	Tenure: 120, MaxIter: 100000 & 370.09 & 240.002 \\
+
+Tabu Search AC - FI 	Tenure: 120, MaxIter: 100000 & 376.2 & 30.0001 \\
+
+Tabu Search AC - FI 	Tenure: 120, MaxIter: 100000 & 371.87 & 30.0006 \\
+
+Tabu Search AC - FI 	Tenure: 120, MaxIter: 100000 & 371.87 & 30.0001 \\
+
+Tabu Search AC - FI 	Tenure: 120, MaxIter: 100000 & 370.09 & 30.0004 \\
+
+Tabu Search AC - FI 	Tenure: 120, MaxIter: 100000 & 370.09 & 30.0002 \\
+
+Tabu Search AC - FI 	Tenure: 120, MaxIter: 100000 & 380.82 & 30 \\
+
+Tabu Search AC - FI 	Tenure: 120, MaxIter: 100000 & 384.95 & 30.0007 \\
+
+Tabu Search AC - FI 	Tenure: 120, MaxIter: 100000 & 371.87 & 30.0003 \\
+
+
+Tabu Search AC - FI 	Tenure: 120, MaxIter: 100000 & 374.72 & 30.0003 \\
+Tabu Search AC - FI 	Tenure: 120, MaxIter: 100000 & 370.09 & 240.002 \\
+
+Tabu Search - FI 	Tenure: 140, MaxIter: 100000 & 370.38 & 30.0001 \\
+
+Tabu Search - FI 	Tenure: 140, MaxIter: 100000 & 370.26 & 30.0007 \\
+
+Tabu Search - FI 	Tenure: 140, MaxIter: 100000 & 370.59 & 30.0007 \\
+
+Tabu Search - FI 	Tenure: 140, MaxIter: 100000 & 372.05 & 30.0005 \\
+
+Tabu Search - FI 	Tenure: 140, MaxIter: 100000 & 370.47 & 30.0003 \\
+
+Tabu Search - FI 	Tenure: 140, MaxIter: 100000 & 376.54 & 30 \\
+
+Tabu Search - FI 	Tenure: 140, MaxIter: 100000 & 370.27 & 30.0005 \\
+
+Tabu Search - FI 	Tenure: 140, MaxIter: 100000 & 372.54 & 30.0004 \\
+
+
+Tabu Search - FI 	Tenure: 140, MaxIter: 100000 & 371.638 & 30.0004 \\
+Tabu Search - FI 	Tenure: 140, MaxIter: 100000 & 370.26 & 240.003 \\
+
+Tabu Search AC - FI 	Tenure: 140, MaxIter: 100000 & 370.09 & 30.0006 \\
+
+Tabu Search AC - FI 	Tenure: 140, MaxIter: 100000 & 370.09 & 30.0001 \\
+
+Tabu Search AC - FI 	Tenure: 140, MaxIter: 100000 & 372.05 & 30.0005 \\
+
+Tabu Search AC - FI 	Tenure: 140, MaxIter: 100000 & 370.09 & 30.0008 \\
+
+Tabu Search AC - FI 	Tenure: 140, MaxIter: 100000 & 371.87 & 30.0001 \\
+
+Tabu Search AC - FI 	Tenure: 140, MaxIter: 100000 & 371.87 & 30.0007 \\
+
+Tabu Search AC - FI 	Tenure: 140, MaxIter: 100000 & 371.87 & 30.0007 \\
+
+Tabu Search AC - FI 	Tenure: 140, MaxIter: 100000 & 371.87 & 30.0006 \\
+
+
+Tabu Search AC - FI 	Tenure: 140, MaxIter: 100000 & 371.225 & 30.0005 \\
+Tabu Search AC - FI 	Tenure: 140, MaxIter: 100000 & 370.09 & 240.004 \\
+
+Tabu Search - FI 	Tenure: 160, MaxIter: 100000 & 370.51 & 30.0008 \\
+
+Tabu Search - FI 	Tenure: 160, MaxIter: 100000 & 371.98 & 30.0004 \\
+
+Tabu Search - FI 	Tenure: 160, MaxIter: 100000 & 376.92 & 30.0001 \\
+
+Tabu Search - FI 	Tenure: 160, MaxIter: 100000 & 370.16 & 30.0004 \\
+
+Tabu Search - FI 	Tenure: 160, MaxIter: 100000 & 371.42 & 30.0006 \\
+
+Tabu Search - FI 	Tenure: 160, MaxIter: 100000 & 372.35 & 30.0004 \\
+
+Tabu Search - FI 	Tenure: 160, MaxIter: 100000 & 373.89 & 30.0006 \\
+
+Tabu Search - FI 	Tenure: 160, MaxIter: 100000 & 372.84 & 30.0001 \\
+
+
+Tabu Search - FI 	Tenure: 160, MaxIter: 100000 & 372.509 & 30.0004 \\
+Tabu Search - FI 	Tenure: 160, MaxIter: 100000 & 370.16 & 240.003 \\
+
+Tabu Search AC - FI 	Tenure: 160, MaxIter: 100000 & 370.09 & 30.0005 \\
+
+Tabu Search AC - FI 	Tenure: 160, MaxIter: 100000 & 370.09 & 30.0005 \\
+
+Tabu Search AC - FI 	Tenure: 160, MaxIter: 100000 & 370.09 & 30.0004 \\
+
+Tabu Search AC - FI 	Tenure: 160, MaxIter: 100000 & 370.09 & 30.0004 \\
+
+Tabu Search AC - FI 	Tenure: 160, MaxIter: 100000 & 370.09 & 30.0007 \\
+
+Tabu Search AC - FI 	Tenure: 160, MaxIter: 100000 & 371.87 & 30.0003 \\
+
+Tabu Search AC - FI 	Tenure: 160, MaxIter: 100000 & 370.27 & 30.0007 \\
+
+Tabu Search AC - FI 	Tenure: 160, MaxIter: 100000 & 376.52 & 30.0008 \\
+
+
+Tabu Search AC - FI 	Tenure: 160, MaxIter: 100000 & 371.139 & 30.0005 \\
+Tabu Search AC - FI 	Tenure: 160, MaxIter: 100000 & 370.09 & 240.004 \\
+
+Tabu Search - FI 	Tenure: 180, MaxIter: 100000 & 370.72 & 30.0003 \\
+
+Tabu Search - FI 	Tenure: 180, MaxIter: 100000 & 371.78 & 30.0002 \\
+
+Tabu Search - FI 	Tenure: 180, MaxIter: 100000 & 372.09 & 30.0007 \\
+
+Tabu Search - FI 	Tenure: 180, MaxIter: 100000 & 371.26 & 30.0001 \\
+
+Tabu Search - FI 	Tenure: 180, MaxIter: 100000 & 371.1 & 30 \\
+
+Tabu Search - FI 	Tenure: 180, MaxIter: 100000 & 382.47 & 30.0003 \\
+
+Tabu Search - FI 	Tenure: 180, MaxIter: 100000 & 381.85 & 30.0007 \\
+
+Tabu Search - FI 	Tenure: 180, MaxIter: 100000 & 370.28 & 30.0006 \\
+
+
+Tabu Search - FI 	Tenure: 180, MaxIter: 100000 & 373.944 & 30.0004 \\
+Tabu Search - FI 	Tenure: 180, MaxIter: 100000 & 370.28 & 240.003 \\
+
+Tabu Search AC - FI 	Tenure: 180, MaxIter: 100000 & 370.09 & 30.0008 \\
+
+Tabu Search AC - FI 	Tenure: 180, MaxIter: 100000 & 370.09 & 30.001 \\
+
+Tabu Search AC - FI 	Tenure: 180, MaxIter: 100000 & 370.09 & 30.0004 \\
+
+Tabu Search AC - FI 	Tenure: 180, MaxIter: 100000 & 370.09 & 30.0007 \\
+
+Tabu Search AC - FI 	Tenure: 180, MaxIter: 100000 & 370.09 & 30.0003 \\
+
+Tabu Search AC - FI 	Tenure: 180, MaxIter: 100000 & 370.27 & 30.0001 \\
+
+Tabu Search AC - FI 	Tenure: 180, MaxIter: 100000 & 370.09 & 30.0005 \\
+
+Tabu Search AC - FI 	Tenure: 180, MaxIter: 100000 & 370.09 & 30.0001 \\
+
+
+Tabu Search AC - FI 	Tenure: 180, MaxIter: 100000 & 370.113 & 30.0005 \\
+Tabu Search AC - FI 	Tenure: 180, MaxIter: 100000 & 370.09 & 240.004 \\
+
+Tabu Search - FI 	Tenure: 200, MaxIter: 100000 & 372.53 & 30.001 \\
+
+Tabu Search - FI 	Tenure: 200, MaxIter: 100000 & 370.77 & 30.001 \\
+
+Tabu Search - FI 	Tenure: 200, MaxIter: 100000 & 374.42 & 30.0002 \\
+
+Tabu Search - FI 	Tenure: 200, MaxIter: 100000 & 372.17 & 30.0002 \\
+
+Tabu Search - FI 	Tenure: 200, MaxIter: 100000 & 373.78 & 30.0011 \\
+
+Tabu Search - FI 	Tenure: 200, MaxIter: 100000 & 370.76 & 30.0009 \\
+
+Tabu Search - FI 	Tenure: 200, MaxIter: 100000 & 372.81 & 30.0007 \\
+
+Tabu Search - FI 	Tenure: 200, MaxIter: 100000 & 371.26 & 30.0007 \\
+
+
+Tabu Search - FI 	Tenure: 200, MaxIter: 100000 & 372.313 & 30.0007 \\
+Tabu Search - FI 	Tenure: 200, MaxIter: 100000 & 370.76 & 240.006 \\
+
+Tabu Search AC - FI 	Tenure: 200, MaxIter: 100000 & 370.09 & 30.0005 \\
+
+Tabu Search AC - FI 	Tenure: 200, MaxIter: 100000 & 371.13 & 30.0006 \\
+
+Tabu Search AC - FI 	Tenure: 200, MaxIter: 100000 & 371.71 & 30.0008 \\
+
+Tabu Search AC - FI 	Tenure: 200, MaxIter: 100000 & 370.09 & 30.001 \\
+
+Tabu Search AC - FI 	Tenure: 200, MaxIter: 100000 & 370.09 & 30.0005 \\
+
+Tabu Search AC - FI 	Tenure: 200, MaxIter: 100000 & 370.09 & 30.0001 \\
+
+Tabu Search AC - FI 	Tenure: 200, MaxIter: 100000 & 371.87 & 30.001 \\
+
+Tabu Search AC - FI 	Tenure: 200, MaxIter: 100000 & 370.09 & 30.0005 \\
+
+
+Tabu Search AC - FI 	Tenure: 200, MaxIter: 100000 & 370.645 & 30.0006 \\
+Tabu Search AC - FI 	Tenure: 200, MaxIter: 100000 & 370.09 & 240.005 \\

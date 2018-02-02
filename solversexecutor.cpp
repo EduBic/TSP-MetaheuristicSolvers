@@ -47,9 +47,9 @@ void SolversExecutor::execute() {
     std::string fileNameStr = std::string(mFilename);
     fileNameStr.erase(0, 5);
 
-    ofstream outputLog("Log/outputLog - " + fileNameStr + " - " + nowTime + ".txt");
-    ofstream latexLog("Log/latexLog - " + fileNameStr + " - " + nowTime + ".txt");
-    ofstream csvLog("Log/csvLog - " + fileNameStr + " - " + nowTime + ".csv");
+    ofstream outputLog("Log/" + fileNameStr + "-outputLog-" + nowTime + ".txt");
+    ofstream latexLog("Log/" + fileNameStr + "-latexLog-" + nowTime + ".txt");
+    ofstream csvLog("Log/" + fileNameStr + "-csvLog-" + nowTime + ".csv");
 
     for (std::vector<Solver*>::iterator it = mSolvers.begin(); it != mSolvers.end(); ++it) {
 
@@ -116,7 +116,7 @@ void SolversExecutor::execute() {
         }
 
         // Print result
-        //csvLog << (*it)->getSolverName() << ", " << bestOfBestvalue << ", " << sumTime << endl;
+        csvLog << (*it)->getSolverName() << ", " << bestOfBestvalue << ", " << sumTime << endl;
     }
 
     csvLog.close();

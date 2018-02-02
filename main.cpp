@@ -30,25 +30,25 @@ int main (int argc, char const *argv[]) {
 
         SolversExecutor solversExe(argv[1]);
 
-        //solversExe.addRandomSeedInitSolution(42);
-        //solversExe.addRandomSeedInitSolution(58);
-        //solversExe.addRandomSeedInitSolution(4);
-        //solversExe.addRandomSeedInitSolution(25);
-        //solversExe.addRandomSeedInitSolution(26);
+        // Test initial solutions
+        solversExe.addRandomSeedInitSolution(58);
+        solversExe.addRandomSeedInitSolution(4);
+        solversExe.addRandomSeedInitSolution(25);
+        solversExe.addRandomSeedInitSolution(26);
         solversExe.addRandomSeedInitSolution(43);
         solversExe.addRandomSeedInitSolution(46);
         solversExe.addRandomSeedInitSolution(93); 
         solversExe.addRandomSeedInitSolution(99);
 
         solversExe.addSolver(new LocalSearchSolver());
-        //solversExe.addSolver(new LocalSearchSolver(false));
+        solversExe.addSolver(new LocalSearchSolver(false));
 
         //solversExe.addSolver(new TabuSearchSolver(100, 2000, true, true, 10));
 
 
         int maxIteration = 100000;
         double maxSeconds = 30;
-        int bestTabuLenght = 180;   // for rnd100.dat
+        //int bestTabuLenght = 180;   // for rnd100.dat
 
         //solversExe.addSolver(TabuSearchSolver::buildTS_BI(bestTabuLenght, maxIteration, maxSeconds));
         //solversExe.addSolver(TabuSearchSolver::buildTS_BI_AC(bestTabuLenght, maxIteration, maxSeconds));
