@@ -1,0 +1,72 @@
+
+Tabu Search - BI 	Tenure: 100, MaxIter: 100000 & 457.54 & 30.0002 \\
+
+
+Tabu Search - BI 	Tenure: 100, MaxIter: 100000 & 457.54 & 30.0002 \\
+Tabu Search - BI 	Tenure: 100, MaxIter: 100000 & 457.54 & 30.0002 \\
+
+Tabu Search AC - BI 	Tenure: 100, MaxIter: 100000 & 457.54 & 30.0002 \\
+
+
+Tabu Search AC - BI 	Tenure: 100, MaxIter: 100000 & 457.54 & 30.0002 \\
+Tabu Search AC - BI 	Tenure: 100, MaxIter: 100000 & 457.54 & 30.0002 \\
+
+Tabu Search - FI 	Tenure: 100, MaxIter: 100000 & 457.54 & 30.0002 \\
+
+
+Tabu Search - FI 	Tenure: 100, MaxIter: 100000 & 457.54 & 30.0002 \\
+Tabu Search - FI 	Tenure: 100, MaxIter: 100000 & 457.54 & 30.0002 \\
+
+Tabu Search AC - FI 	Tenure: 100, MaxIter: 100000 & 457.54 & 30.0004 \\
+
+
+Tabu Search AC - FI 	Tenure: 100, MaxIter: 100000 & 457.54 & 30.0004 \\
+Tabu Search AC - FI 	Tenure: 100, MaxIter: 100000 & 457.54 & 30.0004 \\
+
+Tabu Search - BI 	Tenure: 180, MaxIter: 100000 & 464.67 & 30.0004 \\
+
+
+Tabu Search - BI 	Tenure: 180, MaxIter: 100000 & 464.67 & 30.0004 \\
+Tabu Search - BI 	Tenure: 180, MaxIter: 100000 & 464.67 & 30.0004 \\
+
+Tabu Search AC - BI 	Tenure: 180, MaxIter: 100000 & 459.3 & 30.0006 \\
+
+
+Tabu Search AC - BI 	Tenure: 180, MaxIter: 100000 & 459.3 & 30.0006 \\
+Tabu Search AC - BI 	Tenure: 180, MaxIter: 100000 & 459.3 & 30.0006 \\
+
+Tabu Search - FI 	Tenure: 180, MaxIter: 100000 & 464.67 & 30.0009 \\
+
+
+Tabu Search - FI 	Tenure: 180, MaxIter: 100000 & 464.67 & 30.0009 \\
+Tabu Search - FI 	Tenure: 180, MaxIter: 100000 & 464.67 & 30.0009 \\
+
+Tabu Search AC - FI 	Tenure: 180, MaxIter: 100000 & 459.3 & 30.0002 \\
+
+
+Tabu Search AC - FI 	Tenure: 180, MaxIter: 100000 & 459.3 & 30.0002 \\
+Tabu Search AC - FI 	Tenure: 180, MaxIter: 100000 & 459.3 & 30.0002 \\
+
+Tabu Search - BI 	Tenure: 240, MaxIter: 100000 & 466.22 & 30.0009 \\
+
+
+Tabu Search - BI 	Tenure: 240, MaxIter: 100000 & 466.22 & 30.0009 \\
+Tabu Search - BI 	Tenure: 240, MaxIter: 100000 & 466.22 & 30.0009 \\
+
+Tabu Search AC - BI 	Tenure: 240, MaxIter: 100000 & 460.24 & 30.0006 \\
+
+
+Tabu Search AC - BI 	Tenure: 240, MaxIter: 100000 & 460.24 & 30.0006 \\
+Tabu Search AC - BI 	Tenure: 240, MaxIter: 100000 & 460.24 & 30.0006 \\
+
+Tabu Search - FI 	Tenure: 240, MaxIter: 100000 & 466.22 & 30.0012 \\
+
+
+Tabu Search - FI 	Tenure: 240, MaxIter: 100000 & 466.22 & 30.0012 \\
+Tabu Search - FI 	Tenure: 240, MaxIter: 100000 & 466.22 & 30.0012 \\
+
+Tabu Search AC - FI 	Tenure: 240, MaxIter: 100000 & 460.24 & 30.0012 \\
+
+
+Tabu Search AC - FI 	Tenure: 240, MaxIter: 100000 & 460.24 & 30.0012 \\
+Tabu Search AC - FI 	Tenure: 240, MaxIter: 100000 & 460.24 & 30.0012 \\

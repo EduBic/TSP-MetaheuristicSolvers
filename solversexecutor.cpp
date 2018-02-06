@@ -42,9 +42,9 @@ void SolversExecutor::execute() {
     timeinfo = localtime(&rawtime);
 
     strftime(buffer, sizeof(buffer),"%d-%m-%Y %I:%M:%S", timeinfo);
-    std::string nowTime(buffer);
+    string nowTime(buffer);
 
-    std::string fileNameStr = std::string(mFilename);
+    string fileNameStr = string(mFilename);
     fileNameStr.erase(0, 5);
 
     ofstream outputLog("Log/" + fileNameStr + "-outputLog-" + nowTime + ".txt");
@@ -53,6 +53,8 @@ void SolversExecutor::execute() {
 
 
     for (std::vector<Solver*>::iterator it = mSolvers.begin(); it != mSolvers.end(); ++it) {
+
+        latexLog << endl;
 
         int i = 0;
         double values[mInitSolutions.size()];
@@ -83,9 +85,7 @@ void SolversExecutor::execute() {
             outputLog << "sec. (CPU time) " << bestSolution->cpuTime << std::endl;
 
             // print latex result of init solution solved
-            latexLog << std::endl;
-            latexLog << bestSolution->solveBy << " & " << value << " & " << bestSolution->cpuTime << " \\\\";
-            latexLog << std::endl;
+            latexLog << bestSolution->solveBy << ", " << value << ", " << bestSolution->cpuTime << endl;
 
             // for compute average
             values[i] = value;
@@ -105,10 +105,11 @@ void SolversExecutor::execute() {
         double avgValue = sumValue / mInitSolutions.size();
         double avgTime = sumTime / mInitSolutions.size();
 
-        latexLog << std::endl << std::endl;
-        latexLog << (*it)->getSolverName() << " & " << avgValue << " & " << avgTime << " \\\\" << std::endl;
-        latexLog << (*it)->getSolverName() << " & " << bestOfBestvalue << " & " << sumTime << " \\\\";
-        latexLog << std::endl;
+        latexLog << endl;
+        latexLog << "Solver, Avg Value, Avg Time, Best Value found, Total time" << endl;
+        latexLog << (*it)->getSolverName() << ", " << avgValue << ", " << avgTime << ", " << bestOfBestvalue << ", " << sumTime;
+        latexLog << endl;
+
 
         // Print result for Calibration of TS
         TabuSearchSolver* tsSolver = dynamic_cast<TabuSearchSolver*>(*it);

@@ -260,7 +260,6 @@ bool TabuSearchSolver::isTabuMove(int from, int to) {
         //std::cout << "Hello" << std::endl << (*it).from << ", " << (*it).to << std::endl;
 
         if ((*it).from == from && (*it).to == to) return true;
-        //if ((*it).from == to && (*it).to == from) return true;
 
         it++;
     }

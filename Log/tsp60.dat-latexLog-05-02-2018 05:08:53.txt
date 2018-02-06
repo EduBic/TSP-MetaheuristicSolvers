@@ -1,0 +1,5 @@
+
+Local Search Best Improvement, 653.8, 0.000551
+
+Solver, Avg Value, Avg Time, Best Value found, Total time
+Local Search Best Improvement, 653.8, 0.000551, 653.8, 0.000551

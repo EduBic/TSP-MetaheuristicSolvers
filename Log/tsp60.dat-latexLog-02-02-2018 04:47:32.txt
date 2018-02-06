@@ -1,6 +1,0 @@
-
-Tabu Search - BI 	Tenure: 50, MaxIter: 1000 & 630.5 & 0.100344 \\
-
-
-Tabu Search - BI 	Tenure: 50, MaxIter: 1000 & 630.5 & 0.100344 \\
-Tabu Search - BI 	Tenure: 50, MaxIter: 1000 & 630.5 & 0.100344 \\

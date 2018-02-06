@@ -69,7 +69,7 @@ int main (int argc, char *argv[]) {
         int c;
         int option_index;
 
-        while((c = getopt_long (argc, argv, "lfbtae:i:s:m", long_options, &option_index)) != EOF) {
+        while((c = getopt_long(argc, argv, "lfbtae:i:s:m", long_options, &option_index)) != EOF) {
             switch(c) {
                 case 'l': {
                     localSearch = true;
@@ -116,39 +116,29 @@ int main (int argc, char *argv[]) {
 
             // Test initial solutions
             solversExe.addRandomSeedInitSolution(58);
-            solversExe.addRandomSeedInitSolution(4);
-            solversExe.addRandomSeedInitSolution(25);
-            solversExe.addRandomSeedInitSolution(26);
-            solversExe.addRandomSeedInitSolution(43);
-            solversExe.addRandomSeedInitSolution(46);
-            solversExe.addRandomSeedInitSolution(93);
-            solversExe.addRandomSeedInitSolution(99);
+            //solversExe.addRandomSeedInitSolution(4);
+            //solversExe.addRandomSeedInitSolution(25);
+            //solversExe.addRandomSeedInitSolution(26);
+            //solversExe.addRandomSeedInitSolution(43);
+            //solversExe.addRandomSeedInitSolution(46);
+            //solversExe.addRandomSeedInitSolution(93);
+            /*solversExe.addRandomSeedInitSolution(99);*/
 
-            //solversExe.addSolver(new LocalSearchSolver());
+            solversExe.addSolver(new LocalSearchSolver());
             //solversExe.addSolver(new LocalSearchSolver(false));
 
-            //solversExe.addSolver(new TabuSearchSolver(100, 2000, true, true, 10));
 
+            int maxIteration = 100000;
+            double maxSeconds = 60;
+            //int tabuLenght = 100;
+            int tabuLengths[3] = {100, 180, 240};
 
-            //int maxIteration = 100000;
-            //double maxSeconds = 30;
-            //int bestTabuLenght = 180;   // for rnd100.dat
-
-            //solversExe.addSolver(TabuSearchSolver::buildTS_BI(bestTabuLenght, maxIteration, maxSeconds));
-            //solversExe.addSolver(TabuSearchSolver::buildTS_BI_AC(bestTabuLenght, maxIteration, maxSeconds));
-            //solversExe.addSolver(TabuSearchSolver::buildTS_FI(bestTabuLenght, maxIteration, maxSeconds));
-            //solversExe.addSolver(TabuSearchSolver::buildTS_FI_AC(bestTabuLenght, maxIteration, maxSeconds));
-
-
-
-            //for (int i = 6000; i <= 14000; i = i + 2000) {
-                //for (int t = 80; t <= 200; t = t + 20) {
-                    //solversExe.addSolver(TabuSearchSolver::buildTS_BI(t, maxIteration, maxSeconds));
-                    //solversExe.addSolver(TabuSearchSolver::buildTS_BI_AC(t, maxIteration, maxSeconds));
-                    //solversExe.addSolver(TabuSearchSolver::buildTS_FI(t, maxIteration, maxSeconds));
-                    //solversExe.addSolver(TabuSearchSolver::buildTS_FI_AC(t, maxIteration, maxSeconds));
-                //}
-            //}
+            for (int i = 1; i < 2; i++) {
+                //solversExe.addSolver(TabuSearchSolver::buildTS_BI(tabuLengths[i], maxIteration, maxSeconds));
+                //solversExe.addSolver(TabuSearchSolver::buildTS_BI_AC(tabuLengths[i], maxIteration, maxSeconds));
+                //solversExe.addSolver(TabuSearchSolver::buildTS_FI(tabuLengths[i], maxIteration, maxSeconds));
+                //solversExe.addSolver(TabuSearchSolver::buildTS_FI_AC(tabuLengths[i], maxIteration, maxSeconds));
+            }
 
         } else {
             // Command line program
