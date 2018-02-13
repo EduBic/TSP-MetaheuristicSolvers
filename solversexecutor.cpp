@@ -51,6 +51,8 @@ void SolversExecutor::execute() {
     ofstream latexLog("Log/" + fileNameStr + "-latexLog-" + nowTime + ".txt");
     ofstream csvLog("Log/" + fileNameStr + "-csvLog-" + nowTime + ".csv");
 
+    csvLog << "Length, Avg. Value" << endl;
+
 
     for (std::vector<Solver*>::iterator it = mSolvers.begin(); it != mSolvers.end(); ++it) {
 
@@ -106,7 +108,7 @@ void SolversExecutor::execute() {
         double avgTime = sumTime / mInitSolutions.size();
 
         latexLog << endl;
-        latexLog << "Solver, Avg Value, Avg Time, Best Value found, Total time" << endl;
+        latexLog << "Solver, Avg Value, Avg. Time, Best Value found, Total time" << endl;
         latexLog << (*it)->getSolverName() << ", " << avgValue << ", " << avgTime << ", " << bestOfBestvalue << ", " << sumTime;
         latexLog << endl;
 
