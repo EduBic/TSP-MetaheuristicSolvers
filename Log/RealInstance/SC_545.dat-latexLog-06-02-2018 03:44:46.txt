@@ -1,0 +1,72 @@
+
+Tabu Search - BI 	Tenure: 100, MaxIter: 100000, 16350, 30.0106
+Tabu Search - BI 	Tenure: 100, MaxIter: 100000, 16611, 30.0032
+Tabu Search - BI 	Tenure: 100, MaxIter: 100000, 16312, 30.0058
+Tabu Search - BI 	Tenure: 100, MaxIter: 100000, 16234, 30.0008
+Tabu Search - BI 	Tenure: 100, MaxIter: 100000, 17219, 30.0061
+Tabu Search - BI 	Tenure: 100, MaxIter: 100000, 16293, 30.0084
+Tabu Search - BI 	Tenure: 100, MaxIter: 100000, 16762, 30.0058
+Tabu Search - BI 	Tenure: 100, MaxIter: 100000, 16601, 30.015
+
+Solver,				Avg Value,	Avg. Time,	Best Value found,	Total time
+Tabu Search - BI 	Tenure: 100, MaxIter: 100000,	16547.8,	30.007,	16234,			240.056
+
+Tabu Search AC - BI 	Tenure: 100, MaxIter: 100000, 16351, 30.011
+Tabu Search AC - BI 	Tenure: 100, MaxIter: 100000, 16690, 30.008
+Tabu Search AC - BI 	Tenure: 100, MaxIter: 100000, 16287, 30.0166
+Tabu Search AC - BI 	Tenure: 100, MaxIter: 100000, 16246, 30.006
+Tabu Search AC - BI 	Tenure: 100, MaxIter: 100000, 17203, 30.0143
+Tabu Search AC - BI 	Tenure: 100, MaxIter: 100000, 16291, 30.0016
+Tabu Search AC - BI 	Tenure: 100, MaxIter: 100000, 16765, 30.0062
+Tabu Search AC - BI 	Tenure: 100, MaxIter: 100000, 16588, 30.0015
+
+Solver,				Avg Value,	Avg. Time,	Best Value found,	Total time
+Tabu Search AC - BI 	Tenure: 100, MaxIter: 100000,	16552.6,	30.0082,	16246,			240.065
+
+Tabu Search - BI 	Tenure: 240, MaxIter: 100000, 16408, 30.003
+Tabu Search - BI 	Tenure: 240, MaxIter: 100000, 16746, 30.0373
+Tabu Search - BI 	Tenure: 240, MaxIter: 100000, 16366, 30.0356
+Tabu Search - BI 	Tenure: 240, MaxIter: 100000, 16302, 30.0178
+Tabu Search - BI 	Tenure: 240, MaxIter: 100000, 17482, 30.009
+Tabu Search - BI 	Tenure: 240, MaxIter: 100000, 16383, 30.0371
+Tabu Search - BI 	Tenure: 240, MaxIter: 100000, 16861, 30.0005
+Tabu Search - BI 	Tenure: 240, MaxIter: 100000, 16614, 30.0297
+
+Solver,				Avg Value,	Avg. Time,	Best Value found,	Total time
+Tabu Search - BI 	Tenure: 240, MaxIter: 100000,	16645.2,	30.0213,	16302,			240.17
+
+Tabu Search AC - BI 	Tenure: 240, MaxIter: 100000, 16382, 30.0203
+Tabu Search AC - BI 	Tenure: 240, MaxIter: 100000, 16811, 30.0201
+Tabu Search AC - BI 	Tenure: 240, MaxIter: 100000, 16373, 30.018
+Tabu Search AC - BI 	Tenure: 240, MaxIter: 100000, 16314, 30.0247
+Tabu Search AC - BI 	Tenure: 240, MaxIter: 100000, 17473, 30.0254
+Tabu Search AC - BI 	Tenure: 240, MaxIter: 100000, 16330, 30.03
+Tabu Search AC - BI 	Tenure: 240, MaxIter: 100000, 16855, 30.0338
+Tabu Search AC - BI 	Tenure: 240, MaxIter: 100000, 16649, 30.0208
+
+Solver,				Avg Value,	Avg. Time,	Best Value found,	Total time
+Tabu Search AC - BI 	Tenure: 240, MaxIter: 100000,	16648.4,	30.0241,	16314,			240.193
+
+Tabu Search - BI 	Tenure: 300, MaxIter: 100000, 16427, 30.0213
+Tabu Search - BI 	Tenure: 300, MaxIter: 100000, 17316, 30.0064
+Tabu Search - BI 	Tenure: 300, MaxIter: 100000, 16763, 30.0167
+Tabu Search - BI 	Tenure: 300, MaxIter: 100000, 16978, 30.0068
+Tabu Search - BI 	Tenure: 300, MaxIter: 100000, 17987, 30.0008
+Tabu Search - BI 	Tenure: 300, MaxIter: 100000, 16745, 30.0415
+Tabu Search - BI 	Tenure: 300, MaxIter: 100000, 17312, 30.0301
+Tabu Search - BI 	Tenure: 300, MaxIter: 100000, 17300, 30.0094
+
+Solver,				Avg Value,	Avg. Time,	Best Value found,	Total time
+Tabu Search - BI 	Tenure: 300, MaxIter: 100000,	17103.5,	30.0166,	16427,			240.133
+
+Tabu Search AC - BI 	Tenure: 300, MaxIter: 100000, 16435, 30.0365
+Tabu Search AC - BI 	Tenure: 300, MaxIter: 100000, 17371, 30.0079
+Tabu Search AC - BI 	Tenure: 300, MaxIter: 100000, 16934, 30.0014
+Tabu Search AC - BI 	Tenure: 300, MaxIter: 100000, 17082, 30.0404
+Tabu Search AC - BI 	Tenure: 300, MaxIter: 100000, 18175, 30.0275
+Tabu Search AC - BI 	Tenure: 300, MaxIter: 100000, 17061, 30.0118
+Tabu Search AC - BI 	Tenure: 300, MaxIter: 100000, 17576, 30.0453
+Tabu Search AC - BI 	Tenure: 300, MaxIter: 100000, 17331, 30.0011
+
+Solver,				Avg Value,	Avg. Time,	Best Value found,	Total time
+Tabu Search AC - BI 	Tenure: 300, MaxIter: 100000,	17245.6,	30.0215,	16435,			240.172

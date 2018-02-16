@@ -1,0 +1,7 @@
+Solver, Avg Value, Avg. Time, Best Value found, Total time
+
+Tabu Search - BI 	Tenure: 180, MaxIter: 300000, 5.29681e+06, 30.0146, 5.16582e+06, 240.117
+
+Tabu Search - BI 	Tenure: 480, MaxIter: 300000, 5.31941e+06, 30.0153, 5.18626e+06, 240.122
+
+Tabu Search - BI 	Tenure: 800, MaxIter: 300000, 5.32685e+06, 30.0151, 5.1918e+06, 240.121

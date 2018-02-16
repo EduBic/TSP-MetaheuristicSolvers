@@ -1,0 +1,72 @@
+
+Tabu Search - FI 	Tenure: 100, MaxIter: 100000, 5.40998e+06, 30.0126
+Tabu Search - FI 	Tenure: 100, MaxIter: 100000, 5.21645e+06, 30.0011
+Tabu Search - FI 	Tenure: 100, MaxIter: 100000, 5.26559e+06, 30.0176
+Tabu Search - FI 	Tenure: 100, MaxIter: 100000, 5.15856e+06, 30.0215
+Tabu Search - FI 	Tenure: 100, MaxIter: 100000, 5.13771e+06, 30.0149
+Tabu Search - FI 	Tenure: 100, MaxIter: 100000, 5.27746e+06, 30.0048
+Tabu Search - FI 	Tenure: 100, MaxIter: 100000, 5.25714e+06, 30.0222
+Tabu Search - FI 	Tenure: 100, MaxIter: 100000, 5.31341e+06, 30.0078
+
+Solver,				Avg Value,	Avg. Time,	Best Value found,	Total time
+Tabu Search - FI 	Tenure: 100, MaxIter: 100000,	5.25454e+06,	30.0128,	5.13771e+06,			240.102
+
+Tabu Search AC - FI 	Tenure: 100, MaxIter: 100000, 5.41007e+06, 30.0023
+Tabu Search AC - FI 	Tenure: 100, MaxIter: 100000, 5.21463e+06, 30.0073
+Tabu Search AC - FI 	Tenure: 100, MaxIter: 100000, 5.4657e+06, 30.0018
+Tabu Search AC - FI 	Tenure: 100, MaxIter: 100000, 5.16218e+06, 30.0113
+Tabu Search AC - FI 	Tenure: 100, MaxIter: 100000, 5.13827e+06, 30.0065
+Tabu Search AC - FI 	Tenure: 100, MaxIter: 100000, 5.32666e+06, 30.0124
+Tabu Search AC - FI 	Tenure: 100, MaxIter: 100000, 5.25659e+06, 30.0108
+Tabu Search AC - FI 	Tenure: 100, MaxIter: 100000, 5.31817e+06, 30.0224
+
+Solver,				Avg Value,	Avg. Time,	Best Value found,	Total time
+Tabu Search AC - FI 	Tenure: 100, MaxIter: 100000,	5.28653e+06,	30.0094,	5.13827e+06,			240.075
+
+Tabu Search - FI 	Tenure: 180, MaxIter: 100000, 5.58523e+06, 30.0188
+Tabu Search - FI 	Tenure: 180, MaxIter: 100000, 5.72332e+06, 30.0239
+Tabu Search - FI 	Tenure: 180, MaxIter: 100000, 5.83609e+06, 30.0212
+Tabu Search - FI 	Tenure: 180, MaxIter: 100000, 5.68904e+06, 30.035
+Tabu Search - FI 	Tenure: 180, MaxIter: 100000, 5.63082e+06, 30.0039
+Tabu Search - FI 	Tenure: 180, MaxIter: 100000, 5.73338e+06, 30.0296
+Tabu Search - FI 	Tenure: 180, MaxIter: 100000, 5.79908e+06, 30.0025
+Tabu Search - FI 	Tenure: 180, MaxIter: 100000, 5.81389e+06, 30.0261
+
+Solver,				Avg Value,	Avg. Time,	Best Value found,	Total time
+Tabu Search - FI 	Tenure: 180, MaxIter: 100000,	5.72636e+06,	30.0201,	5.58523e+06,			240.161
+
+Tabu Search AC - FI 	Tenure: 180, MaxIter: 100000, 5.57825e+06, 30.0075
+Tabu Search AC - FI 	Tenure: 180, MaxIter: 100000, 5.7038e+06, 30.0122
+Tabu Search AC - FI 	Tenure: 180, MaxIter: 100000, 5.98267e+06, 30.0046
+Tabu Search AC - FI 	Tenure: 180, MaxIter: 100000, 5.76907e+06, 30.005
+Tabu Search AC - FI 	Tenure: 180, MaxIter: 100000, 5.69173e+06, 30.0443
+Tabu Search AC - FI 	Tenure: 180, MaxIter: 100000, 5.74548e+06, 30.0173
+Tabu Search AC - FI 	Tenure: 180, MaxIter: 100000, 5.79501e+06, 30.0282
+Tabu Search AC - FI 	Tenure: 180, MaxIter: 100000, 5.81965e+06, 30.0463
+
+Solver,				Avg Value,	Avg. Time,	Best Value found,	Total time
+Tabu Search AC - FI 	Tenure: 180, MaxIter: 100000,	5.76071e+06,	30.0207,	5.57825e+06,			240.165
+
+Tabu Search - FI 	Tenure: 240, MaxIter: 100000, 6.11833e+06, 30.0378
+Tabu Search - FI 	Tenure: 240, MaxIter: 100000, 6.94153e+06, 30.0446
+Tabu Search - FI 	Tenure: 240, MaxIter: 100000, 7.36322e+06, 30.0181
+Tabu Search - FI 	Tenure: 240, MaxIter: 100000, 7.33356e+06, 30.0648
+Tabu Search - FI 	Tenure: 240, MaxIter: 100000, 7.02828e+06, 30.0341
+Tabu Search - FI 	Tenure: 240, MaxIter: 100000, 7.02038e+06, 30.0632
+Tabu Search - FI 	Tenure: 240, MaxIter: 100000, 7.25777e+06, 30.0173
+Tabu Search - FI 	Tenure: 240, MaxIter: 100000, 7.19171e+06, 30.0408
+
+Solver,				Avg Value,	Avg. Time,	Best Value found,	Total time
+Tabu Search - FI 	Tenure: 240, MaxIter: 100000,	7.03185e+06,	30.0401,	6.11833e+06,			240.321
+
+Tabu Search AC - FI 	Tenure: 240, MaxIter: 100000, 6.12069e+06, 30.0491
+Tabu Search AC - FI 	Tenure: 240, MaxIter: 100000, 6.95382e+06, 30.0535
+Tabu Search AC - FI 	Tenure: 240, MaxIter: 100000, 7.18278e+06, 30.0038
+Tabu Search AC - FI 	Tenure: 240, MaxIter: 100000, 6.98651e+06, 30.0032
+Tabu Search AC - FI 	Tenure: 240, MaxIter: 100000, 6.91108e+06, 30.0433
+Tabu Search AC - FI 	Tenure: 240, MaxIter: 100000, 6.99566e+06, 30.0308
+Tabu Search AC - FI 	Tenure: 240, MaxIter: 100000, 7.09213e+06, 30.053
+Tabu Search AC - FI 	Tenure: 240, MaxIter: 100000, 7.16778e+06, 30.0165
+
+Solver,				Avg Value,	Avg. Time,	Best Value found,	Total time
+Tabu Search AC - FI 	Tenure: 240, MaxIter: 100000,	6.92631e+06,	30.0316,	6.12069e+06,			240.253

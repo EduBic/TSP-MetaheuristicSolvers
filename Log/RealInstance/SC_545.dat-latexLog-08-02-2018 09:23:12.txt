@@ -1,0 +1,12 @@
+
+Tabu Search AC - BI 	Tenure: 480, MaxIter: 200000, 16016, 300.028
+Tabu Search AC - BI 	Tenure: 480, MaxIter: 200000, 16393, 300.066
+Tabu Search AC - BI 	Tenure: 480, MaxIter: 200000, 15999, 300.021
+Tabu Search AC - BI 	Tenure: 480, MaxIter: 200000, 16068, 300.028
+Tabu Search AC - BI 	Tenure: 480, MaxIter: 200000, 16475, 300.026
+Tabu Search AC - BI 	Tenure: 480, MaxIter: 200000, 16114, 300.009
+Tabu Search AC - BI 	Tenure: 480, MaxIter: 200000, 16442, 300.024
+Tabu Search AC - BI 	Tenure: 480, MaxIter: 200000, 16283, 300.05
+
+Solver,				Avg Value,	Avg. Time,	Best Value found,	Total time
+Tabu Search AC - BI 	Tenure: 480, MaxIter: 200000,	16223.8,	300.032,	15999,			2400.25

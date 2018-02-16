@@ -1,0 +1,24 @@
+
+Local Search Best Improvement, 1.7064e+07, 5.21931
+Local Search Best Improvement, 1.70551e+07, 5.08991
+Local Search Best Improvement, 1.70037e+07, 5.04549
+Local Search Best Improvement, 1.70572e+07, 4.89351
+Local Search Best Improvement, 1.69691e+07, 4.82072
+Local Search Best Improvement, 1.71052e+07, 4.99721
+Local Search Best Improvement, 1.71275e+07, 4.87514
+Local Search Best Improvement, 1.70276e+07, 4.99923
+
+Solver, Avg Value, Avg. Time, Best Value found, Total time
+Local Search Best Improvement, 1.70512e+07, 4.99257, 1.69691e+07, 39.9405
+
+Local Search First Improvement, 1.67527e+07, 10.1098
+Local Search First Improvement, 1.67429e+07, 9.38372
+Local Search First Improvement, 1.69352e+07, 5.72052
+Local Search First Improvement, 1.68457e+07, 8.51088
+Local Search First Improvement, 1.67759e+07, 9.93723
+Local Search First Improvement, 1.71556e+07, 8.26942
+Local Search First Improvement, 1.71087e+07, 9.78584
+Local Search First Improvement, 1.70575e+07, 9.29141
+
+Solver, Avg Value, Avg. Time, Best Value found, Total time
+Local Search First Improvement, 1.69218e+07, 8.87609, 1.67429e+07, 71.0088

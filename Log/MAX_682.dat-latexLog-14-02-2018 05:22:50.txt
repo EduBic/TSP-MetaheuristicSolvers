@@ -1,0 +1,3 @@
+Solver, Avg Value, Avg. Time, Best Value found, Total time
+
+Tabu Search AC - BI 	Tenure: 600, MaxIter: 300000, 5.27673e+06, 60.015, 5.11597e+06, 480.12

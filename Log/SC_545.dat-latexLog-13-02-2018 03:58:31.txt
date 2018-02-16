@@ -1,0 +1,24 @@
+
+Tabu Search AC - FI 	Tenure: 180, MaxIter: 300000, 16297, 30.0155
+Tabu Search AC - FI 	Tenure: 180, MaxIter: 300000, 16573, 30.0059
+Tabu Search AC - FI 	Tenure: 180, MaxIter: 300000, 16204, 30.0143
+Tabu Search AC - FI 	Tenure: 180, MaxIter: 300000, 16147, 30.0183
+Tabu Search AC - FI 	Tenure: 180, MaxIter: 300000, 17219, 30.0093
+Tabu Search AC - FI 	Tenure: 180, MaxIter: 300000, 16240, 30.0003
+Tabu Search AC - FI 	Tenure: 180, MaxIter: 300000, 16645, 30.0176
+Tabu Search AC - FI 	Tenure: 180, MaxIter: 300000, 16504, 30.0153
+
+Solver, Avg Value, Avg. Time, Best Value found, Total time
+Tabu Search AC - FI 	Tenure: 180, MaxIter: 300000, 16478.6, 30.0121, 16147, 240.096
+
+Tabu Search AC - FI 	Tenure: 480, MaxIter: 300000, 16282, 30.0074
+Tabu Search AC - FI 	Tenure: 480, MaxIter: 300000, 16538, 30.0046
+Tabu Search AC - FI 	Tenure: 480, MaxIter: 300000, 16092, 30.0047
+Tabu Search AC - FI 	Tenure: 480, MaxIter: 300000, 16150, 30.0115
+Tabu Search AC - FI 	Tenure: 480, MaxIter: 300000, 17130, 30.0144
+Tabu Search AC - FI 	Tenure: 480, MaxIter: 300000, 16239, 30.0161
+Tabu Search AC - FI 	Tenure: 480, MaxIter: 300000, 16595, 30.0083
+Tabu Search AC - FI 	Tenure: 480, MaxIter: 300000, 16521, 30.004
+
+Solver, Avg Value, Avg. Time, Best Value found, Total time
+Tabu Search AC - FI 	Tenure: 480, MaxIter: 300000, 16443.4, 30.0089, 16092, 240.071

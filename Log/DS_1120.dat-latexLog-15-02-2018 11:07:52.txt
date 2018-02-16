@@ -1,0 +1,3 @@
+Solver, Avg Value, Avg. Time, Best Value found, Total time
+
+Tabu Search AC - FI 	Tenure: 600, MaxIter: 300000, 3.50159e+07, 60.0395, 3.33681e+07, 480.316
