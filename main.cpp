@@ -129,13 +129,13 @@ int main (int argc, char *argv[]) {
 
 
             int maxIteration = 300000;
-            double maxSeconds = 300;
-            int tabuLenght = 180;
-            int tabuLengths[3] = {180, 300, 480}; //{100, 180, 240};
+            double maxSeconds = 60;
+            //int tabuLenght = 600;
+            int tabuLengths[3] = {600, 480, 800};
 
             //solversExe.addSolver(TabuSearchSolver::buildTS_BI_AC(tabuLenght, maxIteration, maxSeconds));
 
-            for (int i = 0; i < 1; i++) {
+            for (int i = 0; i < 3; i++) {
                 solversExe.addSolver(TabuSearchSolver::buildTS_BI(tabuLengths[i], maxIteration, maxSeconds));
                 solversExe.addSolver(TabuSearchSolver::buildTS_BI_AC(tabuLengths[i], maxIteration, maxSeconds));
                 solversExe.addSolver(TabuSearchSolver::buildTS_FI(tabuLengths[i], maxIteration, maxSeconds));

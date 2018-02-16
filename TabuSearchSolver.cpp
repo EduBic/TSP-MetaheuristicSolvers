@@ -73,11 +73,38 @@ bool TabuSearchSolver::solve(const TSP& tsp, const TSPSolution& initSol, TSPSolu
                 //tabuList[currSol.sequence[move.to]]   = iter;
 
                 // insertTabu(move);
-                if (mTabuList.size() < mTabuLength) {
+                if (mTabuList.size() < mTabuLength && mTabuSet.size() < mTabuLength) {
                     mTabuList.push_back(move);
+
+
+                    // get key from TSPMove
+                    char buffer[50];
+                    sprintf(buffer, "%u%u", move.from, move.to);
+                    string moveKey = string(buffer);
+
+                    mAdvTabuList.push_back(moveKey);
+                    mTabuSet.insert(moveKey);
+
                 } else {
                     mTabuList.pop_front();  // remove old elements
                     mTabuList.push_back(move);
+
+
+                    // get key from TSPMove
+                    char buffer[50];
+                    sprintf(buffer, "%u%u", move.from, move.to);
+                    string moveKey = string(buffer);
+
+                    // remove old key
+                    string oldTabuKey = mAdvTabuList.front();
+
+                    mAdvTabuList.pop_front();
+                    mTabuSet.erase(oldTabuKey);
+
+
+                    // add new key
+                    mAdvTabuList.push_back(moveKey);
+                    mTabuSet.insert(moveKey);
                 }
 
                 currSol = swap(currSol,move);
@@ -253,7 +280,7 @@ bool TabuSearchSolver::satisfiedAspirationCriteria(double neighbourCostVariation
 
 
 bool TabuSearchSolver::isTabuMove(int from, int to) {
-    std::list<TSPMove>::const_iterator it = mTabuList.begin();
+    /*std::list<TSPMove>::const_iterator it = mTabuList.begin();
 
     while (it != mTabuList.end()) {
 
@@ -262,6 +289,14 @@ bool TabuSearchSolver::isTabuMove(int from, int to) {
         if ((*it).from == from && (*it).to == to) return true;
 
         it++;
+    }*/
+
+    char buffer[50];
+    sprintf(buffer, "%u%u", from, to);
+    string moveKey = string(buffer);
+
+    if (mTabuSet.find(moveKey) != mTabuSet.end()) {
+        return true;
     }
 
     return false;

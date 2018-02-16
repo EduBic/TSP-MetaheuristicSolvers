@@ -10,6 +10,7 @@
 #include <vector>
 #include <list>
 #include <iostream>
+#include <set>
 
 #include "solver.h"
 
@@ -32,6 +33,11 @@ public:
     int mMaxIteration;
     double mMaxTime;
     list<TSPMove> mTabuList;
+
+    // Advance Tabu
+    list<string> mAdvTabuList;
+    set<string> mTabuSet;
+
 
     double mAspiration;
     // config variable

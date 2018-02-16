@@ -51,7 +51,9 @@ void SolversExecutor::execute() {
     ofstream latexLog("Log/" + fileNameStr + "-latexLog-" + nowTime + ".txt");
     ofstream csvLog("Log/" + fileNameStr + "-csvLog-" + nowTime + ".csv");
 
-    csvLog << "Length, Avg. Value" << endl;
+    csvLog << "Length, Avg. Value, Avg. Time, Best Value found, Total time" << endl;
+
+    latexLog << "Solver, Avg Value, Avg. Time, Best Value found, Total time" << endl;
 
 
     for (std::vector<Solver*>::iterator it = mSolvers.begin(); it != mSolvers.end(); ++it) {
@@ -87,7 +89,7 @@ void SolversExecutor::execute() {
             outputLog << "sec. (CPU time) " << bestSolution->cpuTime << std::endl;
 
             // print latex result of init solution solved
-            latexLog << bestSolution->solveBy << ", " << value << ", " << bestSolution->cpuTime << endl;
+            //latexLog << bestSolution->solveBy << ", " << value << ", " << bestSolution->cpuTime << endl;
 
             // for compute average
             values[i] = value;
@@ -107,8 +109,8 @@ void SolversExecutor::execute() {
         double avgValue = sumValue / mInitSolutions.size();
         double avgTime = sumTime / mInitSolutions.size();
 
-        latexLog << endl;
-        latexLog << "Solver, Avg Value, Avg. Time, Best Value found, Total time" << endl;
+        //latexLog << endl;
+        //latexLog << "Solver, Avg Value, Avg. Time, Best Value found, Total time" << endl;
         latexLog << (*it)->getSolverName() << ", " << avgValue << ", " << avgTime << ", " << bestOfBestvalue << ", " << sumTime;
         latexLog << endl;
 
@@ -116,7 +118,7 @@ void SolversExecutor::execute() {
         // Print result for Calibration of TS
         TabuSearchSolver* tsSolver = dynamic_cast<TabuSearchSolver*>(*it);
         if (tsSolver != NULL) {
-            csvLog << tsSolver->mTabuLength << ", " << avgValue << endl;
+            csvLog << tsSolver->mTabuLength << ", " << avgValue << ", " << ", " << bestOfBestvalue << ", " << avgTime << ", " << sumTime << endl;
         }
 
         // Print result
