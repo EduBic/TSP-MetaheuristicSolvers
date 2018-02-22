@@ -24,6 +24,7 @@ public:
     std::string solveBy;
     double userTime;
     double cpuTime;
+    uint iterations;
 
 
     TSPSolution( const TSP& tsp ) {

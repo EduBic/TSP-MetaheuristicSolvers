@@ -26,23 +26,24 @@ class TSStopCriteria {
 class TabuSearchSolver : public Solver
 {
 public:
-    int tabuLength;
-    vector<int> tabuList;  // prof tabu list: unused
 
     uint mTabuLength;
     int mMaxIteration;
     double mMaxTime;
+
     list<TSPMove> mTabuList;
 
     // Advance Tabu
     list<string> mAdvTabuList;
     set<string> mTabuSet;
 
-
     double mAspiration;
+
     // config variable
     bool ACmode;
     bool BestImprovement;
+
+    char mBuffer[50];
 
 
     //TSStopCriteria StopCriteria;

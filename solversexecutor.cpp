@@ -49,11 +49,11 @@ void SolversExecutor::execute() {
 
     ofstream outputLog("Log/" + fileNameStr + "-outputLog-" + nowTime + ".txt");
     ofstream latexLog("Log/" + fileNameStr + "-latexLog-" + nowTime + ".txt");
-    ofstream csvLog("Log/" + fileNameStr + "-csvLog-" + nowTime + ".csv");
+    //ofstream csvLog("Log/" + fileNameStr + "-csvLog-" + nowTime + ".csv");
 
-    csvLog << "Length, Avg. Value, Avg. Time, Best Value found, Total time" << endl;
+    //csvLog << "Length, Avg. Value, Avg. Time, Best Value found, Total time" << endl;
 
-    latexLog << "Solver, Avg Value, Avg. Time, Best Value found, Total time" << endl;
+    latexLog << "Solver, Avg Value, Best Value found, Avg. Time, Total time, Avg Iter" << endl;
 
 
     for (std::vector<Solver*>::iterator it = mSolvers.begin(); it != mSolvers.end(); ++it) {
@@ -63,6 +63,7 @@ void SolversExecutor::execute() {
         int i = 0;
         double values[mInitSolutions.size()];
         double times[mInitSolutions.size()];
+        uint iterations[mInitSolutions.size()];
         double bestOfBestvalue = 1e10;
 
         for (std::vector<TSPSolution*>::iterator inIt = mInitSolutions.begin(); inIt != mInitSolutions.end(); ++inIt) {
@@ -81,12 +82,14 @@ void SolversExecutor::execute() {
             }
 
             // print logconsole result of init solution solved
-            outputLog << std::endl << "----------------------------------------------------------------------" << std::endl;
-            outputLog << std::endl << bestSolution->solveBy << std::endl;
+            outputLog << std::endl << "----------------------------------------------------------------------" << std::endl
+                      << std::endl << bestSolution->solveBy << std::endl;
+
             bestSolution->print(outputLog);
-            outputLog << "(value : " << value << ")\t";
-            outputLog << "sec. (user time) " << bestSolution->userTime << "\t";
-            outputLog << "sec. (CPU time) " << bestSolution->cpuTime << std::endl;
+
+            outputLog << "(value : " << value << ")\t"
+                      << "sec. (user time) " << bestSolution->userTime << "\t"
+                      << "sec. (CPU time) " << bestSolution->cpuTime << std::endl;
 
             // print latex result of init solution solved
             //latexLog << bestSolution->solveBy << ", " << value << ", " << bestSolution->cpuTime << endl;
@@ -94,6 +97,7 @@ void SolversExecutor::execute() {
             // for compute average
             values[i] = value;
             times[i] = bestSolution->cpuTime;
+            iterations[i] = bestSolution->iterations;
 
             i++;
         }
@@ -101,31 +105,39 @@ void SolversExecutor::execute() {
 
         double sumValue = 0;
         double sumTime = 0;
+        uint sumIter = 0;
         for (unsigned int j = 0; j < mInitSolutions.size(); j++) {
             sumValue += values[j];
             sumTime += times[j];
+            sumIter += iterations[j];
         }
 
         double avgValue = sumValue / mInitSolutions.size();
         double avgTime = sumTime / mInitSolutions.size();
+        double avgIter = sumIter / mInitSolutions.size();
 
         //latexLog << endl;
-        //latexLog << "Solver, Avg Value, Avg. Time, Best Value found, Total time" << endl;
-        latexLog << (*it)->getSolverName() << ", " << avgValue << ", " << avgTime << ", " << bestOfBestvalue << ", " << sumTime;
+        //latexLog << "Solver, Avg Value, Avg. Time, Best Value found, Total time, Avg Iter" << endl;
+        latexLog << (*it)->getSolverName()
+                 << ", " << avgValue
+                 << ", " << bestOfBestvalue
+                 << ", " << avgTime
+                 << ", " << sumTime
+                 << ", " << avgIter;
         latexLog << endl;
 
 
         // Print result for Calibration of TS
         TabuSearchSolver* tsSolver = dynamic_cast<TabuSearchSolver*>(*it);
         if (tsSolver != NULL) {
-            csvLog << tsSolver->mTabuLength << ", " << avgValue << ", " << ", " << bestOfBestvalue << ", " << avgTime << ", " << sumTime << endl;
+            //csvLog << tsSolver->mTabuLength << ", " << avgValue << ", " << ", " << bestOfBestvalue << ", " << avgTime << ", " << sumTime << endl;
         }
 
         // Print result
         // csvLog << (*it)->getSolverName() << ", " << bestOfBestvalue << ", " << sumTime << endl;
     }
 
-    csvLog.close();
+    //csvLog.close();
     latexLog.close();
     outputLog.close();
 }
