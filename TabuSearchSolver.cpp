@@ -37,6 +37,11 @@ std::string TabuSearchSolver::getSolverName() const {
 
 bool TabuSearchSolver::solve(const TSP& tsp, const TSPSolution& initSol, TSPSolution& bestSol) {
 
+    // clear previous use
+    //mTabuList.clear();
+    mTabuSet.clear();
+    mAdvTabuList.clear();
+
     try {
         bool stop = false;
         int  iter = 0;
@@ -81,15 +86,15 @@ bool TabuSearchSolver::solve(const TSP& tsp, const TSPSolution& initSol, TSPSolu
                 if (mTabuLength != 0) {
 
                     // use only List
-                    if (mTabuList.size() < mTabuLength) {
+                    /*if (mTabuList.size() < mTabuLength) {
                         mTabuList.push_back(move);
                     } else {
                         mTabuList.pop_front();  // remove old elements
                         mTabuList.push_back(move);
-                    }
+                    }*/
 
                     // use only List + Set
-                    /*if (mTabuSet.size() < mTabuLength) {
+                    if (mTabuSet.size() < mTabuLength) {
                         // get key from TSPMove
                         char buffer[50];
                         sprintf(buffer, "%u%u", move.from, move.to);
@@ -103,6 +108,8 @@ bool TabuSearchSolver::solve(const TSP& tsp, const TSPSolution& initSol, TSPSolu
                         char buffer[50];
                         sprintf(buffer, "%u%u", move.from, move.to);
                         string moveKey = string(buffer);
+
+                        //cout << "\tNew tabu move: " << moveKey << "\t" << mTabuSet.size() << endl;
 
                         // remove old key
                         string oldTabuKey = mAdvTabuList.front();
@@ -113,7 +120,7 @@ bool TabuSearchSolver::solve(const TSP& tsp, const TSPSolution& initSol, TSPSolu
                         // add new key
                         mAdvTabuList.push_back(moveKey);
                         mTabuSet.insert(moveKey);
-                    }*/
+                    }
 
                 }
 
@@ -307,10 +314,8 @@ bool TabuSearchSolver::isTabuMove(int from, int to) {
         it++;
     }*/
 
-    /*std::stringstream ss;
-    ss << from << to;*/
 
-    char buffer[10];
+    char buffer[50];
     sprintf(buffer, "%u%u", from, to);
     string moveKey = string(buffer);
 

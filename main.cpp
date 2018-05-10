@@ -116,13 +116,13 @@ int main (int argc, char *argv[]) {
 
             // Test initial solutions
             solversExe.addRandomSeedInitSolution(58);
-            //solversExe.addRandomSeedInitSolution(4);
-            //solversExe.addRandomSeedInitSolution(25);
-            //solversExe.addRandomSeedInitSolution(26);
-            //solversExe.addRandomSeedInitSolution(43);
-            //solversExe.addRandomSeedInitSolution(46);
-            //solversExe.addRandomSeedInitSolution(93);
-            //solversExe.addRandomSeedInitSolution(99);
+            solversExe.addRandomSeedInitSolution(4);
+            solversExe.addRandomSeedInitSolution(25);
+            solversExe.addRandomSeedInitSolution(26);
+            solversExe.addRandomSeedInitSolution(43);
+            solversExe.addRandomSeedInitSolution(46);
+            solversExe.addRandomSeedInitSolution(93);
+            solversExe.addRandomSeedInitSolution(99);
 
             //solversExe.addSolver(new LocalSearchSolver());
             //solversExe.addSolver(new LocalSearchSolver(false));
@@ -130,10 +130,10 @@ int main (int argc, char *argv[]) {
 
             int maxIteration = 300000;
             double maxSeconds = 10;
-            //int tabuLenght = 0;
+            //int tabuLenght = 600;
             int tabuLengths[4] = {0, 20, 180, 480};
 
-            //solversExe.addSolver(TabuSearchSolver::buildTS_BI_AC(tabuLenght, maxIteration, maxSeconds));
+            //solversExe.addSolver(TabuSearchSolver::buildTS_BI(tabuLenght, maxIteration, maxSeconds));
 
             for (int i = 0; i < 4; i++) {
                 solversExe.addSolver(TabuSearchSolver::buildTS_BI(tabuLengths[i], maxIteration, maxSeconds));

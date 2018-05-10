@@ -51,6 +51,7 @@ bool LocalSearchSolver::solve( const TSP& tsp , const TSPSolution& initSol , TSP
         }
 
         bestSol = currSol;
+        bestSol.iterations = iter;
     }
     catch (std::exception& e) {
         std::cout << ">>>EXCEPTION: " << e.what() << std::endl;

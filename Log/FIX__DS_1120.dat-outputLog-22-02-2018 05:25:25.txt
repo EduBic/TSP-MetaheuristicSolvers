@@ -1,0 +1,49 @@
+
+----------------------------------------------------------------------
+
+Tabu Search - BI 	Tenure: 0, MaxIter: 300000
+(value : 1.7064e+07)	sec. (user time) 10.0009	sec. (CPU time) 10.0006	Max iterations 2660
+(value : 1.70551e+07)	sec. (user time) 10.0024	sec. (CPU time) 10.0022	Max iterations 2700
+(value : 1.70037e+07)	sec. (user time) 10.0014	sec. (CPU time) 10.0013	Max iterations 2703
+(value : 1.70572e+07)	sec. (user time) 10.0028	sec. (CPU time) 10.0026	Max iterations 2733
+(value : 1.69691e+07)	sec. (user time) 10.0031	sec. (CPU time) 10.0029	Max iterations 2785
+(value : 1.71052e+07)	sec. (user time) 10.001	        sec. (CPU time) 10.0009	Max iterations 2653
+(value : 1.71275e+07)	sec. (user time) 10.0012	sec. (CPU time) 10.001	Max iterations 2695
+(value : 1.70276e+07)	sec. (user time) 10.0018	sec. (CPU time) 10.0016	Max iterations 2749
+
+
+----------------------------------------------------------------------
+
+Tabu Search - BI 	Tenure: 20, MaxIter: 300000
+(value : 2.63646e+07)	sec. (user time) 10.0035	sec. (CPU time) 10.0034	Max iterations 832
+(value : 2.60954e+07)	sec. (user time) 10.002	        sec. (CPU time) 10.0018	Max iterations 837
+(value : 2.59919e+07)	sec. (user time) 10.0057	sec. (CPU time) 10.0055	Max iterations 841
+(value : 2.53403e+07)	sec. (user time) 10.0041	sec. (CPU time) 10.0039	Max iterations 844
+(value : 2.45836e+07)	sec. (user time) 10.0055	sec. (CPU time) 10.0054	Max iterations 849
+(value : 2.60564e+07)	sec. (user time) 10.0108	sec. (CPU time) 10.0106	Max iterations 846
+(value : 2.53363e+07)	sec. (user time) 10.0006	sec. (CPU time) 10.0004	Max iterations 844
+(value : 2.56534e+07)	sec. (user time) 10.0053	sec. (CPU time) 10.0051	Max iterations 848
+
+----------------------------------------------------------------------
+
+Tabu Search - BI 	Tenure: 180, MaxIter: 300000
+(value : 2.01459e+08)	sec. (user time) 10.0333	sec. (CPU time) 10.0318	Max iterations 168
+(value : 2.03304e+08)	sec. (user time) 10.0938	sec. (CPU time) 10.0935	Max iterations 168
+(value : 2.04495e+08)	sec. (user time) 10.0985	sec. (CPU time) 10.0982	Max iterations 168
+(value : 2.07285e+08)	sec. (user time) 10.1049	sec. (CPU time) 10.1044	Max iterations 168
+(value : 2.00345e+08)	sec. (user time) 10.09	sec. (CPU time) 10.0894	Max iterations 168
+(value : 2.03863e+08)	sec. (user time) 10.0027	sec. (CPU time) 10.0021	Max iterations 167
+(value : 2.00871e+08)	sec. (user time) 10.0471	sec. (CPU time) 10.0464	Max iterations 167
+(value : 2.0233e+08)	sec. (user time) 10.0262	sec. (CPU time) 10.0258	Max iterations 167
+
+----------------------------------------------------------------------
+
+Tabu Search - BI 	Tenure: 480, MaxIter: 300000
+(value : 2.01459e+08)	sec. (user time) 10.0793	sec. (CPU time) 10.0791	Max iterations 168
+(value : 2.03304e+08)	sec. (user time) 10.0923	sec. (CPU time) 10.092	Max iterations 168
+(value : 2.04495e+08)	sec. (user time) 10.0794	sec. (CPU time) 10.0791	Max iterations 168
+(value : 2.07285e+08)	sec. (user time) 10.1134	sec. (CPU time) 10.1099	Max iterations 168
+(value : 2.00345e+08)	sec. (user time) 10.089	sec. (CPU time) 10.0887	Max iterations 168
+(value : 2.03108e+08)	sec. (user time) 10.0897	sec. (CPU time) 10.0886	Max iterations 168
+(value : 2.00128e+08)	sec. (user time) 10.1051	sec. (CPU time) 10.1046	Max iterations 168
+(value : 2.01582e+08)	sec. (user time) 10.0972	sec. (CPU time) 10.0967	Max iterations 168

@@ -40,6 +40,7 @@ public:
         solveBy = "Random";
         userTime = -1.0;
         cpuTime = -1.0;
+        iterations = 0;
     }
 
     TSPSolution( const TSPSolution& tspSol ) {
@@ -48,6 +49,11 @@ public:
         for (uint i = 0; i < tspSol.sequence.size(); ++i ) {
             sequence.push_back(tspSol.sequence[i]);
         }
+
+        solveBy = tspSol.solveBy;
+        userTime = tspSol.userTime;
+        cpuTime = tspSol.cpuTime;
+        iterations = tspSol.iterations;
     }
 
 

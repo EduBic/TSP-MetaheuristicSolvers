@@ -85,14 +85,15 @@ void SolversExecutor::execute() {
             outputLog << std::endl << "----------------------------------------------------------------------" << std::endl
                       << std::endl << bestSolution->solveBy << std::endl;
 
-            bestSolution->print(outputLog);
+            //bestSolution->print(outputLog);
 
             outputLog << "(value : " << value << ")\t"
                       << "sec. (user time) " << bestSolution->userTime << "\t"
-                      << "sec. (CPU time) " << bestSolution->cpuTime << std::endl;
+                      << "sec. (CPU time) " << bestSolution->cpuTime << "\t"
+                      << "Max iterations " << bestSolution->iterations << endl;
 
             // print latex result of init solution solved
-            //latexLog << bestSolution->solveBy << ", " << value << ", " << bestSolution->cpuTime << endl;
+            latexLog << bestSolution->solveBy << ", " << value << ", " << bestSolution->cpuTime << endl;
 
             // for compute average
             values[i] = value;
@@ -170,10 +171,11 @@ void SolversExecutor::executeAndMeasureTime(Solver& tspSolver, TSPSolution& init
 
 void SolversExecutor::printInitSolutions() const {
     for (vector<TSPSolution*>::const_iterator it = mInitSolutions.begin(); it != mInitSolutions.end(); ++it) {
-        std::cout << std::endl << (*it)->solveBy << std::endl;
-        std::cout << "(value : " << (*it)->evaluateObjectiveFunction(mTspInstance) << ")\n";
-        std::cout << "sec. (user time) " << (*it)->userTime << std::endl;
-        std::cout << "sec. (CPU time) " << (*it)->cpuTime << std::endl;
+        cout << endl << (*it)->solveBy << endl;
+        cout << "(value : " << (*it)->evaluateObjectiveFunction(mTspInstance) << ")\n";
+        cout << "sec. (user time) " << (*it)->userTime << endl;
+        cout << "sec. (CPU time) " << (*it)->cpuTime << endl;
+        cout << "Max iterations " << (*it)->iterations << endl;
     }
 }
 
@@ -200,6 +202,7 @@ void SolversExecutor::printResults() const {
         std::cout << "(value : " << value << ")\n";
         std::cout << "sec. (user time) " << (*it)->userTime << std::endl;
         std::cout << "sec. (CPU time) " << (*it)->cpuTime << std::endl;
+        cout << "Max iterations " << (*it)->iterations << endl;
     }
 
     if (mBestSolutions.size() > 1) {
