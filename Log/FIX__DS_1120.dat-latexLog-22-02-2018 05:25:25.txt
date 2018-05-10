@@ -1,0 +1,41 @@
+Solver, Avg Value, Best Value found, Avg. Time, Total time, Avg Iter
+
+Tabu Search - BI 	Tenure: 0, MaxIter: 300000, 1.7064e+07, 10.0006
+Tabu Search - BI 	Tenure: 0, MaxIter: 300000, 1.70551e+07, 10.0022
+Tabu Search - BI 	Tenure: 0, MaxIter: 300000, 1.70037e+07, 10.0013
+Tabu Search - BI 	Tenure: 0, MaxIter: 300000, 1.70572e+07, 10.0026
+Tabu Search - BI 	Tenure: 0, MaxIter: 300000, 1.69691e+07, 10.0029
+Tabu Search - BI 	Tenure: 0, MaxIter: 300000, 1.71052e+07, 10.0009
+Tabu Search - BI 	Tenure: 0, MaxIter: 300000, 1.71275e+07, 10.001
+Tabu Search - BI 	Tenure: 0, MaxIter: 300000, 1.70276e+07, 10.0016
+Tabu Search - BI 	Tenure: 0, MaxIter: 300000, 1.70512e+07, 1.69691e+07, 10.0016, 80.0132, 2709
+
+Tabu Search - BI 	Tenure: 20, MaxIter: 300000, 2.63646e+07, 10.0034
+Tabu Search - BI 	Tenure: 20, MaxIter: 300000, 2.60954e+07, 10.0018
+Tabu Search - BI 	Tenure: 20, MaxIter: 300000, 2.59919e+07, 10.0055
+Tabu Search - BI 	Tenure: 20, MaxIter: 300000, 2.53403e+07, 10.0039
+Tabu Search - BI 	Tenure: 20, MaxIter: 300000, 2.45836e+07, 10.0054
+Tabu Search - BI 	Tenure: 20, MaxIter: 300000, 2.60564e+07, 10.0106
+Tabu Search - BI 	Tenure: 20, MaxIter: 300000, 2.53363e+07, 10.0004
+Tabu Search - BI 	Tenure: 20, MaxIter: 300000, 2.56534e+07, 10.0051
+Tabu Search - BI 	Tenure: 20, MaxIter: 300000, 2.56777e+07, 2.45836e+07, 10.0045, 80.036, 842
+
+Tabu Search - BI 	Tenure: 180, MaxIter: 300000, 2.01459e+08, 10.0318
+Tabu Search - BI 	Tenure: 180, MaxIter: 300000, 2.03304e+08, 10.0935
+Tabu Search - BI 	Tenure: 180, MaxIter: 300000, 2.04495e+08, 10.0982
+Tabu Search - BI 	Tenure: 180, MaxIter: 300000, 2.07285e+08, 10.1044
+Tabu Search - BI 	Tenure: 180, MaxIter: 300000, 2.00345e+08, 10.0894
+Tabu Search - BI 	Tenure: 180, MaxIter: 300000, 2.03863e+08, 10.0021
+Tabu Search - BI 	Tenure: 180, MaxIter: 300000, 2.00871e+08, 10.0464
+Tabu Search - BI 	Tenure: 180, MaxIter: 300000, 2.0233e+08, 10.0258
+Tabu Search - BI 	Tenure: 180, MaxIter: 300000, 2.02994e+08, 2.00345e+08, 10.0615, 80.4916, 167
+
+Tabu Search - BI 	Tenure: 480, MaxIter: 300000, 2.01459e+08, 10.0791
+Tabu Search - BI 	Tenure: 480, MaxIter: 300000, 2.03304e+08, 10.092
+Tabu Search - BI 	Tenure: 480, MaxIter: 300000, 2.04495e+08, 10.0791
+Tabu Search - BI 	Tenure: 480, MaxIter: 300000, 2.07285e+08, 10.1099
+Tabu Search - BI 	Tenure: 480, MaxIter: 300000, 2.00345e+08, 10.0887
+Tabu Search - BI 	Tenure: 480, MaxIter: 300000, 2.03108e+08, 10.0886
+Tabu Search - BI 	Tenure: 480, MaxIter: 300000, 2.00128e+08, 10.1046
+Tabu Search - BI 	Tenure: 480, MaxIter: 300000, 2.01582e+08, 10.0967
+Tabu Search - BI 	Tenure: 480, MaxIter: 300000, 2.02713e+08, 2.00128e+08, 10.0923, 80.7387, 168

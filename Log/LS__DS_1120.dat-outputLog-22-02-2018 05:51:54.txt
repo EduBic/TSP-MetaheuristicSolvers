@@ -1,0 +1,40 @@
+
+----------------------------------------------------------------------
+
+Local Search Best Improvement
+(value : 1.7064e+07)	sec. (user time) 5.69265	sec. (CPU time) 5.6924	Max iterations 1412
+
+----------------------------------------------------------------------
+
+Local Search Best Improvement
+(value : 1.70551e+07)	sec. (user time) 5.57031	sec. (CPU time) 5.57019	Max iterations 1398
+
+----------------------------------------------------------------------
+
+Local Search Best Improvement
+(value : 1.70037e+07)	sec. (user time) 5.60612	sec. (CPU time) 5.60597	Max iterations 1413
+
+----------------------------------------------------------------------
+
+Local Search Best Improvement
+(value : 1.70572e+07)	sec. (user time) 5.42401	sec. (CPU time) 5.42389	Max iterations 1368
+
+----------------------------------------------------------------------
+
+Local Search Best Improvement
+(value : 1.69691e+07)	sec. (user time) 5.32796	sec. (CPU time) 5.32781	Max iterations 1360
+
+----------------------------------------------------------------------
+
+Local Search Best Improvement
+(value : 1.71052e+07)	sec. (user time) 5.55052	sec. (CPU time) 5.5504	Max iterations 1400
+
+----------------------------------------------------------------------
+
+Local Search Best Improvement
+(value : 1.71275e+07)	sec. (user time) 5.31671	sec. (CPU time) 5.3166	Max iterations 1367
+
+----------------------------------------------------------------------
+
+Local Search Best Improvement
+(value : 1.70276e+07)	sec. (user time) 5.49162	sec. (CPU time) 5.49151	Max iterations 1388

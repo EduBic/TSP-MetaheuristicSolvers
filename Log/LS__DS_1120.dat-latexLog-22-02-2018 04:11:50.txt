@@ -1,0 +1,3 @@
+Solver, Avg Value, Best Value found, Avg. Time, Total time, Avg Iter
+
+Local Search Best Improvement, 1.70512e+07, 1.69691e+07, 5.63437, 45.075, 3.32707e+08

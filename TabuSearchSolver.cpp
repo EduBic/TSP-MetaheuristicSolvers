@@ -5,6 +5,7 @@
 
 #include "TabuSearchSolver.h"
 #include <iostream>
+#include <sstream>
 #include <string>
 #include <stdio.h>
 #include <ctime>
@@ -36,6 +37,11 @@ std::string TabuSearchSolver::getSolverName() const {
 
 bool TabuSearchSolver::solve(const TSP& tsp, const TSPSolution& initSol, TSPSolution& bestSol) {
 
+    // clear previous use
+    //mTabuList.clear();
+    mTabuSet.clear();
+    mAdvTabuList.clear();
+
     try {
         bool stop = false;
         int  iter = 0;
@@ -57,54 +63,65 @@ bool TabuSearchSolver::solve(const TSP& tsp, const TSPSolution& initSol, TSPSolu
             // for small instance of problem print the current solution
             if (tsp.n < 20) {
                 currSol.print(std::cout);
+                std::cout << " (" << iter << ") value " << currValue << "\t(" << bestValue << ")";
             }
 
-            //std::cout << " (" << iter << ") value " << currValue << "\t(" << currSol.evaluateObjectiveFunction(tsp) << ")";
+            //mAspiration = bestValue - currValue;
 
-            mAspiration = bestValue - currValue;
-            double bestNeighValue = currValue + findBestNeighbor(tsp, currSol, move);
+            /*double costVar;
+            if (BestImprovement) {
+                costVar = findBestNeighbor(tsp, currSol, move);
+            } else {
+                costVar = findFirstBestNeighbor(tsp, currSol, move);
+            }*/
+
+            double bestNeighValue = currValue + findBestNeighbor(tsp, currSol, move); // costVar;
 
             if (bestNeighValue >= tsp.infinite) {
-                std::cout << "\tmove: NO legal neighbour" << std::endl;
+                cout << "\tmove: NO legal neighbour" << endl;
                 stop = true;
             }
             else {
-                //tabuList[currSol.sequence[move.from]] = iter;
-                //tabuList[currSol.sequence[move.to]]   = iter;
-
                 // insertTabu(move);
-                if (mTabuList.size() < mTabuLength && mTabuSet.size() < mTabuLength) {
-                    mTabuList.push_back(move);
+                if (mTabuLength != 0) {
 
+                    // use only List
+                    /*if (mTabuList.size() < mTabuLength) {
+                        mTabuList.push_back(move);
+                    } else {
+                        mTabuList.pop_front();  // remove old elements
+                        mTabuList.push_back(move);
+                    }*/
 
-                    // get key from TSPMove
-                    char buffer[50];
-                    sprintf(buffer, "%u%u", move.from, move.to);
-                    string moveKey = string(buffer);
+                    // use only List + Set
+                    if (mTabuSet.size() < mTabuLength) {
+                        // get key from TSPMove
+                        char buffer[50];
+                        sprintf(buffer, "%u%u", move.from, move.to);
+                        string moveKey = string(buffer);
 
-                    mAdvTabuList.push_back(moveKey);
-                    mTabuSet.insert(moveKey);
+                        mAdvTabuList.push_back(moveKey);
+                        mTabuSet.insert(moveKey);
 
-                } else {
-                    mTabuList.pop_front();  // remove old elements
-                    mTabuList.push_back(move);
+                    } else {
+                        // get key from TSPMove
+                        char buffer[50];
+                        sprintf(buffer, "%u%u", move.from, move.to);
+                        string moveKey = string(buffer);
 
+                        //cout << "\tNew tabu move: " << moveKey << "\t" << mTabuSet.size() << endl;
 
-                    // get key from TSPMove
-                    char buffer[50];
-                    sprintf(buffer, "%u%u", move.from, move.to);
-                    string moveKey = string(buffer);
+                        // remove old key
+                        string oldTabuKey = mAdvTabuList.front();
 
-                    // remove old key
-                    string oldTabuKey = mAdvTabuList.front();
+                        mAdvTabuList.pop_front();
+                        mTabuSet.erase(oldTabuKey);
 
-                    mAdvTabuList.pop_front();
-                    mTabuSet.erase(oldTabuKey);
+                        // add new key
+                        mAdvTabuList.push_back(moveKey);
+                        mTabuSet.insert(moveKey);
+                    }
 
-
-                    // add new key
-                    mAdvTabuList.push_back(moveKey);
-                    mTabuSet.insert(moveKey);
                 }
 
                 currSol = swap(currSol,move);
@@ -114,16 +131,15 @@ bool TabuSearchSolver::solve(const TSP& tsp, const TSPSolution& initSol, TSPSolu
                     bestValue = currValue;
                     bestSol = currSol;
 
-                    std::cout << " (" << iter << ") value " << currValue << "\t(" << currSol.evaluateObjectiveFunction(tsp) << ")";
-                    std::cout << "\tmove: " << move.from << " , " << move.to;
-                    std::cout << "\tbetter solution";
-                    std::cout << std::endl;
+                    cout << " (" << iter << ") value " << currValue
+                         << "\tmove: " << move.from << " , " << move.to
+                         << "\tbetter solution" << std::endl;
                 }
 
                 // stopping criteria
-                if (iter > mMaxIteration) {
+                /*if (iter > mMaxIteration) {
                     stop = true;
-                } else if ((double)(clock() - currTime) / CLOCKS_PER_SEC > mMaxTime) {
+                } else*/ if ((double)(clock() - currTime) / CLOCKS_PER_SEC > mMaxTime) {
                     stop = true;
                 }
 
@@ -131,6 +147,8 @@ bool TabuSearchSolver::solve(const TSP& tsp, const TSPSolution& initSol, TSPSolu
                 //std::cout << std::endl;
             }
         }
+
+        bestSol.iterations = iter;
 
         return true;
     }
@@ -240,16 +258,24 @@ double TabuSearchSolver::findBestNeighbor( const TSP& tsp , const TSPSolution& c
                                         + tsp.cost[h][j] + tsp.cost[i][l];
 
 
-            if (isTabuMove(a, b) && !satisfiedAspirationCriteria(neighCostVariation)) {
+            if (!isTabuMove(a, b) /*|| satisfiedAspirationCriteria(neighCostVariation)*/) {
+                if (neighCostVariation < bestCostVariation) {
+                    bestCostVariation = neighCostVariation;
+                    move.from = a;
+                    move.to = b;
+                }
+            }
+
+            /*if (isTabuMove(a, b) && !satisfiedAspirationCriteria(neighCostVariation)) {
                 // DEBUG
                 //std::cout << "\t" << "discard move: " << a << ", " << b << "\t";
             }
             else {
 
                 // DEBUG
-                /*if (isTabuMove(a, b) && satisfiedAspirationCriteria(neighCostVariation)) {
+                if (isTabuMove(a, b) && satisfiedAspirationCriteria(neighCostVariation)) {
                     std::cout << "\t" << "in tabu but satisfied AC: " << a << ", " << b << "\t";
-                }*/
+                }
 
                 if (neighCostVariation < bestCostVariation) {
                     bestCostVariation = neighCostVariation;
@@ -261,7 +287,7 @@ double TabuSearchSolver::findBestNeighbor( const TSP& tsp , const TSPSolution& c
                 else {
                     //std::cout << "\t" << "no better move: " << a << ", " << b << "\t";
                 }
-            }
+            }*/
         }
     }
 
@@ -283,13 +309,11 @@ bool TabuSearchSolver::isTabuMove(int from, int to) {
     /*std::list<TSPMove>::const_iterator it = mTabuList.begin();
 
     while (it != mTabuList.end()) {
-
-        //std::cout << "Hello" << std::endl << (*it).from << ", " << (*it).to << std::endl;
-
-        if ((*it).from == from && (*it).to == to) return true;
-
+        if ((*it).from == from && (*it).to == to)
+            return true;
         it++;
     }*/
+
 
     char buffer[50];
     sprintf(buffer, "%u%u", from, to);
